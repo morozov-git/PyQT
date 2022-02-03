@@ -11,13 +11,48 @@
 
 # воспользуемся пинг-командой со следуюшими параметрами:
 '''
--w интервал
+парвметры для MacOS
+-t интервал
 
 Определяет в миллисекундах время ожидания получения сообщения с эхо-ответом, 
 которое соответствует сообщению с эхо-запросом. Если сообщение с эхо-ответом 
 не получено в пределах заданного интервала, то выдается сообщение об ошибке 
 "Request timed out". Интервал по умолчанию равен 4000 (4 секунды).
 
--n счетчик
+-c счетчик
 Задает число отправляемых сообщений с эхо-запросом. По умолчанию - 4.
 '''
+
+
+from ipaddress import ip_address
+from subprocess import Popen, PIPE
+from tabulate import tabulate
+
+
+hosts = ['ya.ru', 'google.ru', '127.0.0.1', '3.3.3.3']
+
+
+def host_ping(hosts, timeout=50, count=4):
+	results = {'Доступные узлы': [], 'Недоступные узлы': []}
+	ip_list = []
+	host_list = []
+	for host in hosts:
+	# Отделяем IP адреса в список
+		try:
+			ip = ip_address(host)
+			ip_list.append(ip)
+		except ValueError:
+			host_list.append(host)
+
+	for address in (host_list + ip_list):
+		process = Popen(f"ping {address} -t {timeout} -c {count}", shell=True, stdout=PIPE)
+		process.wait()
+		# проверяем код завершения подпроцесса
+		if process.returncode == 0:
+			results['Доступные узлы'].append(f"{address}")
+		else:
+			results['Недоступные узлы'].append(f"{address}")
+	return results
+
+results = host_ping(hosts)
+print(tabulate(results, headers='keys'))
