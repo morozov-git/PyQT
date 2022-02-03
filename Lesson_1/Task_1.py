@@ -49,8 +49,10 @@ def host_ping(hosts, timeout=50, count=4):
 		# проверяем код завершения подпроцесса
 		if process.returncode == 0:
 			results['Доступные узлы'].append(f"{address}")
+			print(f'{address} - Узел доступен')
 		else:
 			results['Недоступные узлы'].append(f"{address}")
+			print(f'{address} - Узел не доступен')
 	return results
 
 
