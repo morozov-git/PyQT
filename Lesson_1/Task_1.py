@@ -29,7 +29,6 @@ from subprocess import Popen, PIPE
 from tabulate import tabulate
 
 
-hosts = ['ya.ru', 'google.ru', '127.0.0.1', '3.3.3.3']
 
 
 def host_ping(hosts, timeout=50, count=4):
@@ -54,5 +53,8 @@ def host_ping(hosts, timeout=50, count=4):
 			results['Недоступные узлы'].append(f"{address}")
 	return results
 
-results = host_ping(hosts)
-print(tabulate(results, headers='keys'))
+
+if __name__ == '__main__':
+	hosts = ['ya.ru', 'google.ru', '127.0.0.1', '3.3.3.3']
+	results = host_ping(hosts)
+	print(tabulate(results, headers='keys'))
