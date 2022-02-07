@@ -24,12 +24,13 @@ SERVER_LOGGER = logging.getLogger('server')
 
 def arg_parser():
     '''
+    Парсер аргументов коммандной строки
     Загрузка параметров командной строки, если нет параметров, то задаём значения по умоланию.
     Сначала обрабатываем порт:
     server.py -p 8079 -a 192.168.0.86
     :return:
     '''
-    """Парсер аргументов коммандной строки"""
+
     # try:
     #     if '-p' in sys.argv:
     #         self.listen_port = int(sys.argv[sys.argv.index('-p') + 1])
@@ -70,11 +71,14 @@ def arg_parser():
     listen_address = namespace.a
     listen_port = namespace.p
 
-    # проверка получения корретного номера порта для работы сервера.
-    if not 1023 < listen_port < 65536:
-        SERVER_LOGGER.critical(f'Попытка запуска сервера с указанием неподходящего порта '
-                               f'{listen_port}. Допустимы адреса с 1024 до 65535.')
-        sys.exit(1)
+    # Проверки вводимых данных перенесены в дескрипторы
+
+    # # проверка получения корретного номера порта для работы сервера.
+    # if not 1023 < listen_port < 65536:
+    #     SERVER_LOGGER.critical(f'Попытка запуска сервера с указанием неподходящего порта '
+    #                            f'{listen_port}. Допустимы адреса с 1024 до 65535.')
+    #     sys.exit(1)
+
     return listen_address, listen_port
 
 
