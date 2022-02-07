@@ -199,6 +199,8 @@ class ClientApp(metaclass=ClientMaker):
         # client.py 192.168.0.100 8079
         s_address, s_port, self.client_name = arg_parser()
 
+        # Николай, не могу понять почему в этом месте после инициализации класса и передачи ему трех параметров
+        # переменная self.client_name не приходит?
 
         if not self.client_name:
             self.client_name = input('Введите имя пользователя: ')
