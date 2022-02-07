@@ -201,6 +201,7 @@ class ClientApp(metaclass=ClientMaker):
 
         # Николай, не могу понять почему в этом месте после инициализации класса и передачи ему трех параметров
         # переменная self.client_name не приходит?
+        #
 
         if not self.client_name:
             self.client_name = input('Введите имя пользователя: ')
