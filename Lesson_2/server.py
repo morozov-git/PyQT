@@ -7,7 +7,7 @@ import argparse
 from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, \
     MAX_CONNECTIONS, PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, ACCOUNT_NAME, SENDER, MESSAGE, MESSAGE_TEXT, \
     RESPONSE_400, DESTINATION, RESPONSE_200, EXIT
-from common.utils import get_message, send_message
+from common.utils import get_message, send_message, arg_parser
 import logging
 import time
 import logs.config_server_log
@@ -22,64 +22,7 @@ SERVER_LOGGER = logging.getLogger('server')
 
 
 
-def arg_parser():
-    '''
-    Парсер аргументов коммандной строки
-    Загрузка параметров командной строки, если нет параметров, то задаём значения по умоланию.
-    Сначала обрабатываем порт:
-    server.py -p 8079 -a 192.168.0.86
-    :return:
-    '''
 
-    # try:
-    #     if '-p' in sys.argv:
-    #         self.listen_port = int(sys.argv[sys.argv.index('-p') + 1])
-    #     else:
-    #         self.listen_port = DEFAULT_PORT
-    #     if self.listen_port < 1024 or self.listen_port > 65535:
-    #         raise ValueError
-    # except IndexError:
-    #     # print('После параметра -\'p\' необходимо указать номер порта.')
-    #     SERVER_LOGGER.error(f'После параметра -\'p\' необходимо указать номер порта.')
-    #     # sys.exit(1)
-    #     # для тестов
-    #     return 'PORT NOT SET'
-    #
-    # except ValueError:
-    #     # print('В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
-    #     SERVER_LOGGER.error(f'В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
-    #     # sys.exit(1)
-    #     # для тестов
-    #     return 'BAD PORT'
-    #
-    # # Затем загружаем какой адрес слушать
-    #
-    # try:
-    #     if '-a' in sys.argv:
-    #         self.listen_address = sys.argv[sys.argv.index('-a') + 1]
-    #     else:
-    #         self.listen_address = ''
-    #
-    # except IndexError:
-    #     # print('После параметра \'a\'- необходимо указать адрес, который будет слушать сервер.')
-    #     SERVER_LOGGER.error(f'После параметра \'a\'- необходимо указать адрес, который будет слушать сервер.')
-    #     sys.exit(1)
-    parser = argparse.ArgumentParser()
-    parser.add_argument('-p', default=DEFAULT_PORT, type=int, nargs='?')
-    parser.add_argument('-a', default='', nargs='?')
-    namespace = parser.parse_args(sys.argv[2:])
-    listen_address = namespace.a
-    listen_port = namespace.p
-
-    # Проверки вводимых данных перенесены в дескрипторы
-
-    # # проверка получения корретного номера порта для работы сервера.
-    # if not 1023 < listen_port < 65536:
-    #     SERVER_LOGGER.critical(f'Попытка запуска сервера с указанием неподходящего порта '
-    #                            f'{listen_port}. Допустимы адреса с 1024 до 65535.')
-    #     sys.exit(1)
-
-    return listen_address, listen_port
 
 
 @Log()
@@ -277,4 +220,5 @@ if __name__ == '__main__':
     ServerApp.main()
 
 # server.py -p 8888 -a 192.168.0.49
+# server.py -p 8888 -a 192.168.0.66
 # server.py -p 8888 -a 192.168.0.101

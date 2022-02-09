@@ -10,7 +10,7 @@ from errors import ReqFieldMissingError
 from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT, ACCOUNT_NAME, SENDER, \
     MESSAGE, MESSAGE_TEXT, DESTINATION, EXIT
-from common.utils import get_message, send_message
+from common.utils import get_message, send_message, arg_parser
 from loging_decos import Log
 from errors import ReqFieldMissingError, ServerError, IncorrectDataRecivedError
 import threading
@@ -20,34 +20,34 @@ from metaclasses import ClientMaker
 # Инициализация клиентского логера
 CLIENT_LOGGER = logging.getLogger('client')
 
-
-def arg_parser():
-    """
-    Создаём парсер аргументов коммандной строки
-    и читаем параметры, возвращаем 3 параметра
-    """
-    parser = argparse.ArgumentParser()
-    parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, nargs='?')
-    parser.add_argument('port', default=DEFAULT_PORT, type=int, nargs='?')
-    # parser.add_argument('-m', '--mode', default='listen', nargs='?')
-    parser.add_argument('-u', '--user', default='Guest', nargs='?')
-    namespace = parser.parse_args(sys.argv[2:])
-    server_address = namespace.addr
-    server_port = namespace.port
-    # client_mode = namespace.mode
-    client_name = namespace.user
-
-    # # проверим подходящий номер порта
-    # if not 1023 < server_port < 65536:
-    #     CLIENT_LOGGER.critical(f'Попытка запуска клиента с неподходящим номером порта: {server_port}. '
-    #                            f'Допустимы адреса с 1024 до 65535. Клиент завершается.')
-    #     sys.exit(1)
-    # # Проверим допустим ли выбранный режим работы клиента
-    # if client_mode not in ('listen', 'send'):
-    #     CLIENT_LOGGER.critical(f'Указан недопустимый режим работы {client_mode}, '
-    #                            f'допустимые режимы: listen , send')
-    #     sys.exit(1)
-    return server_address, server_port, client_name  # client_mode,
+# # парсер перенесен в модуль common.utils
+# def arg_parser():
+#     """
+#     Создаём парсер аргументов коммандной строки
+#     и читаем параметры, возвращаем 3 параметра
+#     """
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, nargs='?')
+#     parser.add_argument('port', default=DEFAULT_PORT, type=int, nargs='?')
+#     # parser.add_argument('-m', '--mode', default='listen', nargs='?')
+#     parser.add_argument('-u', '--user', default='Guest', nargs='?')
+#     namespace = parser.parse_args(sys.argv[2:])
+#     server_address = namespace.addr
+#     server_port = namespace.port
+#     # client_mode = namespace.mode
+#     client_name = namespace.user
+#
+#     # # проверим подходящий номер порта
+#     # if not 1023 < server_port < 65536:
+#     #     CLIENT_LOGGER.critical(f'Попытка запуска клиента с неподходящим номером порта: {server_port}. '
+#     #                            f'Допустимы адреса с 1024 до 65535. Клиент завершается.')
+#     #     sys.exit(1)
+#     # # Проверим допустим ли выбранный режим работы клиента
+#     # if client_mode not in ('listen', 'send'):
+#     #     CLIENT_LOGGER.critical(f'Указан недопустимый режим работы {client_mode}, '
+#     #                            f'допустимые режимы: listen , send')
+#     #     sys.exit(1)
+#     return server_address, server_port, client_name  # client_mode,
 
 
 @Log()
@@ -61,10 +61,11 @@ class ClientApp(metaclass=ClientMaker):
         self.client_name = client_name
         self.server_address = server_address
         self.server_port = server_port
-        super().__init__()
+        # super().__init__()
+        # print(self)
 
 
-    @classmethod
+    # @classmethod
     def create_exit_message(self, account_name):
         """Функция создаёт словарь с сообщением о выходе"""
         return {
@@ -73,7 +74,7 @@ class ClientApp(metaclass=ClientMaker):
             ACCOUNT_NAME: account_name
         }
 
-    @classmethod
+    # @classmethod
     # def message_from_server(cls, sock, username):
     def message_from_server(self, sock, username):
         """Функция - обработчик сообщений других пользователей, поступающих с сервера"""
@@ -92,7 +93,7 @@ class ClientApp(metaclass=ClientMaker):
                 CLIENT_LOGGER.critical(f'Потеряно соединение с сервером.')
                 break
 
-    @classmethod
+    # @classmethod
     def create_message(self, sock, account_name='Guest'):
         """
         Функция запрашивает текст сообщения и возвращает его.
@@ -121,7 +122,7 @@ class ClientApp(metaclass=ClientMaker):
             CLIENT_LOGGER.critical('Потеряно соединение с сервером.')
             sys.exit(1)
 
-    @classmethod
+    # @classmethod
     def user_interactive(self, sock, username):
         """Функция взаимодействия с пользователем, запрашивает команды, отправляет сообщения"""
         ClientApp.print_help()
@@ -132,7 +133,7 @@ class ClientApp(metaclass=ClientMaker):
             elif command == 'help':
                 ClientApp.print_help()
             elif command == 'exit':
-                ClientApp.send_message(sock, ClientApp.create_exit_message(username))
+                send_message(sock, ClientApp.create_exit_message(username))
                 print('Завершение соединения.')
                 CLIENT_LOGGER.info('Завершение работы по команде пользователя.')
                 # Задержка неоходима, чтобы успело уйти сообщение о выходе
@@ -141,15 +142,15 @@ class ClientApp(metaclass=ClientMaker):
             else:
                 print('Команда не распознана, попробойте снова. help - вывести поддерживаемые команды.')
 
-    @classmethod
+    # @classmethod
     def print_help(self):
-        """Функция выводящяя справку по использованию"""
+        """Функция выводящяя справку по командам"""
         print('Поддерживаемые команды:')
         print('message - отправить сообщение. Кому и текст будет запрошены отдельно.')
         print('help - вывести подсказки по командам')
         print('exit - выход из программы')
 
-    @classmethod
+    # @classmethod
     def create_presence(self, account_name='Guest'):
         '''
         Функция генерирует запрос о присутствии клиента
@@ -164,7 +165,7 @@ class ClientApp(metaclass=ClientMaker):
         CLIENT_LOGGER.debug(f'Сформировано {PRESENCE} сообщение для пользователя {account_name}')
         return out
 
-    @classmethod
+    # @classmethod
     def process_response_ans(self, message):
         """
         Функция разбирает ответ сервера на сообщение о присутствии,
@@ -178,7 +179,7 @@ class ClientApp(metaclass=ClientMaker):
                 raise ServerError(f'400 : {message[ERROR]}')
         raise ReqFieldMissingError(RESPONSE)
 
-    @classmethod
+    # @classmethod
     def process_answer(self, message):
         '''
         Функция разбирает ответ сервера
@@ -193,15 +194,11 @@ class ClientApp(metaclass=ClientMaker):
         raise ReqFieldMissingError(RESPONSE)
 
 
-    @classmethod
+    # @classmethod
     def main(self, *args, **kwargs):
         '''Загружаем параметы коммандной строки'''
         # client.py 192.168.0.100 8079
-        s_address, s_port, self.client_name = arg_parser()
-
-        # Николай, не могу понять почему в этом месте после инициализации класса и передачи ему трех параметров
-        # переменная self.client_name не приходит?
-        #
+        # s_address, s_port, self.client_name = arg_parser()
 
         if not self.client_name:
             self.client_name = input('Введите имя пользователя: ')
@@ -318,5 +315,6 @@ if __name__ == '__main__':
     ClientApp = ClientApp(server_address, server_port, client_name)
     ClientApp.main()
 
-# client.py 192.168.0.49 8888 -u TestSender1
+# client.py -a 192.168.0.49 -p 8888 -u TestSender1
+# client.py -a 192.168.0.66 -p 8888 -u TestSender1
 # client.py 192.168.0.49 8888 -m send -u TestSender1
