@@ -44,7 +44,7 @@ class ServerApp(metaclass=ServerMaker):
     names = dict()
 
 
-    @classmethod
+    # @classmethod
     def process_client_message(self, message, messages_list, client, clients, names):
         '''
         Обработчик сообщений от клиентов, принимает словарь -
@@ -92,7 +92,7 @@ class ServerApp(metaclass=ServerMaker):
             send_message(client, response)
             return
 
-    @classmethod
+    # @classmethod
     def process_message(self, message, names, listen_socks):
         """
         Функция адресной отправки сообщения определённому клиенту. Принимает словарь сообщение,
@@ -113,8 +113,9 @@ class ServerApp(metaclass=ServerMaker):
                 f'Пользователь {message[DESTINATION]} не зарегистрирован на сервере, '
                 f'отправка сообщения невозможна.')
 
-    @classmethod
+    # @classmethod
     def main(self, *args, **kwargs):
+        ''' Главная функция сервера '''
         # self.listen_port = listen_port
         # self.listen_address = listen_address
 

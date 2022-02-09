@@ -62,3 +62,10 @@
 2022-02-09 16:31:09,311 INFO server.py Установлено соедение с Клиентом: ('192.168.0.66', 54941)
 2022-02-09 16:31:09,311 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1644413469.3113651, 'user': {'account_name': 'TestSender1'}}
 2022-02-09 16:31:15,851 DEBUG server.py Разбор сообщения от клиента : {'action': 'exit', 'time': 1644413475.825959, 'account_name': 'TestSender1'}
+2022-02-09 17:25:35,036 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_2/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.66'] функции listen_port).
+2022-02-09 17:25:35,037 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.66. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-09 17:25:35,037 DEBUG server.py Сервер запущен. Адрес: 192.168.0.66 Порт: 8888
+2022-02-09 17:25:42,158 INFO server.py Установлено соедение с Клиентом: ('192.168.0.66', 55408)
+2022-02-09 17:25:42,159 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1644416742.157941, 'user': {'account_name': 'TestSender1'}}
+2022-02-09 17:26:06,303 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1644416766.118073, 'from': 'TestSender1', 'to': 'TestSender1', 'mess_text': 'TestSender1TestSender1TestSender1TestSender1TestSender1'}
+2022-02-09 17:26:06,311 INFO server.py Отправлено сообщение пользователю TestSender1 от пользователя TestSender1.

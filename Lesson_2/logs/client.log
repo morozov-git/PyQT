@@ -570,3 +570,14 @@ TestSender1TestSender1TestSender1TestSender1
 2022-02-09 16:31:09,312 DEBUG client.py Запущены процессы
 2022-02-09 16:31:15,826 INFO client.py Завершение работы по команде пользователя.
 2022-02-09 16:31:15,851 CRITICAL client.py Потеряно соединение с сервером.
+2022-02-09 17:25:42,156 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_2/client.py', 'client.py', '-a', '192.168.0.66', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-02-09 17:25:42,157 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.66, порт: 8888
+2022-02-09 17:25:42,157 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-09 17:25:42,160 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-02-09 17:25:42,160 INFO client.py Принят ответ от сервера 200 : OK
+2022-02-09 17:25:42,162 DEBUG client.py Запущены процессы
+2022-02-09 17:26:06,118 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1644416766.118073, 'from': 'TestSender1', 'to': 'TestSender1', 'mess_text': 'TestSender1TestSender1TestSender1TestSender1TestSender1'}
+2022-02-09 17:26:06,126 INFO client.py Отправлено сообщение для пользователя TestSender1
+2022-02-09 17:26:06,311 INFO client.py Получено сообщение от пользователя TestSender1:
+TestSender1TestSender1TestSender1TestSender1TestSender1
+2022-02-09 17:26:11,047 CRITICAL client.py Потеряно соединение с сервером.
