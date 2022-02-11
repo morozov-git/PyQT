@@ -201,7 +201,7 @@ class ServerApp(metaclass=ServerMaker):
                         disabled_client = self.database.session.query(ServerStorage.ActiveUsers).filter_by(port=client_port).first()
                         # print(client_port, disabled_client, 'user.id:', disabled_client.user)
 
-                        # Удаляем отключившегося пользователя из базы из твблицы ActiveUsers
+                        # Удаляем отключившегося пользователя из базы из таблицы ActiveUsers
                         self.database.session.query(ServerStorage.ActiveUsers).filter_by(port=client_port).delete()
                         self.database.session.commit()
                         disabled_client_name = self.database.session.query(ServerStorage.AllUsers).filter_by(id=disabled_client.user).first()
