@@ -135,7 +135,7 @@ class ServerApp(threading.Thread, metaclass=ServerMaker):
                            f'адрес с которого принимаются подключения: {self.listen_address}. '
                            f'Если адрес не указан, принимаются соединения с любых адресов.')
 
-        server_start_message = f'Сервер запущен. Адрес: {self.listen_address} Порт: {self.listen_port}'
+        server_start_message = f'\n\nСервер запущен. Адрес: {self.listen_address} Порт: {self.listen_port}\n\n'
         SERVER_LOGGER.debug(server_start_message)
         print(server_start_message)
 
