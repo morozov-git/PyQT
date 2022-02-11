@@ -4,10 +4,11 @@ import socket
 import sys
 import json
 import argparse
-from common.variables import *
+from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, \
+    MAX_CONNECTIONS, PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, ACCOUNT_NAME, SENDER, MESSAGE, MESSAGE_TEXT, \
+    RESPONSE_400, DESTINATION, RESPONSE_200, EXIT
 from common.utils import get_message, send_message, arg_parser
 import logging
-import threading
 import time
 import logs.config_server_log
 from loging_decos import Log
@@ -15,40 +16,29 @@ import select
 from descrptors import Port, IP_Address
 from metaclasses import ServerMaker
 from server_db import ServerStorage
-
+import threading
 
 # Инициализация серверного логера
 SERVER_LOGGER = logging.getLogger('server')
 
-# # парсер перенесен в модуль common.utils
-# Парсер аргументов коммандной строки.
-# @log
-# def arg_parser():
-#     parser = argparse.ArgumentParser()
-#     parser.add_argument('-p', default=DEFAULT_PORT, type=int, nargs='?')
-#     parser.add_argument('-a', default='', nargs='?')
-#     namespace = parser.parse_args(sys.argv[1:])
-#     listen_address = namespace.a
-#     listen_port = namespace.p
-#     return listen_address, listen_port
+
+
+
+
 
 @Log()
-class ServerApp(threading.Thread, metaclass=ServerMaker):
+class ServerApp(metaclass=ServerMaker):
+
+    # Инициализация базы данных
+    database = ServerStorage()
 
     listen_port = Port()
     listen_address = IP_Address()
 
-    def __init__(self, listen_address, listen_port, database):
+    def __init__(self, listen_address, listen_port):
         """ Параментры подключения """
         self.listen_address = listen_address
         self.listen_port = listen_port
-
-        # Инициализация базы данных
-        # База данных сервера
-        self.database = database
-
-        # Конструктор предка
-        super().__init__()
 
     # список клиентов , очередь сообщений
     clients = []
@@ -56,6 +46,7 @@ class ServerApp(threading.Thread, metaclass=ServerMaker):
 
     # Словарь, содержащий имена пользователей и соответствующие им сокеты.
     names = dict()
+
 
     # @classmethod
     def process_client_message(self, message, messages_list, client, clients, names):
@@ -129,27 +120,55 @@ class ServerApp(threading.Thread, metaclass=ServerMaker):
                 f'Пользователь {message[DESTINATION]} не зарегистрирован на сервере, '
                 f'отправка сообщения невозможна.')
 
-    def run(self):
-        '''Запуск сокета и основной цикл сервера'''
-        SERVER_LOGGER.info(f'Запущен сервер, порт для подключений: {self.listen_port}, '
-                           f'адрес с которого принимаются подключения: {self.listen_address}. '
-                           f'Если адрес не указан, принимаются соединения с любых адресов.')
+    def print_help(self):
+        '''Справка по командам интерфейса'''
+        print('Поддерживаемые комманды:')
+        print('users - список известных пользователей')
+        print('connected - список подключенных пользователей')
+        print('history - история входов пользователя')
+        print('exit - завершение работы сервера.')
+        print('help - вывод справки по поддерживаемым командам')
 
-        server_start_message = f'\n\nСервер запущен. Адрес: {self.listen_address} Порт: {self.listen_port}\n\n'
-        SERVER_LOGGER.debug(server_start_message)
-        print(server_start_message)
+    def server_iterface(self):
+        '''Консольный интерфейс сервера (работа с БД)'''
+        # Печатаем справку:
+        self.print_help()
 
-        # Готовим сокет
-        transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        transport.bind((self.listen_address, self.listen_port))
-        transport.settimeout(0.5)
+        # Основной цикл сервера:
+        while True:
+            command = input('Введите комманду: ')
+            if command == 'help':
+                self.print_help()
+            elif command == 'exit':
+                break
+            elif command == 'users':
+                for user in sorted(self.database.users_list()):
+                    print(f'Пользователь {user[0]}, последний вход: {user[1]}')
+            elif command == 'connected':
+                active_users_now = sorted(self.database.active_users_list())
+                # print(active_users_now)
+                if active_users_now:
+                    for user in active_users_now:
+                        print(
+                            f'Пользователь {user[0]}, подключен: {user[1]}:{user[2]}, время установки соединения: {user[3]}')
+                else:
+                    print('Отсутствуют активные пользователи.')
+            elif command == 'history':
+                name = input(
+                    'Введите имя пользователя для просмотра истории. Для вывода всей истории, просто нажмите Enter: ')
+                for user in sorted(self.database.login_history(name)):
+                    print(f'Пользователь: {user[0]} время входа: {user[1]}. Вход с: {user[2]}:{user[3]}')
+            else:
+                print('Команда не распознана.')
 
-        # Слушаем порт
-        transport.listen(MAX_CONNECTIONS)
+    def main_server_process(self):
+        '''Главный процесс сервера по приему/отправке сообщений и управления активными пользователями'''
         # Основной цикл программы сервера
+
+
         while True:
             try:
-                client, client_address = transport.accept()
+                client, client_address = self.transport.accept()
             except OSError:
                 pass
             else:
@@ -159,6 +178,7 @@ class ServerApp(threading.Thread, metaclass=ServerMaker):
             recv_data_lst = []
             send_data_lst = []
             err_lst = []
+
             # Проверяем на наличие ждущих клиентов
             try:
                 if self.clients:
@@ -174,7 +194,14 @@ class ServerApp(threading.Thread, metaclass=ServerMaker):
                                                          client_with_message, self.clients, self.names)
                     except:
                         SERVER_LOGGER.info(f'Клиент {client_with_message.getpeername()} отключился от сервера.')
+                        # self.database.user_logout(client_with_message)
+                        client_port =  client_with_message.getpeername()[1]
+                        disabled_client = self.database.session.query(ServerStorage.ActiveUsers).filter_by(port=client_port).first()
+                        print(client_port, disabled_client, disabled_client.id)
+                        # self.session.query(self.ActiveUsers).filter_by(user=user.id).delete()
+                        # active_users_now = sorted(self.database.active_users_list())
                         self.clients.remove(client_with_message)
+
 
             # Если есть сообщения, обрабатываем каждое. Добавили обработку получателя сообщения.
             for i in self.messages:
@@ -186,59 +213,101 @@ class ServerApp(threading.Thread, metaclass=ServerMaker):
                     del self.names[i[DESTINATION]]
             self.messages.clear()
 
-def print_help():
-    print('Поддерживаемые комманды:')
-    print('users - список известных пользователей')
-    print('connected - список подключенных пользователей')
-    print('loghist - история входов пользователя')
-    print('exit - завершение работы сервера.')
-    print('help - вывод справки по поддерживаемым командам')
+    def server_socket(self):
+        '''Функция запуска сокета для сервера'''
+        # Готовим сокет
+        transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        transport.bind((listen_address, listen_port))
+        transport.settimeout(0.5)
+        self.transport = transport
+
+        # Слушаем порт
+        transport.listen(MAX_CONNECTIONS)
+
+    # @classmethod
+    def main(self, *args, **kwargs):
+        ''' Функция запуска сервера '''
+        # self.listen_port = listen_port
+        # self.listen_address = listen_address
 
 
-def main(*args, **kwargs):
-    ''' Главная функция сервера '''
-    # self.listen_port = listen_port
-    # self.listen_address = listen_address
-    listen_address, listen_port = arg_parser()
+        # переменные для тестов
+        if args:
+            if args[0] == 'test':
+                SERVER_LOGGER.debug(f'Запущен тест ServerApp с параметрами: {args}')
+                sys.argv = args
 
-    # Инициализация базы данных
-    database = ServerStorage()
+        SERVER_LOGGER.info(f'Запущен сервер, порт для подключений: {listen_port}, '
+                    f'адрес с которого принимаются подключения: {listen_address}. '
+                    f'Если адрес не указан, принимаются соединения с любых адресов.')
 
-    # Создание экземпляра класса - сервера и его запуск:
-    server = ServerApp(listen_address, listen_port, database)
-    server.daemon = True
-    server.start()
 
-    # переменные для тестов
-    if args:
-        if args[0] == 'test':
-            SERVER_LOGGER.debug(f'Запущен тест ServerApp с параметрами: {args}')
-            sys.argv = args
+        server_start_message = f'Сервер запущен. Адрес: {listen_address} Порт: {listen_port}'
+        SERVER_LOGGER.debug(server_start_message)
+        print(server_start_message)
 
-    # Печатаем справку:
-    print_help()
+        # Запуск сокета для сервера
+        self.server_socket()
 
-    # Основной цикл сервера:
-    while True:
-        command = input('Введите комманду: ')
-        if command == 'help':
-            print_help()
-        elif command == 'exit':
+        # Запуск главного серверного процесса
+        module_main_server = threading.Thread(target=self.main_server_process)
+        module_main_server.daemon = True
+        module_main_server.start()
+
+
+        # # Запуск интерфейса сервера
+        # module_server_iterface = threading.Thread(target=self.server_iterface)
+        # module_server_iterface.daemon = True
+        # module_server_iterface.start()
+
+        # Watchdog основной цикл, если один из потоков завершён, то значит или потеряно соединение или пользователь
+        # ввёл exit. Поскольку все события обработываются в потоках, достаточно просто завершить цикл.
+        while True:
+            time.sleep(1)
+            if module_main_server.is_alive(): #module_server_iterface.is_alive() and
+                continue
             break
-        elif command == 'users':
-            for user in sorted(database.users_list()):
-                print(f'Пользователь {user[0]}, последний вход: {user[1]}')
-        elif command == 'connected':
-            for user in sorted(database.active_users_list()):
-                print(
-                    f'Пользователь {user[0]}, подключен: {user[1]}:{user[2]}, время установки соединения: {user[3]}')
-        elif command == 'loghist':
-            name = input(
-                'Введите имя пользователя для просмотра истории. Для вывода всей истории, просто нажмите Enter: ')
-            for user in sorted(database.login_history(name)):
-                print(f'Пользователь: {user[0]} время входа: {user[1]}. Вход с: {user[2]}:{user[3]}')
-        else:
-            print('Команда не распознана.')
+
+
+        # # Основной цикл программы сервера
+        # while True:
+        #     try:
+        #         client, client_address = transport.accept()
+        #     except OSError:
+        #         pass
+        #     else:
+        #         SERVER_LOGGER.info(f'Установлено соедение с Клиентом: {client_address}')
+        #         self.clients.append(client)
+        #
+        #     recv_data_lst = []
+        #     send_data_lst = []
+        #     err_lst = []
+        #
+        #     # Проверяем на наличие ждущих клиентов
+        #     try:
+        #         if self.clients:
+        #             recv_data_lst, send_data_lst, err_lst = select.select(self.clients, self.clients, [], 0)
+        #     except OSError:
+        #         pass
+        #     # принимаем сообщения и если там есть сообщения,
+        #     # кладём в словарь, если ошибка, исключаем клиента.
+        #     if recv_data_lst:
+        #         for client_with_message in recv_data_lst:
+        #             try:
+        #                 ServerApp.process_client_message(get_message(client_with_message), self.messages, client_with_message, self.clients, self.names)
+        #             except:
+        #                 SERVER_LOGGER.info(f'Клиент {client_with_message.getpeername()} отключился от сервера.')
+        #                 self.clients.remove(client_with_message)
+        #
+        #     # Если есть сообщения, обрабатываем каждое. Добавили обработку получателя сообщения.
+        #     for i in self.messages:
+        #         try:
+        #             ServerApp.process_message(i, self.names, send_data_lst)
+        #         except Exception:
+        #             SERVER_LOGGER.info(f'Связь с клиентом с именем {i[DESTINATION]} была потеряна')
+        #             self.clients.remove(self.names[i[DESTINATION]])
+        #             del self.names[i[DESTINATION]]
+        #     self.messages.clear()
 
 
 
@@ -274,8 +343,10 @@ def main(*args, **kwargs):
 
 
 if __name__ == '__main__':
-    main()
+    listen_address, listen_port = arg_parser()
+    ServerApp = ServerApp(listen_address, listen_port)
+    ServerApp.main()
 
-# server.py -p 8888 -a 192.168.0.49
-# server.py -p 8888 -a 192.168.0.66
-# server.py -p 8888 -a 192.168.0.101
+# server_with_db.py -p 8888 -a 192.168.0.49
+# server_with_db.py -p 8888 -a 192.168.0.66
+# server_with_db.py -p 8888 -a 192.168.0.101

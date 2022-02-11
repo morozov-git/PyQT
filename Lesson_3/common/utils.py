@@ -41,13 +41,13 @@ def send_message(sock, message):
     sock.send(encoded_message)
 
 
-# server.py arg_parser()
+# server_with_db.py arg_parser()
 # def arg_parser():
 #     '''
 #     Парсер аргументов коммандной строки
 #     Загрузка параметров командной строки, если нет параметров, то задаём значения по умоланию.
 #     Сначала обрабатываем порт:
-#     server.py -p 8079 -a 192.168.0.86
+#     server_with_db.py -p 8079 -a 192.168.0.86
 #     :return:
 #     '''
 #

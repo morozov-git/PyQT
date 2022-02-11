@@ -16,6 +16,8 @@ from errors import ReqFieldMissingError, ServerError, IncorrectDataRecivedError
 import threading
 from descrptors import Port, IP_Address
 from metaclasses import ClientMaker
+from server_db import ServerStorage
+
 
 # Инициализация клиентского логера
 CLIENT_LOGGER = logging.getLogger('client')

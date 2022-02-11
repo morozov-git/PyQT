@@ -220,6 +220,6 @@ if __name__ == '__main__':
     ServerApp = ServerApp(listen_address, listen_port)
     ServerApp.main()
 
-# server.py -p 8888 -a 192.168.0.49
-# server.py -p 8888 -a 192.168.0.66
-# server.py -p 8888 -a 192.168.0.101
+# server_with_db.py -p 8888 -a 192.168.0.49
+# server_with_db.py -p 8888 -a 192.168.0.66
+# server_with_db.py -p 8888 -a 192.168.0.101

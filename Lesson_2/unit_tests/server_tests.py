@@ -37,10 +37,10 @@ class TestServerApp(unittest.TestCase):
 			 TIME: self.TEST_TIME, USER: {ACCOUNT_NAME: 'Guest'}}), self.right_response)
 
 	def test_main_bad_port(self):
-		self.assertEqual(ServerApp.main('test', 'server.py', '-p', 888, '-a', '192.168.0.86'), 'BAD PORT')
+		self.assertEqual(ServerApp.main('test', 'server_with_db.py', '-p', 888, '-a', '192.168.0.86'), 'BAD PORT')
 
 	def test_main_not_port(self):
-		self.assertEqual(ServerApp.main('test', 'server.py', '-a', '192.168.0.86', '-p'), 'PORT NOT SET')
+		self.assertEqual(ServerApp.main('test', 'server_with_db.py', '-a', '192.168.0.86', '-p'), 'PORT NOT SET')
 
 if __name__ == '__main__':
 	unittest.main()

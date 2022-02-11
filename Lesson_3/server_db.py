@@ -6,7 +6,7 @@ import datetime
 
 # Класс - серверная база данных:
 class ServerStorage:
-    # Класс - отображение таблицы всех пользователей
+    '''Класс - отображение таблицы всех пользователей'''
     # Экземпляр этого класса = запись в таблице AllUsers
     class AllUsers:
         def __init__(self, username):
@@ -124,7 +124,7 @@ class ServerStorage:
         # Запрашиваем пользователя, что покидает нас
         # получаем запись из таблицы AllUsers
         user = self.session.query(self.AllUsers).filter_by(name=username).first()
-
+        # self.session.query(self.AllUsers).filter_by(port=49502).first()
         # Удаляем его из таблицы активных пользователей.
         # Удаляем запись из таблицы ActiveUsers
         self.session.query(self.ActiveUsers).filter_by(user=user.id).delete()
