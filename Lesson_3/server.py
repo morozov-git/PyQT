@@ -194,12 +194,20 @@ class ServerApp(metaclass=ServerMaker):
                                                          client_with_message, self.clients, self.names)
                     except:
                         SERVER_LOGGER.info(f'Клиент {client_with_message.getpeername()} отключился от сервера.')
-                        # self.database.user_logout(client_with_message)
+
+                        # Получаем порт отключившегося клиента
                         client_port =  client_with_message.getpeername()[1]
+                        # Получаем из базы пользователя по порту клиента
                         disabled_client = self.database.session.query(ServerStorage.ActiveUsers).filter_by(port=client_port).first()
-                        print(client_port, disabled_client, disabled_client.id)
-                        # self.session.query(self.ActiveUsers).filter_by(user=user.id).delete()
-                        # active_users_now = sorted(self.database.active_users_list())
+                        # print(client_port, disabled_client, 'user.id:', disabled_client.user)
+
+                        # Удаляем отключившегося пользователя из базы из твблицы ActiveUsers
+                        self.database.session.query(ServerStorage.ActiveUsers).filter_by(port=client_port).delete()
+                        self.database.session.commit()
+                        disabled_client_name = self.database.session.query(ServerStorage.AllUsers).filter_by(id=disabled_client.user).first()
+                        print(f'Клиент {disabled_client_name.name} (User.ID={disabled_client.user}) отключился от сервера.')
+
+                        # Удаляем из списка клиентов
                         self.clients.remove(client_with_message)
 
 

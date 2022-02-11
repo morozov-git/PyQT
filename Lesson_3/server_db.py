@@ -90,7 +90,7 @@ class ServerStorage:
 
     # Функция выполняющяяся при входе пользователя, записывает в базу факт входа
     def user_login(self, username, ip_address, port):
-        print(username, ip_address, port)
+        print(f'\n Подключился клиент: {username}, {ip_address}, {port}')
         # Запрос в таблицу пользователей на наличие там пользователя с таким именем
         rez = self.session.query(self.AllUsers).filter_by(name=username)
         #print(type(rez))
