@@ -4,37 +4,51 @@ import socket
 import sys
 import json
 import argparse
-from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, \
-    MAX_CONNECTIONS, PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, ACCOUNT_NAME, SENDER, MESSAGE, MESSAGE_TEXT, \
-    RESPONSE_400, DESTINATION, RESPONSE_200, EXIT
+from common.variables import *
 from common.utils import get_message, send_message, arg_parser
 import logging
+import threading
 import time
 import logs.config_server_log
 from loging_decos import Log
 import select
 from descrptors import Port, IP_Address
 from metaclasses import ServerMaker
+from server_db import ServerStorage
 
 
 # Инициализация серверного логера
 SERVER_LOGGER = logging.getLogger('server')
 
-
-
-
-
+# # парсер перенесен в модуль common.utils
+# Парсер аргументов коммандной строки.
+# @log
+# def arg_parser():
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument('-p', default=DEFAULT_PORT, type=int, nargs='?')
+#     parser.add_argument('-a', default='', nargs='?')
+#     namespace = parser.parse_args(sys.argv[1:])
+#     listen_address = namespace.a
+#     listen_port = namespace.p
+#     return listen_address, listen_port
 
 @Log()
-class ServerApp(metaclass=ServerMaker):
+class ServerApp(threading.Thread, metaclass=ServerMaker):
 
     listen_port = Port()
     listen_address = IP_Address()
 
-    def __init__(self, listen_address, listen_port):
+    def __init__(self, listen_address, listen_port, database):
         """ Параментры подключения """
         self.listen_address = listen_address
         self.listen_port = listen_port
+
+        # Инициализация базы данных
+        # База данных сервера
+        self.database = database
+
+        # Конструктор предка
+        super().__init__()
 
     # список клиентов , очередь сообщений
     clients = []
@@ -42,7 +56,6 @@ class ServerApp(metaclass=ServerMaker):
 
     # Словарь, содержащий имена пользователей и соответствующие им сокеты.
     names = dict()
-
 
     # @classmethod
     def process_client_message(self, message, messages_list, client, clients, names):
@@ -64,6 +77,8 @@ class ServerApp(metaclass=ServerMaker):
 
             if message[USER][ACCOUNT_NAME] not in names.keys():
                 names[message[USER][ACCOUNT_NAME]] = client
+                client_ip, client_port = client.getpeername()
+                self.database.user_login(message[USER][ACCOUNT_NAME], client_ip, client_port)
                 send_message(client, RESPONSE_200)
             else:
                 response = RESPONSE_400
@@ -81,6 +96,7 @@ class ServerApp(metaclass=ServerMaker):
             return
         # Если клиент выходит
         elif ACTION in message and message[ACTION] == EXIT and ACCOUNT_NAME in message:
+            self.database.user_logout(message[ACCOUNT_NAME])
             clients.remove(names[message[ACCOUNT_NAME]])
             names[message[ACCOUNT_NAME]].close()
             del names[message[ACCOUNT_NAME]]
@@ -113,34 +129,20 @@ class ServerApp(metaclass=ServerMaker):
                 f'Пользователь {message[DESTINATION]} не зарегистрирован на сервере, '
                 f'отправка сообщения невозможна.')
 
-    # @classmethod
-    def main(self, *args, **kwargs):
-        ''' Главная функция сервера '''
-        # self.listen_port = listen_port
-        # self.listen_address = listen_address
+    def run(self):
+        '''Запуск сокета и основной цикл сервера'''
+        SERVER_LOGGER.info(f'Запущен сервер, порт для подключений: {self.listen_port}, '
+                           f'адрес с которого принимаются подключения: {self.listen_address}. '
+                           f'Если адрес не указан, принимаются соединения с любых адресов.')
 
-
-        # переменные для тестов
-        if args:
-            if args[0] == 'test':
-                SERVER_LOGGER.debug(f'Запущен тест ServerApp с параметрами: {args}')
-                sys.argv = args
-
-        SERVER_LOGGER.info(f'Запущен сервер, порт для подключений: {listen_port}, '
-                    f'адрес с которого принимаются подключения: {listen_address}. '
-                    f'Если адрес не указан, принимаются соединения с любых адресов.')
-
-
-        server_start_message = f'Сервер запущен. Адрес: {listen_address} Порт: {listen_port}'
+        server_start_message = f'Сервер запущен. Адрес: {self.listen_address} Порт: {self.listen_port}'
         SERVER_LOGGER.debug(server_start_message)
         print(server_start_message)
 
         # Готовим сокет
         transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        transport.bind((listen_address, listen_port))
+        transport.bind((self.listen_address, self.listen_port))
         transport.settimeout(0.5)
-
-
 
         # Слушаем порт
         transport.listen(MAX_CONNECTIONS)
@@ -168,7 +170,8 @@ class ServerApp(metaclass=ServerMaker):
             if recv_data_lst:
                 for client_with_message in recv_data_lst:
                     try:
-                        ServerApp.process_client_message(get_message(client_with_message), self.messages, client_with_message, self.clients, self.names)
+                        ServerApp.process_client_message(get_message(client_with_message), self.messages,
+                                                         client_with_message, self.clients, self.names)
                     except:
                         SERVER_LOGGER.info(f'Клиент {client_with_message.getpeername()} отключился от сервера.')
                         self.clients.remove(client_with_message)
@@ -182,6 +185,61 @@ class ServerApp(metaclass=ServerMaker):
                     self.clients.remove(self.names[i[DESTINATION]])
                     del self.names[i[DESTINATION]]
             self.messages.clear()
+
+def print_help():
+    print('Поддерживаемые комманды:')
+    print('users - список известных пользователей')
+    print('connected - список подключенных пользователей')
+    print('loghist - история входов пользователя')
+    print('exit - завершение работы сервера.')
+    print('help - вывод справки по поддерживаемым командам')
+
+
+def main(*args, **kwargs):
+    ''' Главная функция сервера '''
+    # self.listen_port = listen_port
+    # self.listen_address = listen_address
+    listen_address, listen_port = arg_parser()
+
+    # Инициализация базы данных
+    database = ServerStorage()
+
+    # Создание экземпляра класса - сервера и его запуск:
+    server = ServerApp(listen_address, listen_port, database)
+    server.daemon = True
+    server.start()
+
+    # переменные для тестов
+    if args:
+        if args[0] == 'test':
+            SERVER_LOGGER.debug(f'Запущен тест ServerApp с параметрами: {args}')
+            sys.argv = args
+
+    # Печатаем справку:
+    print_help()
+
+    # Основной цикл сервера:
+    while True:
+        command = input('Введите комманду: ')
+        if command == 'help':
+            print_help()
+        elif command == 'exit':
+            break
+        elif command == 'users':
+            for user in sorted(database.users_list()):
+                print(f'Пользователь {user[0]}, последний вход: {user[1]}')
+        elif command == 'connected':
+            for user in sorted(database.active_users_list()):
+                print(
+                    f'Пользователь {user[0]}, подключен: {user[1]}:{user[2]}, время установки соединения: {user[3]}')
+        elif command == 'loghist':
+            name = input(
+                'Введите имя пользователя для просмотра истории. Для вывода всей истории, просто нажмите Enter: ')
+            for user in sorted(database.login_history(name)):
+                print(f'Пользователь: {user[0]} время входа: {user[1]}. Вход с: {user[2]}:{user[3]}')
+        else:
+            print('Команда не распознана.')
+
 
 
             # # Если есть сообщения для отправки и ожидающие клиенты, отправляем им сообщение.
@@ -216,9 +274,7 @@ class ServerApp(metaclass=ServerMaker):
 
 
 if __name__ == '__main__':
-    listen_address, listen_port = arg_parser()
-    ServerApp = ServerApp(listen_address, listen_port)
-    ServerApp.main()
+    main()
 
 # server.py -p 8888 -a 192.168.0.49
 # server.py -p 8888 -a 192.168.0.66

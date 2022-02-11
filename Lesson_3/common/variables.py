@@ -32,7 +32,8 @@ EXIT = 'exit'
 
 # Текущий уровень логирования
 LOGGING_LEVEL = logging.DEBUG
-
+# База данных для хранения данных сервера:
+SERVER_DB = 'sqlite:///server_db.db3'
 
 # Словари - ответы:
 # 200

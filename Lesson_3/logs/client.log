@@ -581,3 +581,33 @@ TestSender1TestSender1TestSender1TestSender1
 2022-02-09 17:26:06,311 INFO client.py Получено сообщение от пользователя TestSender1:
 TestSender1TestSender1TestSender1TestSender1TestSender1
 2022-02-09 17:26:11,047 CRITICAL client.py Потеряно соединение с сервером.
+2022-02-11 04:09:07,475 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_3/client.py', 'client.py', '-a', '192.168.0.66', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-02-11 04:09:07,476 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.66, порт: 8888
+2022-02-11 04:09:07,477 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-11 04:09:46,475 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_3/client.py', 'client.py', '-a', '192.168.0.66', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-02-11 04:09:46,476 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.66, порт: 8888
+2022-02-11 04:09:46,476 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-11 04:10:26,607 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_3/client.py', 'client.py', '-a', '192.168.0.66', '-p', '8888', '-u', 'TestSender1'] функции main().
+2022-02-11 04:10:26,608 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.66, порт: 8888
+2022-02-11 04:10:26,609 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-11 04:12:11,401 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_3/client.py', 'client.py', '-a', '192.168.0.66', '-p', '8888', '-u', 'TestSender1'] функции main().
+2022-02-11 04:12:11,402 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.66, порт: 8888
+2022-02-11 04:12:11,403 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-11 04:12:56,138 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_3/client.py', 'client.py', '-a', '192.168.0.66', '-p', '8888', '-u', 'TestSender1'] функции main().
+2022-02-11 04:12:56,138 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.66, порт: 8888
+2022-02-11 04:12:56,150 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-11 04:13:21,391 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_3/client.py', 'client.py', '-a', '192.168.0.66', '-p', '8888', '-u', 'TestSender1'] функции main().
+2022-02-11 04:13:22,395 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.66, порт: 8888
+2022-02-11 04:13:22,397 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-11 04:14:30,892 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_3/client.py', 'client.py', '-a', '192.168.0.66', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-02-11 04:14:30,893 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.66, порт: 8888
+2022-02-11 04:14:30,893 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-11 04:14:35,450 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_3/client.py', 'client.py', '-a', '192.168.0.66', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-02-11 04:14:35,451 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.66, порт: 8888
+2022-02-11 04:14:35,451 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-11 04:15:03,648 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_3/client.py', 'client.py', '-a', '192.168.0.66', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-02-11 04:15:03,648 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.66, порт: 8888
+2022-02-11 04:15:03,649 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-11 04:15:37,360 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_3/client.py', 'client.py', '-a', '192.168.0.66', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-02-11 04:15:37,360 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.66, порт: 8888
+2022-02-11 04:15:37,361 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
