@@ -39,6 +39,8 @@ USERS_REQUEST = 'get_users'
 LOGGING_LEVEL = logging.DEBUG
 # База данных для хранения данных сервера:
 SERVER_DB = 'sqlite:///server_db.db3'
+# База данных для хранения данных сервера:
+SERVER_CONFIG = 'server.ini'
 
 # Словари - ответы:
 # 200

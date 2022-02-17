@@ -52,7 +52,7 @@ class ServerStorage:
 
     def __init__(self, path=''):
         # Создаём движок базы данных
-        # SERVER_DATABASE - sqlite:///server_base.db3
+        # SERVER_DATABASE - sqlite:///server_db.db3
         # echo=False - отключаем ведение лога (вывод sql-запросов)
         # pool_recycle - По умолчанию соединение с БД через 8 часов простоя обрывается.
         # Чтобы это не случилось нужно добавить опцию pool_recycle = 7200 (переуст-ка соед-я через 2 часа)
