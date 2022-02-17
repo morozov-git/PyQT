@@ -1,0 +1,44 @@
+2022-01-27 19:19:41,520 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции ServerApp().
+2022-01-27 19:20:56,985 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции ServerApp().
+2022-01-27 19:21:38,041 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции main().
+2022-01-27 19:25:11,094 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции main().
+2022-01-27 19:28:03,967 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции main().
+2022-01-27 19:29:21,320 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции main().
+2022-01-27 19:29:56,548 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.49. Если адрес не указан, принимаются соединения с любых адресов.
+2022-01-27 19:30:10,617 DEBUG server.py Сервер запущен. Адрес: 192.168.0.49 Порт: 8888
+2022-01-27 19:31:07,301 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции ServerApp().
+2022-01-27 19:31:07,334 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.49. Если адрес не указан, принимаются соединения с любых адресов.
+2022-01-27 19:31:07,334 DEBUG server.py Сервер запущен. Адрес: 192.168.0.49 Порт: 8888
+2022-01-27 19:34:13,946 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции ServerApp().
+2022-01-27 19:34:13,957 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.49. Если адрес не указан, принимаются соединения с любых адресов.
+2022-01-27 19:34:13,957 DEBUG server.py Сервер запущен. Адрес: 192.168.0.49 Порт: 8888
+2022-01-27 19:41:09,804 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции ServerApp().
+2022-01-27 19:41:09,837 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.49. Если адрес не указан, принимаются соединения с любых адресов.
+2022-01-27 19:41:09,838 DEBUG server.py Сервер запущен. Адрес: 192.168.0.49 Порт: 8888
+2022-01-27 19:42:44,608 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции ServerApp().
+2022-01-27 19:42:44,644 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.49. Если адрес не указан, принимаются соединения с любых адресов.
+2022-01-27 19:42:44,644 DEBUG server.py None
+2022-01-27 19:43:29,047 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции ServerApp().
+2022-01-27 19:43:29,076 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.49. Если адрес не указан, принимаются соединения с любых адресов.
+2022-01-27 19:43:29,076 DEBUG server.py Сервер запущен. Адрес: 192.168.0.49 Порт: 8888
+2022-01-27 22:17:12,650 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции ServerApp().
+2022-01-27 22:17:12,683 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.49. Если адрес не указан, принимаются соединения с любых адресов.
+2022-01-27 22:17:12,683 DEBUG server.py Сервер запущен. Адрес: 192.168.0.49 Порт: 8888
+2022-01-27 22:17:18,974 INFO server.py Установлено соедение с Клиентом: ('192.168.0.49', 51355)
+2022-01-27 22:17:18,974 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1643311038.9729338, 'user': {'account_name': 'Guest'}}
+2022-01-27 22:18:08,203 INFO server.py Установлено соедение с Клиентом: ('192.168.0.49', 51357)
+2022-01-27 22:18:08,204 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1643311088.203006, 'user': {'account_name': 'Guest'}}
+2022-01-27 22:19:36,257 INFO server.py Клиент ('192.168.0.49', 51357) отключился от сервера.
+2022-01-27 22:19:51,764 INFO server.py Установлено соедение с Клиентом: ('192.168.0.49', 51360)
+2022-01-27 22:19:51,765 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1643311191.7646961, 'user': {'account_name': 'Guest'}}
+2022-01-27 22:20:19,934 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1643311219.609202, 'account_name': 'Guest', 'mess_text': 'message from client2'}
+2022-01-27 22:21:01,186 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1643311261.144672, 'account_name': 'Guest', 'mess_text': 'fdhgfdh'}
+2022-01-27 22:29:38,540 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/10-cliens_server_applications/client-server-app/Lesson_7/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.49'] функции ServerApp().
+2022-01-27 22:29:38,549 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.49. Если адрес не указан, принимаются соединения с любых адресов.
+2022-01-27 22:29:38,550 DEBUG server.py Сервер запущен. Адрес: 192.168.0.49 Порт: 8888
+2022-01-27 22:29:46,472 INFO server.py Установлено соедение с Клиентом: ('192.168.0.49', 51380)
+2022-01-27 22:29:46,985 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1643311786.472277, 'user': {'account_name': 'Guest'}}
+2022-01-27 22:29:51,969 INFO server.py Установлено соедение с Клиентом: ('192.168.0.49', 51381)
+2022-01-27 22:29:52,473 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1643311791.969602, 'user': {'account_name': 'Guest'}}
+2022-01-27 22:30:16,137 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1643311816.098779, 'account_name': 'TestSender', 'mess_text': 'ghbdtn'}
+2022-01-27 22:30:27,695 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1643311827.56052, 'account_name': 'TestSender', 'mess_text': 'sdfsdaf'}
