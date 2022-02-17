@@ -4,6 +4,9 @@ import socket
 import sys
 import json
 import argparse
+
+from PyQt5.QtWidgets import QApplication
+
 from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, \
     MAX_CONNECTIONS, PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, ACCOUNT_NAME, SENDER, MESSAGE, MESSAGE_TEXT, \
     RESPONSE_400, DESTINATION, RESPONSE_200, EXIT
@@ -17,12 +20,16 @@ from descrptors import Port, IP_Address
 from metaclasses import ServerMaker
 from server_db import ServerStorage
 import threading
+from server_gui import MainWindow, gui_create_model, HistoryWindow, create_stat_model, ConfigWindow
+
 
 # Инициализация серверного логера
 SERVER_LOGGER = logging.getLogger('server')
 
-
-
+# Флаг что был подключён новый пользователь, нужен чтобы не мучать BD
+# постоянными запросами на обновление
+new_connection = False
+conflag_lock = threading.Lock()
 
 
 
@@ -164,8 +171,6 @@ class ServerApp(metaclass=ServerMaker):
     def main_server_process(self):
         '''Главный процесс сервера по приему/отправке сообщений и управления активными пользователями'''
         # Основной цикл программы сервера
-
-
         while True:
             try:
                 client, client_address = self.transport.accept()
@@ -232,6 +237,66 @@ class ServerApp(metaclass=ServerMaker):
         # Слушаем порт
         transport.listen(MAX_CONNECTIONS)
 
+    # Функция обновляющяя список подключённых, проверяет флаг подключения, и
+    # если надо обновляет список
+    def list_update(self):
+        global new_connection
+        if new_connection:
+            self.main_window.active_clients_table.setModel(
+                gui_create_model(self.database))
+            self.main_window.active_clients_table.resizeColumnsToContents()
+            self.main_window.active_clients_table.resizeRowsToContents()
+            with conflag_lock:
+                new_connection = False
+
+    # Функция создающяя окно со статистикой клиентов
+    def show_statistics(self):
+        global stat_window
+        stat_window = HistoryWindow()
+        stat_window.history_table.setModel(create_stat_model(self.database))
+        stat_window.history_table.resizeColumnsToContents()
+        stat_window.history_table.resizeRowsToContents()
+        # stat_window.show()
+
+    # Функция создающяя окно с настройками сервера.
+    def server_config(self):
+        global config_window
+        # Создаём окно и заносим в него текущие параметры
+        config_window = ConfigWindow()
+        config_window.db_path.insert(config['SETTINGS']['Database_path'])
+        config_window.db_file.insert(config['SETTINGS']['Database_file'])
+        config_window.port.insert(config['SETTINGS']['Default_port'])
+        config_window.ip.insert(config['SETTINGS']['Listen_Address'])
+        config_window.save_btn.clicked.connect(self.save_server_config)
+
+    # Функция сохранения настроек
+    def save_server_config(self):
+        global config_window
+        message = QMessageBox()
+        config['SETTINGS']['Database_path'] = config_window.db_path.text()
+        config['SETTINGS']['Database_file'] = config_window.db_file.text()
+        try:
+            port = int(config_window.port.text())
+        except ValueError:
+            message.warning(config_window, 'Ошибка', 'Порт должен быть числом')
+        else:
+            config['SETTINGS']['Listen_Address'] = config_window.ip.text()
+            if 1023 < port < 65536:
+                config['SETTINGS']['Default_port'] = str(port)
+                print(port)
+                with open('server.ini', 'w') as conf:
+                    config.write(conf)
+                    message.information(
+                        config_window, 'OK', 'Настройки успешно сохранены!')
+            else:
+                message.warning(
+                    config_window,
+                    'Ошибка',
+                    'Порт должен быть от 1024 до 65536')
+
+
+
+
     # @classmethod
     def main(self, *args, **kwargs):
         ''' Функция запуска сервера '''
@@ -263,10 +328,37 @@ class ServerApp(metaclass=ServerMaker):
         module_main_server.start()
 
 
-        # # Запуск интерфейса сервера
+        # # Запуск консольного интерфейса сервера
         # module_server_iterface = threading.Thread(target=self.server_iterface)
         # module_server_iterface.daemon = True
         # module_server_iterface.start()
+
+        # Создаём графическое окуружение для сервера:
+        server_app = QApplication(sys.argv)  # создаем приложение
+        main_window = MainWindow()
+        # ЗАПУСК РАБОТАЕТ ПАРАЛЕЛЬНО СЕРВЕРА(К ОКНУ)
+        # ГЛАВНОМ ПОТОКЕ ЗАПУСКАЕМ НАШ GUI - ГРАФИЧЕСКИЙ ИНТЕРФЕС ПОЛЬЗОВАТЕЛЯ
+
+        # Инициализируем параметры в окна Главное окно
+        main_window.statusBar().showMessage('Server Working')  # подвал
+        main_window.active_clients_table.setModel(
+            gui_create_model(database))  # заполняем таблицу основного окна делаем разметку и заполянем ее
+        main_window.active_clients_table.resizeColumnsToContents()
+        main_window.active_clients_table.resizeRowsToContents()
+
+        # Таймер, обновляющий список клиентов 1 раз в секунду
+        timer = QTimer()
+        timer.timeout.connect(list_update)
+        timer.start(1000)
+
+        # Связываем кнопки с процедурами
+        main_window.refresh_button.triggered.connect(list_update)
+        main_window.show_history_button.triggered.connect(show_statistics)
+        main_window.config_btn.triggered.connect(server_config)
+
+        # Запускаем GUI
+        server_app.exec_()
+
 
         # Watchdog основной цикл, если один из потоков завершён, то значит или потеряно соединение или пользователь
         # ввёл exit. Поскольку все события обработываются в потоках, достаточно просто завершить цикл.
@@ -355,6 +447,6 @@ if __name__ == '__main__':
     ServerApp = ServerApp(listen_address, listen_port)
     ServerApp.main()
 
-# server_with_db.py -p 8888 -a 192.168.0.49
-# server_with_db.py -p 8888 -a 192.168.0.66
-# server_with_db.py -p 8888 -a 192.168.0.101
+# server.py -p 8888 -a 192.168.0.74
+# server.py -p 8888 -a 192.168.0.66
+# server.py -p 8888 -a 192.168.0.101
