@@ -1,15 +1,14 @@
 """Программа-сервер"""
-
+import configparser
 import socket
 import sys
 import json
 import argparse
 
-from PyQt5.QtWidgets import QApplication
+from PyQt5.QtCore import QTimer
+from PyQt5.QtWidgets import QApplication, QMessageBox
 
-from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, \
-    MAX_CONNECTIONS, PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, ACCOUNT_NAME, SENDER, MESSAGE, MESSAGE_TEXT, \
-    RESPONSE_400, DESTINATION, RESPONSE_200, EXIT
+from common.variables import *
 from common.utils import get_message, send_message, arg_parser
 import logging
 import time
@@ -237,9 +236,10 @@ class ServerApp(metaclass=ServerMaker):
         # Слушаем порт
         transport.listen(MAX_CONNECTIONS)
 
-    # Функция обновляющяя список подключённых, проверяет флаг подключения, и
-    # если надо обновляет список
+
     def list_update(self):
+        '''Функция обновляющяя список подключённых пользователей,
+        проверяет флаг подключения, и если надо обновляет список'''
         global new_connection
         if new_connection:
             self.main_window.active_clients_table.setModel(
@@ -249,8 +249,9 @@ class ServerApp(metaclass=ServerMaker):
             with conflag_lock:
                 new_connection = False
 
-    # Функция создающяя окно со статистикой клиентов
+
     def show_statistics(self):
+        '''Функция создающяя окно со статистикой клиентов'''
         global stat_window
         stat_window = HistoryWindow()
         stat_window.history_table.setModel(create_stat_model(self.database))
@@ -258,34 +259,36 @@ class ServerApp(metaclass=ServerMaker):
         stat_window.history_table.resizeRowsToContents()
         # stat_window.show()
 
-    # Функция создающяя окно с настройками сервера.
+
     def server_config(self):
+        '''Функция создающяя окно с настройками сервера.'''
         global config_window
         # Создаём окно и заносим в него текущие параметры
         config_window = ConfigWindow()
-        config_window.db_path.insert(config['SETTINGS']['Database_path'])
-        config_window.db_file.insert(config['SETTINGS']['Database_file'])
-        config_window.port.insert(config['SETTINGS']['Default_port'])
-        config_window.ip.insert(config['SETTINGS']['Listen_Address'])
+        config_window.db_path.insert(self.config['SETTINGS']['Database_path'])
+        config_window.db_file.insert(self.config['SETTINGS']['Database_file'])
+        config_window.port.insert(self.config['SETTINGS']['Default_port'])
+        config_window.ip.insert(self.config['SETTINGS']['Listen_Address'])
         config_window.save_btn.clicked.connect(self.save_server_config)
 
-    # Функция сохранения настроек
+
     def save_server_config(self):
+        '''Функция сохранения настроек'''
         global config_window
         message = QMessageBox()
-        config['SETTINGS']['Database_path'] = config_window.db_path.text()
-        config['SETTINGS']['Database_file'] = config_window.db_file.text()
+        self.config['SETTINGS']['Database_path'] = config_window.db_path.text()
+        self.config['SETTINGS']['Database_file'] = config_window.db_file.text()
         try:
             port = int(config_window.port.text())
         except ValueError:
             message.warning(config_window, 'Ошибка', 'Порт должен быть числом')
         else:
-            config['SETTINGS']['Listen_Address'] = config_window.ip.text()
+            self.config['SETTINGS']['Listen_Address'] = config_window.ip.text()
             if 1023 < port < 65536:
-                config['SETTINGS']['Default_port'] = str(port)
+                self.config['SETTINGS']['Default_port'] = str(port)
                 print(port)
                 with open('server.ini', 'w') as conf:
-                    config.write(conf)
+                    self.config.write(conf)
                     message.information(
                         config_window, 'OK', 'Настройки успешно сохранены!')
             else:
@@ -303,7 +306,8 @@ class ServerApp(metaclass=ServerMaker):
         # self.listen_port = listen_port
         # self.listen_address = listen_address
 
-
+        # Загрузка файла конфигурации сервера
+        self.config = configparser.ConfigParser()
         # переменные для тестов
         if args:
             if args[0] == 'test':
@@ -342,19 +346,19 @@ class ServerApp(metaclass=ServerMaker):
         # Инициализируем параметры в окна Главное окно
         main_window.statusBar().showMessage('Server Working')  # подвал
         main_window.active_clients_table.setModel(
-            gui_create_model(database))  # заполняем таблицу основного окна делаем разметку и заполянем ее
+            gui_create_model(self.database))  # заполняем таблицу основного окна делаем разметку и заполянем ее
         main_window.active_clients_table.resizeColumnsToContents()
         main_window.active_clients_table.resizeRowsToContents()
 
         # Таймер, обновляющий список клиентов 1 раз в секунду
         timer = QTimer()
-        timer.timeout.connect(list_update)
+        timer.timeout.connect(self.list_update)
         timer.start(1000)
 
         # Связываем кнопки с процедурами
-        main_window.refresh_button.triggered.connect(list_update)
-        main_window.show_history_button.triggered.connect(show_statistics)
-        main_window.config_btn.triggered.connect(server_config)
+        main_window.refresh_button.triggered.connect(self.list_update)
+        main_window.show_history_button.triggered.connect(self.show_statistics)
+        main_window.config_btn.triggered.connect(self.server_config)
 
         # Запускаем GUI
         server_app.exec_()
