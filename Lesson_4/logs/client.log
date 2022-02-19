@@ -1002,3 +1002,32 @@ TestSender1TestSender1TestSender1TestSender1
 2022-02-12 02:08:11,579 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
 2022-02-12 02:08:11,580 INFO client.py Принят ответ от сервера 200 : OK
 2022-02-12 02:08:11,583 DEBUG client.py Запущены процессы
+2022-02-20 00:46:11,532 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/client.py', 'client.py', '-a', '192.168.0.106', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-02-20 00:46:11,542 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.106, порт: 8888
+2022-02-20 00:46:11,542 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-20 00:46:11,560 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-02-20 00:46:11,560 INFO client.py Принят ответ от сервера 200 : OK
+2022-02-20 00:46:11,561 DEBUG client.py Запущены процессы
+2022-02-20 00:46:12,428 CRITICAL client.py Потеряно соединение с сервером.
+2022-02-20 00:49:10,955 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/client.py', 'client.py', '-a', '192.168.0.106', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-02-20 00:49:10,955 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.106, порт: 8888
+2022-02-20 00:49:10,955 DEBUG client.py Сформировано presence сообщение для пользователя TestSender1
+2022-02-20 00:49:10,977 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-02-20 00:49:10,978 INFO client.py Принят ответ от сервера 200 : OK
+2022-02-20 00:49:10,979 DEBUG client.py Запущены процессы
+2022-02-20 00:50:52,045 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/client_2.py', 'client.py', '-a', '192.168.0.106', '-p', '8888', '-u', 'TestSender2'] функции client_name).
+2022-02-20 00:50:52,045 INFO client_2.py Запущен клиент с парамертами: адрес сервера: 192.168.0.106, порт: 8888
+2022-02-20 00:50:52,045 DEBUG client_2.py Сформировано presence сообщение для пользователя TestSender2
+2022-02-20 00:50:52,222 DEBUG client_2.py Разбор сообщения от сервера: {'response': 200}
+2022-02-20 00:50:52,222 INFO client_2.py Принят ответ от сервера 200 : OK
+2022-02-20 00:50:52,223 DEBUG client_2.py Запущены процессы
+2022-02-20 00:51:10,902 DEBUG client_2.py Сформирован словарь сообщения: {'action': 'message', 'time': 1645307470.9022112, 'from': 'TestSender2', 'to': '"""Программа-клиент"""', 'mess_text': ''}
+2022-02-20 00:51:10,902 INFO client_2.py Отправлено сообщение для пользователя """Программа-клиент"""
+2022-02-20 00:51:39,398 DEBUG client_2.py Сформирован словарь сообщения: {'action': 'message', 'time': 1645307499.398668, 'from': 'TestSender2', 'to': 'TestSender1', 'mess_text': 'TestSenderTestSenderTestSenderTestSenderTestSender'}
+2022-02-20 00:51:39,409 INFO client_2.py Отправлено сообщение для пользователя TestSender1
+2022-02-20 00:51:39,488 INFO client.py Получено сообщение от пользователя TestSender2:
+TestSenderTestSenderTestSenderTestSenderTestSender
+2022-02-20 00:52:11,646 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1645307531.6465259, 'from': 'TestSender1', 'to': 'TestSender2', 'mess_text': 'fdsafgdsfgdsgsd'}
+2022-02-20 00:52:11,646 INFO client.py Отправлено сообщение для пользователя TestSender2
+2022-02-20 00:52:11,672 INFO client_2.py Получено сообщение от пользователя TestSender1:
+fdsafgdsfgdsgsd

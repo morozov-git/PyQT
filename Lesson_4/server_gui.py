@@ -199,7 +199,7 @@ class ConfigWindow(QDialog):
         self.ip.setFixedSize(150, 20)
 
         # Кнопка сохранения настроек
-        self.save_btn = QPushButton('Сохранить' , self)
+        self.save_btn = QPushButton('Сохранить', self)
         self.save_btn.move(190 , 220)
 
         # Кнапка закрытия окна

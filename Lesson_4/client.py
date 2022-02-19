@@ -317,6 +317,8 @@ if __name__ == '__main__':
     ClientApp = ClientApp(server_address, server_port, client_name)
     ClientApp.main()
 
+
+# client.py -a 192.168.0.106 -p 8888 -u TestSender1
 # client.py -a 192.168.0.49 -p 8888 -u TestSender1
 # client.py -a 192.168.0.66 -p 8888 -u TestSender1
 # client.py 192.168.0.49 8888 -m send -u TestSender1

@@ -356,7 +356,7 @@ class ServerApp(metaclass=ServerMaker):
                     f'Если адрес не указан, принимаются соединения с любых адресов.')
 
 
-        server_start_message = f'Сервер запущен. Адрес: {listen_address} Порт: {listen_port}'
+        server_start_message = f'Server launched. IP: {listen_address} Port: {listen_port}'
         SERVER_LOGGER.debug(server_start_message)
         print(server_start_message)
 
@@ -376,16 +376,16 @@ class ServerApp(metaclass=ServerMaker):
 
         # Создаём графическое окуружение для сервера:
         server_app = QApplication(sys.argv)  # создаем приложение
-        main_window = MainWindow()
+        self.main_window = MainWindow()
         # ЗАПУСК РАБОТАЕТ ПАРАЛЕЛЬНО СЕРВЕРА(К ОКНУ)
         # ГЛАВНОМ ПОТОКЕ ЗАПУСКАЕМ НАШ GUI - ГРАФИЧЕСКИЙ ИНТЕРФЕС ПОЛЬЗОВАТЕЛЯ
 
         # Инициализируем параметры в окна Главное окно
-        main_window.statusBar().showMessage('Server Working')  # подвал
-        main_window.active_clients_table.setModel(
+        self.main_window.statusBar().showMessage('Server Working')  # подвал
+        self.main_window.active_clients_table.setModel(
             gui_create_model(self.database))  # заполняем таблицу основного окна делаем разметку и заполянем ее
-        main_window.active_clients_table.resizeColumnsToContents()
-        main_window.active_clients_table.resizeRowsToContents()
+        self.main_window.active_clients_table.resizeColumnsToContents()
+        self.main_window.active_clients_table.resizeRowsToContents()
 
         # Таймер, обновляющий список клиентов 1 раз в секунду
         timer = QTimer()
@@ -393,21 +393,26 @@ class ServerApp(metaclass=ServerMaker):
         timer.start(1000)
 
         # Связываем кнопки с процедурами
-        main_window.refresh_button.triggered.connect(self.list_update)
-        main_window.show_history_button.triggered.connect(self.show_statistics)
-        main_window.config_btn.triggered.connect(self.server_config)
+        self.main_window.refresh_button.triggered.connect(self.list_update)
+        self.main_window.show_history_button.triggered.connect(self.show_statistics)
+        self.main_window.config_btn.triggered.connect(self.server_config)
 
-        # Запускаем GUI
-        server_app.exec_()
 
+        # Запускаем GUI в отдельном потоке
+        module_server_gui = threading.Thread(target=server_app.exec_())
+        module_server_gui.daemon = True
+        module_server_gui.start()
+        print('Server stopped')
 
         # Watchdog основной цикл, если один из потоков завершён, то значит или потеряно соединение или пользователь
         # ввёл exit. Поскольку все события обработываются в потоках, достаточно просто завершить цикл.
         while True:
             time.sleep(1)
-            if module_main_server.is_alive(): #module_server_iterface.is_alive() and
+            if module_main_server.is_alive() and module_server_gui.is_alive(): #module_server_iterface.is_alive() and
                 continue
             break
+
+
 
 
         # # Основной цикл программы сервера
@@ -488,6 +493,8 @@ if __name__ == '__main__':
     ServerApp = ServerApp(listen_address, listen_port)
     ServerApp.main()
 
+
+# server.py -p 8888 -a 192.168.0.106
 # server.py -p 8888 -a 192.168.0.74
 # server.py -p 8888 -a 192.168.0.66
 # server.py -p 8888 -a 192.168.0.101
