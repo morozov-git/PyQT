@@ -369,10 +369,10 @@ class ServerApp(metaclass=ServerMaker):
         module_main_server.start()
 
 
-        # # Запуск консольного интерфейса сервера
-        # module_server_iterface = threading.Thread(target=self.server_iterface)
-        # module_server_iterface.daemon = True
-        # module_server_iterface.start()
+        # Запуск консольного интерфейса сервера
+        module_server_iterface = threading.Thread(target=self.server_iterface)
+        module_server_iterface.daemon = True
+        module_server_iterface.start()
 
         # Создаём графическое окуружение для сервера:
         server_app = QApplication(sys.argv)  # создаем приложение
@@ -410,6 +410,7 @@ class ServerApp(metaclass=ServerMaker):
             time.sleep(1)
             if module_main_server.is_alive() and module_server_gui.is_alive(): #module_server_iterface.is_alive() and
                 continue
+
             break
 
 

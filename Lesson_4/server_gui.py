@@ -200,7 +200,7 @@ class ConfigWindow(QDialog):
 
         # Кнопка сохранения настроек
         self.save_btn = QPushButton('Сохранить', self)
-        self.save_btn.move(190 , 220)
+        self.save_btn.move(170, 220)
 
         # Кнапка закрытия окна
         self.close_button = QPushButton('Закрыть', self)
