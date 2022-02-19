@@ -1,5 +1,6 @@
 """Программа-сервер"""
 import configparser
+import os
 import socket
 import sys
 import json
@@ -64,6 +65,7 @@ class ServerApp(metaclass=ServerMaker):
         :param message:
         :return:
         '''
+        global new_connection
         SERVER_LOGGER.debug(f'Разбор сообщения от клиента : {message}')
         if ACTION in message and message[ACTION] == PRESENCE and TIME in message \
                 and USER in message:
@@ -77,6 +79,8 @@ class ServerApp(metaclass=ServerMaker):
                 client_ip, client_port = client.getpeername()
                 self.database.user_login(message[USER][ACCOUNT_NAME], client_ip, client_port)
                 send_message(client, RESPONSE_200)
+                with conflag_lock:
+                    new_connection = True
             else:
                 response = RESPONSE_400
                 response[ERROR] = 'Имя пользователя уже занято.'
@@ -97,7 +101,35 @@ class ServerApp(metaclass=ServerMaker):
             clients.remove(names[message[ACCOUNT_NAME]])
             names[message[ACCOUNT_NAME]].close()
             del names[message[ACCOUNT_NAME]]
+            with conflag_lock:
+                new_connection = True
             return
+
+        # Если это запрос контакт-листа
+        elif ACTION in message and message[ACTION] == GET_CONTACTS and \
+                USER in message and self.names[message[USER]] == client:
+            response = RESPONSE_202
+            response[LIST_INFO] = self.database.get_contacts(message[USER])
+            send_message(client, response)
+
+        # Если это добавление контакта
+        elif ACTION in message and message[ACTION] == ADD_CONTACT and ACCOUNT_NAME in message and \
+                USER in message and self.names[message[USER]] == client:
+            self.database.add_contact(message[USER], message[ACCOUNT_NAME])
+            send_message(client, RESPONSE_200)
+
+        # Если это удаление контакта
+        elif ACTION in message and message[ACTION] == REMOVE_CONTACT and ACCOUNT_NAME in message and \
+                USER in message and self.names[message[USER]] == client:
+            self.database.remove_contact(message[USER], message[ACCOUNT_NAME])
+            send_message(client, RESPONSE_200)
+
+        # Если это запрос известных пользователей
+        elif ACTION in message and message[ACTION] == USERS_REQUEST and ACCOUNT_NAME in message \
+                and self.names[message[ACCOUNT_NAME]] == client:
+            response = RESPONSE_202
+            response[LIST_INFO] = [user[0] for user in self.database.users_list()]
+            send_message(client, response)
 
         else:
             response = RESPONSE_400
@@ -222,6 +254,7 @@ class ServerApp(metaclass=ServerMaker):
                 except Exception:
                     SERVER_LOGGER.info(f'Связь с клиентом с именем {i[DESTINATION]} была потеряна')
                     self.clients.remove(self.names[i[DESTINATION]])
+                    self.database.user_logout(message[DESTINATION])
                     del self.names[i[DESTINATION]]
             self.messages.clear()
 
@@ -308,6 +341,10 @@ class ServerApp(metaclass=ServerMaker):
 
         # Загрузка файла конфигурации сервера
         self.config = configparser.ConfigParser()
+
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        self.config.read(f"{dir_path}/{'server.ini'}")
+
         # переменные для тестов
         if args:
             if args[0] == 'test':
