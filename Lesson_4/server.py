@@ -410,7 +410,8 @@ class ServerApp(metaclass=ServerMaker):
             time.sleep(1)
             if module_main_server.is_alive() and module_server_gui.is_alive(): #module_server_iterface.is_alive() and
                 continue
-
+            # if not module_server_gui.is_alive():
+            #     sys.exit(0)
             break
 
 
