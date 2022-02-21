@@ -402,6 +402,7 @@ class ServerApp(metaclass=ServerMaker):
         module_server_gui = threading.Thread(target=server_app.exec_())
         module_server_gui.daemon = True
         module_server_gui.start()
+
         print('Server stopped')
 
         # Watchdog основной цикл, если один из потоков завершён, то значит или потеряно соединение или пользователь
@@ -496,7 +497,7 @@ if __name__ == '__main__':
     ServerApp.main()
 
 
-# server.py -p 8888 -a 192.168.0.106
+# server.py -p 8888 -a 192.168.0.81
 # server.py -p 8888 -a 192.168.0.74
 # server.py -p 8888 -a 192.168.0.66
 # server.py -p 8888 -a 192.168.0.101
