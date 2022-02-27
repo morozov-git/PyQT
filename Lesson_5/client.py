@@ -405,6 +405,8 @@ class ClientApp(metaclass=ClientMaker):
 		# Инициализация сокета и обмен приветствиями
 		try:
 			transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			# Таймаут 1 секунда, необходим для освобождения сокета.
+			transport.settimeout(1)
 			transport.connect((server_address, server_port))
 			message_to_server = ClientApp.create_presence(self.client_name)
 			send_message(transport, message_to_server)
@@ -428,6 +430,11 @@ class ClientApp(metaclass=ClientMaker):
 								   f'сервер отверг запрос на подключение.')
 			sys.exit(1)
 		else:
+
+			# Инициализация БД
+			database = ClientDatabase(client_name)
+			ClientApp.database_load(transport, database, client_name)
+
 			# Если соединение с сервером установлено корректно,
 			# запускаем клиенский процесс приёма сообщний
 			receiver = threading.Thread(target=ClientApp.message_from_server, args=(transport, self.client_name))
@@ -439,6 +446,8 @@ class ClientApp(metaclass=ClientMaker):
 			user_interface.daemon = True
 			user_interface.start()
 			CLIENT_LOGGER.debug('Запущены процессы')
+
+
 
 			# Watchdog основной цикл, если один из потоков завершён,
 			# то значит или потеряно соединение или пользователь
