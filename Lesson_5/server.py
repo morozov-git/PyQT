@@ -359,10 +359,10 @@ class ServerApp(metaclass=ServerMaker):
 		module_main_server.daemon = True
 		module_main_server.start()
 
-		# Запуск консольного интерфейса сервера
-		module_server_iterface = threading.Thread(target=self.server_iterface)
-		module_server_iterface.daemon = True
-		module_server_iterface.start()
+		# # Запуск консольного интерфейса сервера
+		# module_server_iterface = threading.Thread(target=self.server_iterface)
+		# module_server_iterface.daemon = True
+		# module_server_iterface.start()
 
 		# Создаём графическое окуружение для сервера:
 		server_app = QApplication(sys.argv)
@@ -481,7 +481,7 @@ if __name__ == '__main__':
 	ServerApp = ServerApp(listen_address, listen_port)
 	ServerApp.main()
 
-# server.py -p 8888 -a 192.168.0.81
+# server.py -p 8888 -a 192.168.0.93
 # server.py -p 8888 -a 192.168.0.74
 # server.py -p 8888 -a 192.168.0.66
 # server.py -p 8888 -a 192.168.0.101

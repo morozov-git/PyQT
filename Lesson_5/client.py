@@ -246,7 +246,7 @@ class ClientApp(metaclass=ClientMaker):
 			raise ServerError('Ошибка создания контакта')
 		print('Удачное создание контакта.')
 
-	def contacts_list_request(sock, name):
+	def contacts_list_request(self, transport, name):
 		"""Функция запрос контакт листа"""
 		CLIENT_LOGGER.debug(f'Запрос контакт листа для пользователся {name}')
 		req = {
@@ -255,15 +255,15 @@ class ClientApp(metaclass=ClientMaker):
 			USER: name
 		}
 		CLIENT_LOGGER.debug(f'Сформирован запрос {req}')
-		send_message(sock, req)
-		ans = get_message(sock)
+		send_message(transport, req)
+		ans = get_message(transport)
 		CLIENT_LOGGER.debug(f'Получен ответ {ans}')
 		if RESPONSE in ans and ans[RESPONSE] == 202:
 			return ans[LIST_INFO]
 		else:
 			raise ServerError
 
-	def user_list_request(sock, username):
+	def user_list_request(self, transport, username):
 		"""Функция запроса списка известных пользователей"""
 		CLIENT_LOGGER.debug(f'Запрос списка известных пользователей {username}')
 		req = {
@@ -271,14 +271,14 @@ class ClientApp(metaclass=ClientMaker):
 			TIME: time.time(),
 			ACCOUNT_NAME: username
 		}
-		send_message(sock, req)
-		ans = get_message(sock)
+		send_message(transport, req)
+		ans = get_message(transport)
 		if RESPONSE in ans and ans[RESPONSE] == 202:
 			return ans[LIST_INFO]
 		else:
 			raise ServerError
 
-	def remove_contact(sock, username, contact):
+	def remove_contact(self, transport, username, contact):
 		"""Функция удаления пользователя из контакт листа"""
 		CLIENT_LOGGER.debug(f'Создание контакта {contact}')
 		req = {
@@ -287,8 +287,8 @@ class ClientApp(metaclass=ClientMaker):
 			USER: username,
 			ACCOUNT_NAME: contact
 		}
-		send_message(sock, req)
-		ans = get_message(sock)
+		send_message(transport, req)
+		ans = get_message(transport)
 		if RESPONSE in ans and ans[RESPONSE] == 200:
 			pass
 		else:
@@ -312,14 +312,14 @@ class ClientApp(metaclass=ClientMaker):
 		return out
 
 
-	def database_load(sock, database, username):
+	def database_load(self, transport, database, username):
 		"""
 		Функция инициализатор базы данных.
 		Запускается при запуске, загружает данные в базу с сервера.
 		"""
 		# Загружаем список известных пользователей
 		try:
-			users_list = ClientApp.user_list_request(sock, username)
+			users_list = ClientApp.user_list_request(transport, username)
 		except ServerError:
 			CLIENT_LOGGER.error('Ошибка запроса списка известных пользователей.')
 		else:
@@ -327,7 +327,7 @@ class ClientApp(metaclass=ClientMaker):
 
 		# Загружаем список контактов
 		try:
-			contacts_list = ClientApp.contacts_list_request(sock, username)
+			contacts_list = ClientApp.contacts_list_request(transport, username)
 		except ServerError:
 			CLIENT_LOGGER.error('Ошибка запроса списка контактов.')
 		else:
@@ -441,11 +441,11 @@ class ClientApp(metaclass=ClientMaker):
 			receiver.daemon = True
 			receiver.start()
 
-			# затем запускаем отправку сообщений и взаимодействие с пользователем.
-			user_interface = threading.Thread(target=ClientApp.user_interactive, args=(transport, self.client_name))
-			user_interface.daemon = True
-			user_interface.start()
-			CLIENT_LOGGER.debug('Запущены процессы')
+			# # запускаем консольный интерфейс пользователя(отправку сообщений и взаимодействие с пользователем).
+			# user_interface = threading.Thread(target=ClientApp.user_interactive, args=(transport, self.client_name))
+			# user_interface.daemon = True
+			# user_interface.start()
+			# CLIENT_LOGGER.debug('Запущены процессы')
 
 
 
@@ -455,7 +455,7 @@ class ClientApp(metaclass=ClientMaker):
 			# достаточно просто завершить цикл.
 			while True:
 				time.sleep(1)
-				if receiver.is_alive() and user_interface.is_alive():
+				if receiver.is_alive(): # and user_interface.is_alive()
 					continue
 				break
 
@@ -489,7 +489,7 @@ if __name__ == '__main__':
 	ClientApp = ClientApp(server_address, server_port, client_name)
 	ClientApp.main()
 
-# client.py -a 192.168.0.106 -p 8888 -u TestSender1
+# client.py -a 192.168.0.93 -p 8888 -u TestSender1
 # client.py -a 192.168.0.49 -p 8888 -u TestSender1
 # client.py -a 192.168.0.66 -p 8888 -u TestSender1
 # client.py 192.168.0.49 8888 -m send -u TestSender1
