@@ -1,0 +1,89 @@
+2022-02-20 00:44:02,419 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 00:44:02,423 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 00:44:02,424 DEBUG server.py Сервер запущен. Адрес: 192.168.0.106 Порт: 8888
+2022-02-20 00:46:11,543 INFO server.py Установлено соедение с Клиентом: ('192.168.0.106', 51119)
+2022-02-20 00:46:11,543 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1645307171.5428748, 'user': {'account_name': 'TestSender1'}}
+2022-02-20 00:48:59,318 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 00:48:59,319 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 00:48:59,319 DEBUG server.py Сервер запущен. Адрес: 192.168.0.106 Порт: 8888
+2022-02-20 00:49:10,956 INFO server.py Установлено соедение с Клиентом: ('192.168.0.106', 51120)
+2022-02-20 00:49:10,956 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1645307350.95593, 'user': {'account_name': 'TestSender1'}}
+2022-02-20 00:50:52,046 INFO server.py Установлено соедение с Клиентом: ('192.168.0.106', 51121)
+2022-02-20 00:50:52,046 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1645307452.0459468, 'user': {'account_name': 'TestSender2'}}
+2022-02-20 00:51:11,302 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1645307470.9022112, 'from': 'TestSender2', 'to': '"""Программа-клиент"""', 'mess_text': ''}
+2022-02-20 00:51:11,303 ERROR server.py Пользователь """Программа-клиент""" не зарегистрирован на сервере, отправка сообщения невозможна.
+2022-02-20 00:51:39,487 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1645307499.398668, 'from': 'TestSender2', 'to': 'TestSender1', 'mess_text': 'TestSenderTestSenderTestSenderTestSenderTestSender'}
+2022-02-20 00:51:39,488 INFO server.py Отправлено сообщение пользователю TestSender1 от пользователя TestSender2.
+2022-02-20 00:52:11,672 DEBUG server.py Разбор сообщения от клиента : {'action': 'message', 'time': 1645307531.6465259, 'from': 'TestSender1', 'to': 'TestSender2', 'mess_text': 'fdsafgdsfgdsgsd'}
+2022-02-20 00:52:11,672 INFO server.py Отправлено сообщение пользователю TestSender2 от пользователя TestSender1.
+2022-02-20 00:55:40,361 INFO server.py Клиент ('192.168.0.106', 51121) отключился от сервера.
+2022-02-20 00:55:46,414 INFO server.py Клиент ('192.168.0.106', 51120) отключился от сервера.
+2022-02-20 00:56:42,517 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 00:56:42,518 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 00:56:42,518 DEBUG server.py Сервер запущен. Адрес: 192.168.0.106 Порт: 8888
+2022-02-20 00:57:29,028 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 00:57:29,029 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 00:57:29,029 DEBUG server.py Сервер запущен. Адрес: 192.168.0.106 Порт: 8888
+2022-02-20 01:00:46,529 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:00:46,530 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:00:46,530 DEBUG server.py Сервер запущен. Адрес: 192.168.0.106 Порт: 8888
+2022-02-20 01:02:53,663 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:02:53,664 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:02:53,664 DEBUG server.py Сервер запущен. Адрес: 192.168.0.106 Порт: 8888
+2022-02-20 01:03:03,975 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:03:03,976 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:03:03,976 DEBUG server.py Сервер запущен. Адрес: 192.168.0.106 Порт: 8888
+2022-02-20 01:04:01,147 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:04:01,147 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:04:01,147 DEBUG server.py Сервер запущен. Адрес: 192.168.0.106 Порт: 8888
+2022-02-20 01:05:13,409 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:05:13,410 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:05:13,411 DEBUG server.py Сервер запущен. Адрес: 192.168.0.106 Порт: 8888
+2022-02-20 01:08:20,437 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:08:20,439 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:08:20,439 DEBUG server.py Сервер запущен. Адрес: 192.168.0.106 Порт: 8888
+2022-02-20 01:09:29,735 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:09:29,736 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:09:29,736 DEBUG server.py Сервер запущен. Адрес: 192.168.0.106 Порт: 8888
+2022-02-20 01:11:54,975 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:11:54,976 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:11:54,977 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:13:25,513 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:13:25,514 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:13:25,514 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:20:00,288 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:20:00,289 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:20:00,290 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:20:27,680 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции main().
+2022-02-20 01:20:27,682 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:20:27,683 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:24:02,797 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:24:02,798 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:24:02,798 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:24:27,675 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:24:27,675 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:24:27,675 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:24:41,543 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции main().
+2022-02-20 01:24:41,545 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:24:41,545 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:26:32,495 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции main().
+2022-02-20 01:26:32,497 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:26:32,498 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:28:28,867 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции main().
+2022-02-20 01:28:28,869 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:28:28,869 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:29:50,887 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции main().
+2022-02-20 01:29:50,890 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:29:50,890 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:53:38,978 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:53:38,979 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:53:38,980 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:57:49,143 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 01:57:49,144 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:57:49,144 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 01:58:22,923 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции main().
+2022-02-20 01:58:22,926 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 01:58:22,927 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
+2022-02-20 02:00:41,621 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_4/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.106'] функции listen_port).
+2022-02-20 02:00:41,622 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.106. Если адрес не указан, принимаются соединения с любых адресов.
+2022-02-20 02:00:41,622 DEBUG server.py Server launched. IP: 192.168.0.106 Port: 8888
