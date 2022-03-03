@@ -4,7 +4,7 @@ from common.variables import *
 import datetime
 
 
-# Класс - база данных сервера.
+# Класс - база данных клиента.
 class ClientDatabase:
     # Класс - отображение таблицы известных пользователей.
     class KnownUsers:
