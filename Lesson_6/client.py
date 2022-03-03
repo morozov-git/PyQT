@@ -8,7 +8,7 @@ import os
 import argparse
 import logging
 from errors import ReqFieldMissingError
-from Cryptodome.PublicKey import RSA
+from Crypto.PublicKey import RSA
 from PyQt5.QtWidgets import QApplication, QMessageBox
 from common.variables import *
 from common.utils import get_message, send_message, arg_parser
