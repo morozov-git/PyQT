@@ -43,6 +43,7 @@ class ServerApp(metaclass=ServerMaker):
 		""" Параментры подключения """
 		self.listen_address = listen_address
 		self.listen_port = listen_port
+		self.command = ''
 
 	# список клиентов , очередь сообщений
 	clients = []
@@ -70,8 +71,8 @@ class ServerApp(metaclass=ServerMaker):
 			# send_message(client, {RESPONSE: 200})
 			# return
 
-			if message[USER][ACCOUNT_NAME] not in names.keys():
-				names[message[USER][ACCOUNT_NAME]] = client
+			if message[USER][ACCOUNT_NAME] not in self.names.keys():
+				self.names[message[USER][ACCOUNT_NAME]] = client
 				client_ip, client_port = client.getpeername()
 				self.database.user_login(message[USER][ACCOUNT_NAME], client_ip, client_port)
 				send_message(client, RESPONSE_200)
@@ -170,15 +171,16 @@ class ServerApp(metaclass=ServerMaker):
 
 		# Основной цикл сервера:
 		while True:
-			command = input('Введите комманду: ')
-			if command == 'help':
+			self.command = input('Введите комманду: ')
+			if self.command == 'help':
 				self.print_help()
-			elif command == 'exit':
+			elif self.command == 'exit':
+				# sys.exit(0)
 				break
-			elif command == 'users':
+			elif self.command == 'users':
 				for user in sorted(self.database.users_list()):
 					print(f'Пользователь {user[0]}, последний вход: {user[1]}')
-			elif command == 'connected':
+			elif self.command == 'connected':
 				active_users_now = sorted(self.database.active_users_list())
 				# print(active_users_now)
 				if active_users_now:
@@ -187,7 +189,7 @@ class ServerApp(metaclass=ServerMaker):
 							f'Пользователь {user[0]}, подключен: {user[1]}:{user[2]}, время установки соединения: {user[3]}')
 				else:
 					print('Отсутствуют активные пользователи.')
-			elif command == 'history':
+			elif self.command == 'history':
 				name = input(
 					'Введите имя пользователя для просмотра истории. Для вывода всей истории, просто нажмите Enter: ')
 				for user in sorted(self.database.login_history(name)):
@@ -198,6 +200,8 @@ class ServerApp(metaclass=ServerMaker):
 	def main_server_process(self):
 		'''Главный процесс сервера по приему/отправке сообщений и управления активными пользователями'''
 		# Основной цикл программы сервера
+		global new_connection
+
 		while True:
 			try:
 				client, client_address = self.transport.accept()
@@ -225,25 +229,34 @@ class ServerApp(metaclass=ServerMaker):
 						ServerApp.process_client_message(get_message(client_with_message), self.messages,
 														 client_with_message, self.clients, self.names)
 					except:
-						SERVER_LOGGER.info(f'Клиент {client_with_message.getpeername()} отключился от сервера.')
+
 
 						# Получаем порт отключившегося клиента
-						client_port = client_with_message.getpeername()[1]
+						# client_port = client_with_message.getpeername()[1]
+						client_port = client_address[-1]
 						# Получаем из базы пользователя по порту клиента
 						disabled_client = self.database.session.query(ServerStorage.ActiveUsers).filter_by(
 							port=client_port).first()
 						# print(client_port, disabled_client, 'user.id:', disabled_client.user)
 
+						SERVER_LOGGER.info(f'Клиент ID: {disabled_client.user} отключился от сервера.')
+
 						# Удаляем отключившегося пользователя из базы из таблицы ActiveUsers
-						self.database.session.query(ServerStorage.ActiveUsers).filter_by(port=client_port).delete()
-						self.database.session.commit()
 						disabled_client_name = self.database.session.query(ServerStorage.AllUsers).filter_by(
 							id=disabled_client.user).first()
+						self.database.session.query(ServerStorage.ActiveUsers).filter_by(port=client_port).delete()
+						self.database.session.commit()
+
 						print(
 							f'Клиент {disabled_client_name.name} (User.ID={disabled_client.user}) отключился от сервера.')
 
 						# Удаляем из списка клиентов
 						self.clients.remove(client_with_message)
+						# Обновляем ссписок активных клиентов в GUI
+						with conflag_lock:
+							new_connection = True
+						self.list_update()
+
 
 			# Если есть сообщения, обрабатываем каждое. Добавили обработку получателя сообщения.
 			for i in self.messages:
@@ -252,9 +265,15 @@ class ServerApp(metaclass=ServerMaker):
 				except Exception:
 					SERVER_LOGGER.info(f'Связь с клиентом с именем {i[DESTINATION]} была потеряна')
 					self.clients.remove(self.names[i[DESTINATION]])
-					self.database.user_logout(message[DESTINATION])
+					self.database.user_logout(i[DESTINATION])
 					del self.names[i[DESTINATION]]
 			self.messages.clear()
+
+			if self.command != 'exit':
+				continue
+			else:
+				break
+
 
 	def server_socket(self):
 		'''Функция запуска сокета для сервера'''
@@ -359,10 +378,10 @@ class ServerApp(metaclass=ServerMaker):
 		module_main_server.daemon = True
 		module_main_server.start()
 
-		# Запуск консольного интерфейса сервера
-		module_server_iterface = threading.Thread(target=self.server_iterface)
-		module_server_iterface.daemon = True
-		module_server_iterface.start()
+		# # Запуск консольного интерфейса сервера
+		# module_server_iterface = threading.Thread(target=self.server_iterface, daemon=True)
+		# module_server_iterface.daemon = True
+		# module_server_iterface.start()
 
 		# Создаём графическое окуружение для сервера:
 		server_app = QApplication(sys.argv)
@@ -388,22 +407,29 @@ class ServerApp(metaclass=ServerMaker):
 		self.main_window.config_btn.triggered.connect(self.server_config)
 
 		# Запускаем GUI в отдельном потоке
-		module_server_gui = threading.Thread(target=server_app.exec_())
+		module_server_gui = threading.Thread(target=server_app.exec_(), daemon=True)
 		module_server_gui.daemon = True
 		module_server_gui.start()
+		server_app.exec_()
 
-		print('Server stopped')
+
 
 		# Watchdog основной цикл, если один из потоков завершён, то значит или потеряно соединение или пользователь
 		# ввёл exit. Поскольку все события обработываются в потоках, достаточно просто завершить цикл.
 		while True:
 			time.sleep(1)
 			if module_main_server.is_alive() and module_server_gui.is_alive():  # module_server_iterface.is_alive() and
+				# if not module_server_iterface.is_alive():
+				# 	self.command = 'exit'
+				# 	time.sleep(1)
+				# 	print('Server stopped')
+				# 	sys.exit(0)
 				continue
-			# if not module_server_gui.is_alive():
-			#     sys.exit(0)
-
+			self.command = 'exit'
 			break
+		time.sleep(1)
+		print('Server stopped')
+		sys.exit(0)
 
 	# # Основной цикл программы сервера
 	# while True:
@@ -480,8 +506,10 @@ if __name__ == '__main__':
 	listen_address, listen_port = arg_parser()
 	ServerApp = ServerApp(listen_address, listen_port)
 	ServerApp.main()
+	# time.sleep(1)
+	# sys.exit(0)
 
-# server.py -p 8888 -a 192.168.0.81
+# server.py -p 8888 -a 192.168.0.93
 # server.py -p 8888 -a 192.168.0.74
 # server.py -p 8888 -a 192.168.0.66
 # server.py -p 8888 -a 192.168.0.101

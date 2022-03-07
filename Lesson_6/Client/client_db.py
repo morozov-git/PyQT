@@ -32,7 +32,7 @@ class ClientDatabase:
         # Создаём движок базы данных, поскольку разрешено несколько клиентов одновременно, каждый должен иметь свою БД
         # Поскольку клиент мультипоточный необходимо отключить проверки на подключения с разных потоков,
         # иначе sqlite3.ProgrammingError
-        self.database_engine = create_engine(f'sqlite:///client_{name}.db3', echo=False, pool_recycle=7200,
+        self.database_engine = create_engine(f'sqlite:///Client/client_{name}.db3', echo=False, pool_recycle=7200,
                                              connect_args={'check_same_thread': False})
 
         # Создаём объект MetaData

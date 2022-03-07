@@ -1156,3 +1156,180 @@ fdsafgdsfgdsgsd
 2022-03-03 19:11:18,101 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1646323878.100896, 'user': 'TestSender1'}
 2022-03-03 19:11:37,002 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
 2022-03-03 19:13:40,895 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-04 16:38:43,769 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 16:38:43,770 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 16:39:34,779 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 16:39:34,779 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 16:39:34,780 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 16:39:34,800 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 16:39:34,800 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-04 16:39:34,837 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 16:39:35,318 DEBUG client.py Запрос контакт листа для пользователся testtest
+2022-03-04 16:39:35,318 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1646401175.3185291, 'user': 'testtest'}
+2022-03-04 16:39:35,813 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 16:39:36,817 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-04 16:45:08,628 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции main().
+2022-03-04 16:45:08,629 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 16:45:08,630 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 16:47:01,338 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции main().
+2022-03-04 16:47:01,342 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 16:47:08,066 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 16:48:09,315 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции main().
+2022-03-04 16:48:09,317 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 16:48:12,790 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 16:49:15,684 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 16:49:15,685 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 16:49:15,685 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 16:49:15,772 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-04 16:49:15,772 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-04 16:49:15,809 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 16:51:47,192 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции main().
+2022-03-04 16:51:47,197 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 16:51:53,027 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 16:53:26,427 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 16:53:26,428 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 16:53:26,429 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 16:53:26,598 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-04 16:53:26,598 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-04 16:53:26,635 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 16:53:30,535 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции main().
+2022-03-04 16:53:30,538 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 16:53:34,063 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 16:58:49,920 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-04 16:58:51,443 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-04 17:09:26,401 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:09:26,401 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:09:26,402 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:09:26,427 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 17:09:26,428 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-04 17:09:26,487 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 17:09:26,947 DEBUG client.py Запрос контакт листа для пользователся testtest
+2022-03-04 17:09:26,947 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1646402966.947947, 'user': 'testtest'}
+2022-03-04 17:09:27,440 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 17:09:28,442 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-04 17:09:35,343 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:09:35,352 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:09:35,352 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:09:43,382 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:09:43,382 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:09:43,382 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:12:33,843 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:12:33,844 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:12:33,844 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:12:33,866 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 17:12:33,866 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-04 17:12:33,903 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 17:12:34,384 DEBUG client.py Запрос контакт листа для пользователся testtest
+2022-03-04 17:12:34,384 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1646403154.384526, 'user': 'testtest'}
+2022-03-04 17:12:34,881 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 17:12:35,886 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-04 17:12:42,911 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции main().
+2022-03-04 17:12:42,912 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:12:47,158 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:13:19,232 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:13:19,233 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:13:19,234 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:13:19,253 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 17:13:19,254 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-04 17:13:19,304 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 17:13:19,774 DEBUG client.py Запрос контакт листа для пользователся testtest
+2022-03-04 17:13:19,774 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1646403199.774608, 'user': 'testtest'}
+2022-03-04 17:13:20,278 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 17:13:21,282 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-04 17:14:02,323 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:14:02,324 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:14:02,324 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:17:09,960 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:17:09,960 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:17:09,961 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:17:14,453 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:17:14,453 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:17:14,454 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:17:46,968 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:17:46,968 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:17:46,969 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:21:19,329 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:21:19,329 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:21:19,329 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:25:23,950 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:25:23,951 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:25:23,951 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:25:23,971 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 17:25:23,971 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-04 17:25:24,058 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 17:25:24,493 DEBUG client.py Запрос контакт листа для пользователся testtest
+2022-03-04 17:25:24,493 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1646403924.493827, 'user': 'testtest'}
+2022-03-04 17:25:24,985 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 17:25:25,988 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-04 17:25:37,311 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:25:37,311 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:25:37,311 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:26:07,134 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:26:07,134 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:26:07,135 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:34:47,104 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:34:47,104 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:34:47,104 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:34:47,124 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 17:34:47,125 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-04 17:34:47,187 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 17:34:47,639 DEBUG client.py Запрос контакт листа для пользователся testtest
+2022-03-04 17:34:47,639 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1646404487.6394188, 'user': 'testtest'}
+2022-03-04 17:34:48,140 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 17:34:49,141 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-04 17:36:44,103 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:36:44,104 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:36:44,104 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:36:44,124 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 17:36:44,124 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-04 17:36:44,184 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 17:36:44,643 DEBUG client.py Запрос контакт листа для пользователся testtest
+2022-03-04 17:36:44,643 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1646404604.64361, 'user': 'testtest'}
+2022-03-04 17:36:45,142 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 17:36:46,147 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-04 17:39:12,807 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:39:12,807 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:39:12,808 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:51:57,374 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:51:57,375 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:51:57,375 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:51:57,400 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-04 17:51:57,401 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-04 17:51:57,455 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 17:51:57,913 DEBUG client.py Запрос контакт листа для пользователся testtest
+2022-03-04 17:51:57,914 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1646405517.913992, 'user': 'testtest'}
+2022-03-04 17:51:58,418 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-04 17:51:59,423 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-04 17:54:32,646 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:54:32,647 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:54:32,647 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:54:32,648 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-04 17:54:32,649 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-04 17:54:32,710 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 17:56:01,666 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции main().
+2022-03-04 17:56:01,668 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:56:08,068 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 17:57:03,499 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-04 17:57:04,115 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-04 17:57:06,603 DEBUG client.py Запрос списка известных пользователей testtest
+2022-03-04 17:59:46,483 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 17:59:46,484 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 17:59:46,484 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 18:01:12,730 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 18:01:12,731 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 18:01:12,732 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 18:01:16,805 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 18:01:16,805 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 18:01:16,805 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 18:01:32,023 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 18:01:32,023 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 18:01:32,024 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 18:02:33,292 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 18:02:33,292 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 18:02:33,293 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 18:13:47,914 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 18:13:47,914 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 18:13:47,914 DEBUG client.py Сформировано presence сообщение для пользователя testtest
+2022-03-04 18:13:54,411 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.93', '-p', '8888', '-u', 'testtest', '-pw', 'test'] функции client_password).
+2022-03-04 18:13:54,412 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.93, порт: 8888
+2022-03-04 18:13:54,412 DEBUG client.py Сформировано presence сообщение для пользователя testtest

@@ -4,12 +4,6 @@ import sys
 import json
 import socket
 import time
-import os
-import argparse
-import logging
-from errors import ReqFieldMissingError
-from Crypto.PublicKey import RSA
-from PyQt5.QtWidgets import QApplication, QMessageBox
 from common.variables import *
 from common.utils import get_message, send_message, arg_parser
 from loging_decos import Log
@@ -17,8 +11,7 @@ from errors import ReqFieldMissingError, ServerError, IncorrectDataRecivedError
 import threading
 from descrptors import Port, IP_Address
 from metaclasses import ClientMaker
-from server_db import ServerStorage
-from client_database import ClientDatabase
+from client_db import ClientDatabase
 
 # Инициализация клиентского логера
 CLIENT_LOGGER = logging.getLogger('client')
@@ -63,11 +56,12 @@ class ClientApp(metaclass=ClientMaker):
 	server_port = Port()
 	server_address = IP_Address()
 
-	def __init__(self, server_address, server_port, client_name):
+	def __init__(self, server_address, server_port, client_name, client_password):
 		""" Параментры подключения """
 		self.client_name = client_name
 		self.server_address = server_address
 		self.server_port = server_port
+		self.client_password = client_password
 
 	# super().__init__()
 	# print(self)
@@ -488,10 +482,12 @@ class ClientApp(metaclass=ClientMaker):
 
 
 if __name__ == '__main__':
-	server_address, server_port, client_name = arg_parser()
-	ClientApp = ClientApp(server_address, server_port, client_name)
+	server_address, server_port, client_name, client_password = arg_parser()
+	ClientApp = ClientApp(server_address, server_port, client_name, client_password)
 	ClientApp.main()
 
+
+# client.py -a 192.168.0.93 -p 8888 -u testtest -pw test
 # client.py -a 192.168.0.93 -p 8888 -u TestSender1
 # client.py -a 192.168.0.49 -p 8888 -u TestSender1
 # client.py -a 192.168.0.66 -p 8888 -u TestSender1

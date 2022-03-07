@@ -5,8 +5,7 @@ import sys
 
 from variables import MAX_PACKAGE_LENGTH, ENCODING
 import argparse
-from common.variables import  USER, ERROR, DEFAULT_PORT, ACCOUNT_NAME, DEFAULT_IP_ADDRESS, SENDER, MESSAGE, MESSAGE_TEXT, \
-    RESPONSE_400, DESTINATION, RESPONSE_200, EXIT
+from common.variables import *
 
 
 def get_message(client):

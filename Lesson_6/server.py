@@ -3,8 +3,6 @@ import configparser
 import os
 import socket
 import sys
-import json
-import argparse
 
 from PyQt5.QtCore import QTimer
 from PyQt5.QtWidgets import QApplication, QMessageBox
@@ -13,7 +11,6 @@ from common.variables import *
 from common.utils import get_message, send_message, arg_parser
 import logging
 import time
-import logs.config_server_log
 from loging_decos import Log
 import select
 from descrptors import Port, IP_Address
@@ -244,6 +241,7 @@ class ServerApp(metaclass=ServerMaker):
 
 						# Удаляем из списка клиентов
 						self.clients.remove(client_with_message)
+						# self.clients.close()
 
 			# Если есть сообщения, обрабатываем каждое. Добавили обработку получателя сообщения.
 			for i in self.messages:
@@ -252,9 +250,24 @@ class ServerApp(metaclass=ServerMaker):
 				except Exception:
 					SERVER_LOGGER.info(f'Связь с клиентом с именем {i[DESTINATION]} была потеряна')
 					self.clients.remove(self.names[i[DESTINATION]])
-					self.database.user_logout(message[DESTINATION])
+					# self.clients.close()
+					self.database.user_logout(i[DESTINATION])
 					del self.names[i[DESTINATION]]
 			self.messages.clear()
+
+	# def remove_client(self, client):
+	# 	'''
+	# 	Метод обработчик клиента с которым прервана связь.
+	# 	Ищет клиента и удаляет его из списков и базы:
+	# 	'''
+	# 	SERVER_LOGGER.info(f'Клиент {client.getpeername()} отключился от сервера.')
+	# 	for name in self.names:
+	# 		if self.names[name] == client:
+	# 			self.database.user_logout(name)
+	# 			del self.names[name]
+	# 			break
+	# 	self.clients.remove(client)
+	# 	client.close()
 
 	def server_socket(self):
 		'''Функция запуска сокета для сервера'''
