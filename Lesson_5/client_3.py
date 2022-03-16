@@ -4,11 +4,8 @@ import sys
 import json
 import socket
 import time
-import argparse
 import logging
-from errors import ReqFieldMissingError
-from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
-    RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT, ACCOUNT_NAME, SENDER, \
+from common.variables import ACTION, PRESENCE, TIME, USER, RESPONSE, ERROR, ACCOUNT_NAME, SENDER, \
     MESSAGE, MESSAGE_TEXT, DESTINATION, EXIT
 from common.utils import get_message, send_message, arg_parser
 from loging_decos import Log
@@ -16,8 +13,6 @@ from errors import ReqFieldMissingError, ServerError, IncorrectDataRecivedError
 import threading
 from descrptors import Port, IP_Address
 from metaclasses import ClientMaker
-from server_db import ServerStorage
-
 
 # Инициализация клиентского логера
 CLIENT_LOGGER = logging.getLogger('client')

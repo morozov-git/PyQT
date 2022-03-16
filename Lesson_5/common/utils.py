@@ -110,7 +110,7 @@ def arg_parser():
     parser.add_argument('-a', '--ip_address', default=DEFAULT_IP_ADDRESS, nargs='?')
     parser.add_argument('-p', '--port', default=DEFAULT_PORT, type=int, nargs='?')
     # parser.add_argument('-m', '--mode', default='listen', nargs='?')
-    parser.add_argument('-u', '--user', default='Guest', nargs='?')
+    parser.add_argument('-u', '--user', default=None, nargs='?')
     namespace = parser.parse_args(sys.argv[2:])
     server_address = namespace.ip_address
     server_port = namespace.port

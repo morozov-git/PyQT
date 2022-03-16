@@ -8,7 +8,6 @@
 # import logging
 # from errors import ReqFieldMissingError
 # from common.variables import *
-from common.utils import get_message, send_message, arg_parser
 # from loging_decos import Log
 # from errors import ReqFieldMissingError, ServerError, IncorrectDataRecivedError
 # import threading
@@ -446,16 +445,9 @@ from common.utils import get_message, send_message, arg_parser
 # # client.py 192.168.0.49 8888 -m send -u TestSender1
 
 
-
-
-import sys
-import json
 import socket
 import time
-import argparse
-import logging
 import threading
-import logs.config_client_log
 from common.variables import *
 from common.utils import *
 from errors import IncorrectDataRecivedError, ReqFieldMissingError, ServerError
