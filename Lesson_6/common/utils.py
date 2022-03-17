@@ -3,7 +3,7 @@
 import json
 import sys
 
-from variables import *
+from variables import MAX_PACKAGE_LENGTH, ENCODING
 import argparse
 from common.variables import *
 
@@ -110,14 +110,12 @@ def arg_parser():
     parser.add_argument('-a', '--ip_address', default=DEFAULT_IP_ADDRESS, nargs='?')
     parser.add_argument('-p', '--port', default=DEFAULT_PORT, type=int, nargs='?')
     # parser.add_argument('-m', '--mode', default='listen', nargs='?')
-    parser.add_argument('-u', '--user', default='Guest', nargs='?')
-    parser.add_argument('-pw', '--password', default='', nargs='?')
+    parser.add_argument('-u', '--user', default=None, nargs='?')
     namespace = parser.parse_args(sys.argv[2:])
     server_address = namespace.ip_address
     server_port = namespace.port
     # client_mode = namespace.mode
     client_name = namespace.user
-    client_password = namespace.password
     module_name = argparse.ArgumentParser().prog
     if 'server' in module_name:
         return server_address, server_port
@@ -132,4 +130,4 @@ def arg_parser():
     #     CLIENT_LOGGER.critical(f'Указан недопустимый режим работы {client_mode}, '
     #                            f'допустимые режимы: listen , send')
     #     sys.exit(1)
-        return server_address, server_port, client_name, client_password  # client_mode,
+        return server_address, server_port, client_name  # client_mode,

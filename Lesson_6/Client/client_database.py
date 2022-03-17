@@ -1,5 +1,8 @@
 from sqlalchemy import create_engine, Table, Column, Integer, String, Text, MetaData, DateTime
 from sqlalchemy.orm import mapper, sessionmaker
+import os
+import sys
+sys.path.append('../')
 from common.variables import *
 import datetime
 
@@ -28,11 +31,11 @@ class ClientDatabase:
             self.name = contact
 
     # Конструктор класса:
-    def __init__(self, client_name):
+    def __init__(self, name):
         # Создаём движок базы данных, поскольку разрешено несколько клиентов одновременно, каждый должен иметь свою БД
         # Поскольку клиент мультипоточный необходимо отключить проверки на подключения с разных потоков,
         # иначе sqlite3.ProgrammingError
-        self.database_engine = create_engine(f'sqlite:///Client/client_{client_name}.db3', echo=False, pool_recycle=7200,
+        self.database_engine = create_engine(f'sqlite:///client_{name}.db3', echo=False, pool_recycle=7200,
                                              connect_args={'check_same_thread': False})
 
         # Создаём объект MetaData
@@ -123,32 +126,35 @@ class ClientDatabase:
         else:
             return False
 
+    # # Функция возвращающая историю переписки
+    # def get_history(self, from_who=None, to_who=None):
+    #     query = self.session.query(self.MessageHistory)
+    #     if from_who:
+    #         query = query.filter_by(from_user=from_who)
+    #     if to_who:
+    #         query = query.filter_by(to_user=to_who)
+    #     return [(history_row.from_user, history_row.to_user, history_row.message, history_row.date)
+    #             for history_row in query.all()]
     # Функция возвращающая историю переписки
-    def get_history(self, from_who=None, to_who=None):
-        query = self.session.query(self.MessageHistory)
-        if from_who:
-            query = query.filter_by(from_user=from_who)
-        if to_who:
-            query = query.filter_by(to_user=to_who)
-        return [(history_row.from_user, history_row.to_user, history_row.message, history_row.date)
+    def get_history(self, contact):
+        query = self.session.query(self.MessageHistory).filter_by(contact=contact)
+        return [(history_row.contact, history_row.direction, history_row.message, history_row.date)
                 for history_row in query.all()]
-
 
 # отладка
 if __name__ == '__main__':
     test_db = ClientDatabase('test1')
-    for i in ['test3', 'test4', 'test5']:
-        test_db.add_contact(i)
-    test_db.add_contact('test4')
-    test_db.add_users(['test1', 'test2', 'test3', 'test4', 'test5'])
-    test_db.save_message('test1', 'test2', f'Привет! я тестовое сообщение от {datetime.datetime.now()}!')
-    test_db.save_message('test2', 'test1', f'Привет! я другое тестовое сообщение от {datetime.datetime.now()}!')
-    print(test_db.get_contacts())
-    print(test_db.get_users())
-    print(test_db.check_user('test1'))
-    print(test_db.check_user('test10'))
-    print(test_db.get_history('test2'))
-    print(test_db.get_history(to_who='test2'))
-    print(test_db.get_history('test3'))
-    test_db.del_contact('test4')
-    print(test_db.get_contacts())
+    #for i in ['test3', 'test4', 'test5']:
+    #    test_db.add_contact(i)
+    #test_db.add_contact('test4')
+    #test_db.add_users(['test1', 'test2', 'test3', 'test4', 'test5'])
+    #test_db.save_message('test2', 'in', f'Привет! я тестовое сообщение от {datetime.datetime.now()}!')
+    #test_db.save_message('test2', 'out', f'Привет! я другое тестовое сообщение от {datetime.datetime.now()}!')
+    #print(test_db.get_contacts())
+    #print(test_db.get_users())
+    #print(test_db.check_user('test1'))
+    #print(test_db.check_user('test10'))
+    print(sorted(test_db.get_history('test2') , key=lambda item: item[3]))
+    #test_db.del_contact('test4')
+    #print(test_db.get_contacts())
+
