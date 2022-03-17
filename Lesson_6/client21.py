@@ -453,7 +453,7 @@ from common.utils import *
 from errors import IncorrectDataRecivedError, ReqFieldMissingError, ServerError
 from decos import log
 from metaclasses import ClientMaker
-from client_database import ClientDatabase
+from client_database_111111 import ClientDatabase
 
 # Инициализация клиентского логера
 logger = logging.getLogger('client')

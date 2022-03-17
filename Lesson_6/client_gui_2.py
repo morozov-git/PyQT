@@ -2,10 +2,8 @@
 
 import sys
 import json
-import socket
 import time
 
-from PyQt5.QtCore import pyqtSignal
 from PyQt5.QtWidgets import QApplication
 
 from common.variables import *

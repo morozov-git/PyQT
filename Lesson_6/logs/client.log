@@ -964,3 +964,153 @@ sgvwbnguqerhf;
 2022-03-17 13:47:40,181 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
 2022-03-17 13:47:54,696 DEBUG client_transport.py Транспорт завершает работу.
 2022-03-17 13:47:54,810 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-17 21:57:27,653 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-17 21:57:28,465 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 21:57:30,912 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:14:53,389 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-17 22:14:54,137 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:14:54,266 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:14:54,297 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:15:00,299 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:15:01,309 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:15:02,311 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:15:03,312 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:15:04,313 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 22:15:10,440 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-17 22:15:11,181 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:15:11,283 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:15:11,321 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:15:17,322 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:15:18,323 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:15:19,325 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:15:20,326 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:15:21,328 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 22:15:34,350 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции main().
+2022-03-17 22:15:38,257 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:15:38,466 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:15:38,527 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:15:44,530 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:15:45,531 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:15:46,533 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:15:47,533 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:15:48,535 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 22:17:13,905 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-17 22:17:14,748 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:17:14,866 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:17:14,897 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:17:20,899 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:17:21,900 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:17:22,901 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:17:23,901 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:17:24,902 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 22:18:25,374 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции main().
+2022-03-17 22:18:50,091 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:19:02,586 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:19:07,454 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:19:13,456 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:19:14,457 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:19:15,458 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:19:16,460 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:19:17,461 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 22:20:19,552 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_password).
+2022-03-17 22:23:07,329 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_password).
+2022-03-17 22:23:38,154 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_password).
+2022-03-17 22:23:43,060 DEBUG client.py Using USERNAME = TestSender1, PASSWD = TestSender1.
+2022-03-17 22:23:43,060 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:23:43,185 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:23:43,219 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:23:49,222 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:23:50,223 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:23:51,224 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:23:52,225 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:23:53,227 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 22:24:18,605 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции main().
+2022-03-17 22:25:02,683 DEBUG client.py Using USERNAME = TestSender1, PASSWD = TestSender1.
+2022-03-17 22:25:38,085 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:26:24,311 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:29:28,300 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:29:34,302 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:29:35,303 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:29:36,304 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:29:37,305 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:29:38,307 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 22:35:45,380 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_password).
+2022-03-17 22:35:49,118 DEBUG client.py Using USERNAME = TestSender1, PASSWORD = TestSender1.
+2022-03-17 22:35:49,119 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:35:49,239 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:35:49,267 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:35:55,268 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:35:56,270 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:35:57,271 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:35:58,271 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:35:59,272 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 22:40:28,573 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_password).
+2022-03-17 22:40:33,010 DEBUG client.py Using USERNAME = TestSender1, PASSWORD = TestSender1.
+2022-03-17 22:40:33,010 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:40:33,144 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:40:33,173 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:40:39,174 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:40:40,175 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:40:41,176 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:40:42,178 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:40:43,179 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 22:41:34,498 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_password).
+2022-03-17 22:41:38,334 DEBUG client.py Using USERNAME = TestSender1, PASSWORD = TestSender1.
+2022-03-17 22:41:38,334 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:41:38,432 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:41:38,454 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:41:44,456 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:41:45,457 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:41:46,459 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:41:47,460 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:41:48,461 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 22:43:10,826 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_password).
+2022-03-17 22:43:17,376 DEBUG client.py Using USERNAME = TestSender1, PASSWORD = TestSender1.
+2022-03-17 22:43:17,376 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:43:17,465 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:43:17,496 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:43:23,498 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:43:24,500 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:43:25,501 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:43:26,502 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:43:27,504 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 22:43:51,754 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции main().
+2022-03-17 22:44:45,018 DEBUG client.py Using USERNAME = TestSender1, PASSWORD = TestSender1.
+2022-03-17 22:44:48,888 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 22:44:57,176 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 22:45:00,006 INFO client_transport.py Попытка подключения №1
+2022-03-17 22:45:06,009 INFO client_transport.py Попытка подключения №2
+2022-03-17 22:45:07,009 INFO client_transport.py Попытка подключения №3
+2022-03-17 22:45:08,011 INFO client_transport.py Попытка подключения №4
+2022-03-17 22:45:09,012 INFO client_transport.py Попытка подключения №5
+2022-03-17 22:45:10,013 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 23:09:48,415 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_password).
+2022-03-17 23:09:53,123 DEBUG client.py Using USERNAME = TestSender2, PASSWORD = TestSender2.
+2022-03-17 23:09:53,123 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender2
+2022-03-17 23:09:54,029 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 23:09:54,059 INFO client_transport.py Попытка подключения №1
+2022-03-17 23:10:00,061 INFO client_transport.py Попытка подключения №2
+2022-03-17 23:10:01,066 INFO client_transport.py Попытка подключения №3
+2022-03-17 23:10:02,067 INFO client_transport.py Попытка подключения №4
+2022-03-17 23:10:03,068 INFO client_transport.py Попытка подключения №5
+2022-03-17 23:10:04,070 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 23:10:16,323 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_password).
+2022-03-17 23:10:25,660 DEBUG client.py Using USERNAME = TestSender1, PASSWORD = TestSender1.
+2022-03-17 23:10:25,660 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 23:10:25,794 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 23:10:25,822 INFO client_transport.py Попытка подключения №1
+2022-03-17 23:10:31,824 INFO client_transport.py Попытка подключения №2
+2022-03-17 23:10:32,835 INFO client_transport.py Попытка подключения №3
+2022-03-17 23:10:33,836 INFO client_transport.py Попытка подключения №4
+2022-03-17 23:10:34,838 INFO client_transport.py Попытка подключения №5
+2022-03-17 23:10:35,839 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-17 23:12:14,602 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_password).
+2022-03-17 23:12:19,560 DEBUG client.py Using USERNAME = TestSender1, PASSWORD = TestSender1.
+2022-03-17 23:12:19,560 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-17 23:12:19,683 DEBUG client.py Keys sucsessfully loaded.
+2022-03-17 23:12:19,706 INFO client_transport.py Попытка подключения №1
+2022-03-17 23:12:25,708 INFO client_transport.py Попытка подключения №2
+2022-03-17 23:12:26,708 INFO client_transport.py Попытка подключения №3
+2022-03-17 23:12:27,709 INFO client_transport.py Попытка подключения №4
+2022-03-17 23:12:28,710 INFO client_transport.py Попытка подключения №5
+2022-03-17 23:12:29,711 CRITICAL client_transport.py Не удалось установить соединение с сервером

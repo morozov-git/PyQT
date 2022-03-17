@@ -9,7 +9,7 @@ sys.path.append('./')
 from Client.main_window_conv import Ui_MainClientWindow
 from Client.add_contact import AddContactDialog
 from Client.del_contact import DelContactDialog
-from client_database import ClientDatabase
+from client_database_111111 import ClientDatabase
 from Client.client_transport import ClientTransport
 from Client.start_dialog import UserNameDialog
 from common.errors import ServerError

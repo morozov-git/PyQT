@@ -111,14 +111,18 @@ def arg_parser():
     parser.add_argument('-p', '--port', default=DEFAULT_PORT, type=int, nargs='?')
     # parser.add_argument('-m', '--mode', default='listen', nargs='?')
     parser.add_argument('-u', '--user', default=None, nargs='?')
+    parser.add_argument('--no_gui', action='store_true')
+    parser.add_argument('-pass', '--password', default='', nargs='?')
     namespace = parser.parse_args(sys.argv[2:])
     server_address = namespace.ip_address
     server_port = namespace.port
     # client_mode = namespace.mode
     client_name = namespace.user
     module_name = argparse.ArgumentParser().prog
+    gui_flag = namespace.no_gui
+    client_password = namespace.password
     if 'server' in module_name:
-        return server_address, server_port
+        return server_address, server_port, gui_flag
     else:
     # # проверим подходящий номер порта
     # if not 1023 < server_port < 65536:
@@ -130,4 +134,4 @@ def arg_parser():
     #     CLIENT_LOGGER.critical(f'Указан недопустимый режим работы {client_mode}, '
     #                            f'допустимые режимы: listen , send')
     #     sys.exit(1)
-        return server_address, server_port, client_name  # client_mode,
+        return server_address, server_port, client_name, client_password  # client_mode,

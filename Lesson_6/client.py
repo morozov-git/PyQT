@@ -1,13 +1,11 @@
 """Программа-клиент"""
-
+import os
 import sys
 import json
-import socket
 import time
 
-from PyQt5.QtCore import pyqtSignal
-from PyQt5.QtWidgets import QApplication
-
+from PyQt5.QtWidgets import QApplication, QMessageBox
+from Crypto.PublicKey import RSA
 from common.variables import *
 from common.utils import get_message, send_message, arg_parser
 from loging_decos import Log
@@ -34,17 +32,14 @@ class ClientApp(metaclass=ClientMaker):
     server_port = Port()
     server_address = IP_Address()
 
-
-
-    def __init__(self, server_address, server_port, client_name):
+    def __init__(self, server_address, server_port, client_name, client_password):
         """ Параментры подключения """
         self.client_name = client_name
         self.server_address = server_address
         self.server_port = server_port
-
+        self.client_password = client_password
         # super().__init__()
         # print(self)
-
 
 
     # @classmethod
@@ -409,18 +404,21 @@ class ClientApp(metaclass=ClientMaker):
         client_app = QApplication(sys.argv)
 
         # Если имя пользователя не было указано в командной строке то запросим его
-        if not self.client_name:
-            start_dialog = UserNameDialog()
+        start_dialog = UserNameDialog()
+        if not self.client_name or not self.client_password:
             client_app.exec_()
-            # Если пользователь ввёл имя и нажал ОК, то сохраняем ведённое и удаляем объект, инааче выходим
+            # Если пользователь ввёл имя и нажал ОК, то сохраняем ведённое и
+            # удаляем объект, инааче выходим
             if start_dialog.ok_pressed:
                 self.client_name = start_dialog.client_name.text()
-                del start_dialog
+                self.client_password = start_dialog.client_password.text()
+                CLIENT_LOGGER.debug(f'Using USERNAME = {self.client_name}, PASSWORD = {self.client_password}.')
             else:
                 exit(0)
 
 
-        CLIENT_LOGGER.info(f'Запущен клиент с парамертами: адрес сервера: {server_address}, порт: {server_port}')
+        CLIENT_LOGGER.info(f'Запущен клиент с парамертами: адрес сервера: {self.server_address}, '
+                           f'порт: {self.server_port}, пользователь {self.client_name}')
 
         # переменные для тестов
         if args:
@@ -533,20 +531,41 @@ class ClientApp(metaclass=ClientMaker):
             #             sys.exit(1)
 
         # Создаём объект базы данных
+
+        # Загружаем ключи с файла, если же файла нет, то генерируем новую пару.
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        key_file = os.path.join(dir_path, f'{self.client_name}.key')
+        if not os.path.exists(key_file):
+            keys = RSA.generate(2048, os.urandom)
+            with open(key_file, 'wb') as key:
+                key.write(keys.export_key())
+        else:
+            with open(key_file, 'rb') as key:
+                keys = RSA.import_key(key.read())
+
+        # !!!keys.publickey().export_key()
+        CLIENT_LOGGER.debug("Keys sucsessfully loaded.")
+
+        # Создаём объект базы данных
         database = ClientDatabase(client_name)
 
         # Инициализация сокета и обмен приветствиями
         # Создаём объект - транспорт и запускаем транспортный поток
         try:
-            transport = ClientTransport(server_port, server_address, database, client_name)
+            transport = ClientTransport(server_port, server_address, database, client_name, client_password, keys)
+            CLIENT_LOGGER.debug("Transport ready.")
         except ServerError as error:
-            print(error.text)
+            message = QMessageBox()
+            message.critical(start_dialog, 'Ошибка сервера', error.text)
             exit(1)
         transport.setDaemon(True)
         transport.start()
 
+        # Удалим объект диалога за ненадобностью
+        del start_dialog
+
         # Создаём GUI
-        main_window = ClientMainWindow(database, transport)
+        main_window = ClientMainWindow(database, transport, keys)
         main_window.make_connection(transport)
         main_window.setWindowTitle(f'Чат Программа alpha release - {client_name}')
         client_app.exec_()
@@ -558,13 +577,13 @@ class ClientApp(metaclass=ClientMaker):
 
 
 if __name__ == '__main__':
-    server_address, server_port, client_name = arg_parser()
-    ClientApp = ClientApp(server_address, server_port, client_name)
+    server_address, server_port, client_name, client_password = arg_parser()
+    ClientApp = ClientApp(server_address, server_port, client_name, client_password)
     ClientApp.main()
     # time.sleep(1)
     # sys.exit(0)
 
-# client.py -a 192.168.0.50 -p 8888 -u TestSender1
+# client.py -a 192.168.0.50 -p 8888 -u TestSender1 -pass TestSender1
 # client.py -a 192.168.0.49 -p 8888 -u TestSender1
 # client.py -a 192.168.0.66 -p 8888 -u TestSender1
 # client.py 192.168.0.49 8888 -m send -u TestSender1
