@@ -426,14 +426,14 @@ class RegisterUser(QDialog):
         self.client_name.setFixedSize(154, 20)
         self.client_name.move(10, 30)
 
-        self.label_passwd = QLabel('Введите пароль:', self)
-        self.label_passwd.move(10, 55)
-        self.label_passwd.setFixedSize(150, 15)
+        self.label_password = QLabel('Введите пароль:', self)
+        self.label_password.move(10, 55)
+        self.label_password.setFixedSize(150, 15)
 
-        self.client_passwd = QLineEdit(self)
-        self.client_passwd.setFixedSize(154, 20)
-        self.client_passwd.move(10, 75)
-        self.client_passwd.setEchoMode(QLineEdit.Password)
+        self.client_password = QLineEdit(self)
+        self.client_password.setFixedSize(154, 20)
+        self.client_password.move(10, 75)
+        self.client_password.setEchoMode(QLineEdit.Password)
         self.label_conf = QLabel('Введите подтверждение:', self)
         self.label_conf.move(10, 100)
         self.label_conf.setFixedSize(150, 15)
@@ -463,7 +463,7 @@ class RegisterUser(QDialog):
             self.messages.critical(
                 self, 'Ошибка', 'Не указано имя пользователя.')
             return
-        elif self.client_passwd.text() != self.client_conf.text():
+        elif self.client_password.text() != self.client_conf.text():
             self.messages.critical(
                 self, 'Ошибка', 'Введённые пароли не совпадают.')
             return
@@ -474,10 +474,10 @@ class RegisterUser(QDialog):
         else:
             # Генерируем хэш пароля, в качестве соли будем использовать логин в
             # нижнем регистре.
-            passwd_bytes = self.client_passwd.text().encode('utf-8')
+            password_bytes = self.client_password.text().encode('utf-8')
             salt = self.client_name.text().lower().encode('utf-8')
             passwd_hash = hashlib.pbkdf2_hmac(
-                'sha512', passwd_bytes, salt, 10000)
+                'sha512', password_bytes, salt, 10000)
             self.database.add_user(
                 self.client_name.text(),
                 binascii.hexlify(passwd_hash))

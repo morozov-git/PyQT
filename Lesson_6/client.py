@@ -547,12 +547,12 @@ class ClientApp(metaclass=ClientMaker):
         CLIENT_LOGGER.debug("Keys sucsessfully loaded.")
 
         # Создаём объект базы данных
-        database = ClientDatabase(client_name)
+        database = ClientDatabase(self.client_name)
 
         # Инициализация сокета и обмен приветствиями
         # Создаём объект - транспорт и запускаем транспортный поток
         try:
-            transport = ClientTransport(server_port, server_address, database, client_name, client_password, keys)
+            transport = ClientTransport(server_port, server_address, database, self.client_name, self.client_password, keys)
             CLIENT_LOGGER.debug("Transport ready.")
         except ServerError as error:
             message = QMessageBox()
