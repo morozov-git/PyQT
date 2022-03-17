@@ -54,7 +54,7 @@ class AddContactDialog(QDialog):
         contacts_list = set(self.database.get_contacts())
         users_list = set(self.database.get_users())
         # Удалим сами себя из списка пользователей, чтобы нельзя было добавить самого себя
-        users_list.remove(self.transport.client_name)
+        # users_list.remove(self.transport.client_name)
         # Добавляем список возможных контактов
         self.selector.addItems(users_list - contacts_list)
 

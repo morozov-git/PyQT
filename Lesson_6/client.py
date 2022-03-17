@@ -396,7 +396,7 @@ class ClientApp(metaclass=ClientMaker):
 
         ''' # client.py 192.168.0.100 8079
         # s_address, s_port, self.client_name = arg_parser()
-        
+
         # if not self.client_name:
         #     self.client_name = input('Введите имя пользователя: ')'''
 
@@ -431,9 +431,9 @@ class ClientApp(metaclass=ClientMaker):
         """перенесена в модуль client_transport"""
         """        # try:
         #     self.transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        # 
-        # 
-        # 
+        #
+        #
+        #
         #     # Таймаут 1 секунда, необходим для освобождения сокета.
         #     self.transport.settimeout(1)
         #     self.transport.connect((server_address, server_port))
@@ -459,38 +459,38 @@ class ClientApp(metaclass=ClientMaker):
         #                            f'сервер отверг запрос на подключение.')
         #     sys.exit(1)
         # else:
-        # 
+        #
         #     # # Инициализация БД
         #     self.database = ClientDatabase(self.client_name)
         #     # self.database_load()
-        # 
-        # 
+        #
+        #
         #     # # затем запускаем отправку сообщений и взаимодействие с пользователем.
         #     # self.user_interface = threading.Thread(target=ClientApp.user_interactive) # , args=(transport, self.client_name)
         #     # self.user_interface.daemon = True
         #     # self.user_interface.start()
         #     # CLIENT_LOGGER.debug('Запущены процессы')
-        # 
+        #
         #     # Если соединение с сервером установлено корректно,
         #     # запускаем клиенский процесс приёма сообщний
         #     self.receiver = threading.Thread(target=ClientApp.message_from_server, args=(self.transport, self.client_name))
         #     self.receiver.daemon = True
         #     self.receiver.start()
-        # 
-        # 
-        # 
+        #
+        #
+        #
         #     # Создаём GUI
         #     client_main_window = ClientMainWindow(self.database, self.transport)
         #     client_main_window.make_connection(self.transport)
         #     client_main_window.setWindowTitle(f'Чат Программа alpha release - {self.client_name}')
         #     client_app.exec_()
-        # 
+        #
         #     # Раз графическая оболочка закрылась, закрываем транспорт
         #     self.transport.transport_shutdown()
         #     self.transport.join()
-        # 
-        # 
-        # 
+        #
+        #
+        #
         #     # Watchdog основной цикл, если один из потоков завершён,
         #     # то значит или потеряно соединение или пользователь
         #     # ввёл exit. Поскольку все события обработываются в потоках,
@@ -504,7 +504,7 @@ class ClientApp(metaclass=ClientMaker):
         #     time.sleep(1)
         #     print('Client stopped')
         #     sys.exit(0)
-        # 
+        #
 """
             # # Если соединение с сервером установлено корректно,
             # # начинаем обмен с ним, согласно требуемому режиму.
@@ -587,4 +587,3 @@ if __name__ == '__main__':
 # client.py -a 192.168.0.49 -p 8888 -u TestSender1
 # client.py -a 192.168.0.66 -p 8888 -u TestSender1
 # client.py 192.168.0.49 8888 -m send -u TestSender1
-

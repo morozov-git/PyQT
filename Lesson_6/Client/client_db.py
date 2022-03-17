@@ -96,6 +96,10 @@ class ClientDatabase:
             self.session.add(user_row)
         self.session.commit()
 
+    def contacts_clear(self):
+        '''Метод очищающий таблицу со списком контактов.'''
+        self.session.query(self.Contacts).delete()
+
     # Функция сохраняющяя сообщения
     def save_message(self, from_user, to_user, message):
         message_row = self.MessageHistory(from_user, to_user, message)
