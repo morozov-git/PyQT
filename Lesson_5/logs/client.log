@@ -798,3 +798,155 @@ sgvwbnguqerhf;
 2022-03-17 00:41:10,070 DEBUG client_transport.py Транспорт завершает работу.
 2022-03-17 00:41:10,190 DEBUG client_transport.py Потеряно соединение с сервером.
 2022-03-17 00:41:11,583 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 00:44:10,055 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 00:44:10,228 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:44:10,254 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:44:10,255 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:44:10,255 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 00:44:15,255 CRITICAL client_transport.py Потеряно соединение с сервером!
+2022-03-17 00:45:27,083 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 00:45:27,254 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:45:27,286 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:45:27,286 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:45:27,287 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 00:45:27,304 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:45:27,304 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 00:45:27,304 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-17 00:45:27,823 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 00:45:27,823 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647467127.823903, 'user': 'TestSender1'}
+2022-03-17 00:45:28,319 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['dasdas', 'TestSender122']}
+2022-03-17 00:45:28,333 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 00:45:49,800 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client_gui_2.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender_gui'] функции client_name).
+2022-03-17 00:45:49,996 INFO client_gui_2.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:45:50,035 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:45:50,036 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:45:50,036 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender_gui
+2022-03-17 00:45:50,558 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:45:50,558 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 00:45:50,558 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:45:51,079 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 00:45:51,080 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647467151.080069, 'user': 'TestSender_gui'}
+2022-03-17 00:45:51,569 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender12222']}
+2022-03-17 00:45:51,579 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 00:46:00,412 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647467160.4120471, 'mess_text': 'csdcsdsd'}
+2022-03-17 00:46:12,362 DEBUG client_transport.py Создание контакта TestSender1
+2022-03-17 00:46:12,730 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:46:12,736 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x113ccf550>
+2022-03-17 00:46:19,172 DEBUG client_transport.py Удаление контакта TestSender1
+2022-03-17 00:46:19,288 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:46:19,290 INFO main_window.py Успешно удалён контакт TestSender1
+2022-03-17 00:46:26,402 DEBUG client_transport.py Удаление контакта TestSender12222
+2022-03-17 00:46:26,834 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:46:26,836 INFO main_window.py Успешно удалён контакт TestSender12222
+2022-03-17 00:46:31,962 DEBUG client_transport.py Создание контакта TestSender1
+2022-03-17 00:46:32,377 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:46:32,382 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x113ccf5e0>
+2022-03-17 00:46:41,653 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467201.653455, 'mess_text': 'dcsdscs'}
+2022-03-17 00:46:41,939 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467201.653455, 'mess_text': 'dcsdscs'}
+2022-03-17 00:46:41,940 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467201.653455, 'mess_text': 'dcsdscs'}
+2022-03-17 00:46:41,940 DEBUG client_transport.py Получено сообщение от пользователя TestSender_gui:dcsdscs
+2022-03-17 00:46:44,018 DEBUG client_transport.py Создание контакта TestSender_gui
+2022-03-17 00:46:44,474 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:46:44,480 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x10a3be280>
+2022-03-17 00:46:58,910 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467218.910423, 'mess_text': 'sdfdsfsd'}
+2022-03-17 00:46:59,059 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467218.910423, 'mess_text': 'sdfdsfsd'}
+2022-03-17 00:46:59,060 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467218.910423, 'mess_text': 'sdfdsfsd'}
+2022-03-17 00:46:59,060 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:sdfdsfsd
+2022-03-17 00:47:07,902 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467227.902721, 'mess_text': 'fsdsdfsdf'}
+2022-03-17 00:47:09,114 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467227.902721, 'mess_text': 'fsdsdfsdf'}
+2022-03-17 00:47:09,114 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467227.902721, 'mess_text': 'fsdsdfsdf'}
+2022-03-17 00:47:09,115 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:fsdsdfsdf
+2022-03-17 00:47:14,641 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467234.6410408, 'mess_text': 'sdfsdfsd'}
+2022-03-17 00:47:14,663 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467234.6410408, 'mess_text': 'sdfsdfsd'}
+2022-03-17 00:47:14,663 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467234.6410408, 'mess_text': 'sdfsdfsd'}
+2022-03-17 00:47:14,663 DEBUG client_transport.py Получено сообщение от пользователя TestSender_gui:sdfsdfsd
+2022-03-17 00:47:43,354 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender122', 'time': 1647467263.354035, 'mess_text': 'sdfsdf'}
+2022-03-17 00:48:14,029 DEBUG client_transport.py Создание контакта TestSender12222
+2022-03-17 00:48:19,074 DEBUG client_transport.py Принято сообщение с сервера: {'response': 200}
+2022-03-17 00:48:19,074 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:48:23,053 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:48:25,320 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-03-17 00:48:25,345 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:48:26,092 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-03-17 00:48:28,687 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:48:29,121 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-03-17 00:48:32,509 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:48:32,643 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-03-17 00:48:40,134 DEBUG client_transport.py Создание контакта TestSender12222
+2022-03-17 00:48:40,189 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:48:40,200 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x1142d0700>
+2022-03-17 00:48:45,511 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647467325.51106, 'mess_text': 'sdfsdf'}
+2022-03-17 00:49:11,565 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 00:49:11,870 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-17 00:49:15,591 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 13:30:35,454 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 13:30:35,665 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 13:30:35,710 INFO client_transport.py Попытка подключения №1
+2022-03-17 13:30:35,711 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 13:30:35,711 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 13:30:35,891 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 13:30:35,891 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 13:30:35,891 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-17 13:30:40,585 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 13:30:40,585 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647513040.585278, 'user': 'TestSender1'}
+2022-03-17 13:30:41,083 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['dasdas', 'TestSender122', 'TestSender_gui']}
+2022-03-17 13:30:41,110 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 13:30:55,430 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 13:30:55,694 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-17 13:32:34,862 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 13:32:35,058 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 13:32:35,091 INFO client_transport.py Попытка подключения №1
+2022-03-17 13:32:35,091 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 13:32:35,091 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 13:32:35,097 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 13:32:35,098 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 13:32:35,098 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-17 13:32:35,618 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 13:32:35,618 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647513155.618525, 'user': 'TestSender1'}
+2022-03-17 13:32:36,109 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['dasdas', 'TestSender122', 'TestSender_gui']}
+2022-03-17 13:32:36,136 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 13:32:48,765 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 13:32:49,263 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-17 13:33:52,717 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 13:33:52,894 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 13:33:52,930 INFO client_transport.py Попытка подключения №1
+2022-03-17 13:33:52,930 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 13:33:52,930 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 13:33:52,942 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 13:33:52,943 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 13:33:52,943 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-17 13:33:53,463 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 13:33:53,463 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647513233.463609, 'user': 'TestSender1'}
+2022-03-17 13:33:53,953 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['dasdas', 'TestSender122', 'TestSender_gui']}
+2022-03-17 13:33:53,969 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 13:34:51,661 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client_gui_2.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender_gui'] функции client_name).
+2022-03-17 13:34:51,850 INFO client_gui_2.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 13:34:51,882 INFO client_transport.py Попытка подключения №1
+2022-03-17 13:34:51,883 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 13:34:51,883 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender_gui
+2022-03-17 13:34:52,007 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 13:34:52,007 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 13:34:52,007 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 13:34:57,020 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 13:34:57,020 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647513297.0208378, 'user': 'TestSender_gui'}
+2022-03-17 13:34:57,506 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender1', 'TestSender12222']}
+2022-03-17 13:34:57,527 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 13:35:05,465 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513305.464951, 'mess_text': 'dfgdsfagdsf'}
+2022-03-17 13:35:05,801 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513305.464951, 'mess_text': 'dfgdsfagdsf'}
+2022-03-17 13:35:05,801 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513305.464951, 'mess_text': 'dfgdsfagdsf'}
+2022-03-17 13:35:05,802 DEBUG client_transport.py Получено сообщение от пользователя TestSender_gui:dfgdsfagdsf
+2022-03-17 13:35:08,758 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647513308.757985, 'mess_text': 'dsfasdf'}
+2022-03-17 13:35:09,075 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647513308.757985, 'mess_text': 'dsfasdf'}
+2022-03-17 13:35:09,076 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:dsfasdf
+2022-03-17 13:35:09,093 INFO client_transport.py Отправлено сообщение для пользователя TestSender1
+2022-03-17 13:35:09,095 DEBUG main_window.py Отправлено сообщение для TestSender1: dfgdsfagdsf
+2022-03-17 13:35:19,523 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647513319.52393, 'mess_text': 'sdfsdf'}
+2022-03-17 13:35:19,631 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647513319.52393, 'mess_text': 'sdfsdf'}
+2022-03-17 13:35:19,631 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647513319.52393, 'mess_text': 'sdfsdf'}
+2022-03-17 13:35:19,632 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:sdfsdf
+2022-03-17 13:36:15,718 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513375.7186182, 'mess_text': 'sdfsdfsd'}
+2022-03-17 13:36:18,756 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513375.7186182, 'mess_text': 'sdfsdfsd'}
+2022-03-17 13:36:18,757 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513375.7186182, 'mess_text': 'sdfsdfsd'}
+2022-03-17 13:36:18,757 DEBUG client_transport.py Получено сообщение от пользователя TestSender_gui:sdfsdfsd
+2022-03-17 13:36:45,864 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 13:36:52,835 DEBUG client_transport.py Транспорт завершает работу.

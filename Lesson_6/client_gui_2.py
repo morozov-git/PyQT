@@ -564,7 +564,7 @@ if __name__ == '__main__':
     # time.sleep(1)
     # sys.exit(0)
 
-# client.py -a 192.168.0.50 -p 8888 -u TestSender1
+# client.py -a 192.168.0.50 -p 8888 -u TestSender_gui
 # client.py -a 192.168.0.49 -p 8888 -u TestSender1
 # client.py -a 192.168.0.66 -p 8888 -u TestSender1
 # client.py 192.168.0.49 8888 -m send -u TestSender1

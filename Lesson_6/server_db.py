@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData, ForeignKey, DateTime
-from sqlalchemy.orm import mapper, sessionmaker
+from sqlalchemy.orm import mapper, sessionmaker, scoped_session
 from common.variables import *
 import datetime
 
@@ -121,7 +121,8 @@ class ServerStorage:
 
         # Создаём сессию
         Session = sessionmaker(bind=self.database_engine)
-        self.session = Session()
+        # self.session = Session()
+        self.session = scoped_session(Session)
 
         # Если в таблице активных пользователей есть записи, то их необходимо удалить
         # Когда устанавливаем соединение, очищаем таблицу активных пользователей
@@ -145,6 +146,8 @@ class ServerStorage:
             self.session.add(user)
             # Комит здесь нужен, чтобы присвоился ID
             self.session.commit()
+            user_in_history = self.UsersHistory(user.id)
+            self.session.add(user_in_history)
 
         # Теперь можно создать запись в таблицу активных пользователей о факте входа.
         # Создаем экземпляр класса self.ActiveUsers, через который передаем данные в таблицу

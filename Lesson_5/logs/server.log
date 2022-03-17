@@ -215,14 +215,3 @@
 2022-03-17 13:36:18,756 INFO server.py Отправлено сообщение пользователю TestSender1 от пользователя TestSender_gui.
 2022-03-17 13:36:46,511 DEBUG server.py Разбор сообщения от клиента : {'action': 'exit', 'time': 1647513405.861699, 'account_name': 'TestSender1'}
 2022-03-17 13:36:53,134 DEBUG server.py Разбор сообщения от клиента : {'action': 'exit', 'time': 1647513412.661172, 'account_name': 'TestSender_gui'}
-2022-03-17 13:46:30,301 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.50'] функции listen_port).
-2022-03-17 13:46:30,302 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
-2022-03-17 13:46:30,302 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
-2022-03-17 13:47:10,391 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-p', '8888', '-a', '192.168.0.50'] функции listen_port).
-2022-03-17 13:47:10,393 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
-2022-03-17 13:47:10,393 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
-2022-03-17 13:47:39,133 INFO server.py Установлено соедение с Клиентом: ('192.168.0.50', 55214)
-2022-03-17 13:47:39,134 DEBUG server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1647514059.133599, 'user': {'account_name': 'TestSender1'}}
-2022-03-17 13:47:39,654 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1647514059.1511412, 'account_name': 'TestSender1'}
-2022-03-17 13:47:40,160 DEBUG server.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1647514059.672735, 'user': 'TestSender1'}
-2022-03-17 13:47:54,756 DEBUG server.py Разбор сообщения от клиента : {'action': 'exit', 'time': 1647514074.695952, 'account_name': 'TestSender1'}
