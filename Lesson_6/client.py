@@ -534,7 +534,7 @@ class ClientApp(metaclass=ClientMaker):
 
         # Загружаем ключи с файла, если же файла нет, то генерируем новую пару.
         dir_path = os.path.dirname(os.path.realpath(__file__))
-        key_file = os.path.join(dir_path, f'{self.client_name}.key')
+        key_file = os.path.join(dir_path, f'Client/{self.client_name}.key')
         if not os.path.exists(key_file):
             keys = RSA.generate(2048, os.urandom)
             with open(key_file, 'wb') as key:
@@ -583,7 +583,7 @@ if __name__ == '__main__':
     # time.sleep(1)
     # sys.exit(0)
 
-# client.py -a 192.168.0.50 -p 8888 -u TestSender1 -pass TestSender1
+# client.py -a 192.168.0.50 -p 8888 -u TestSender2 -pass TestSender2
 # client.py -a 192.168.0.49 -p 8888 -u TestSender1
 # client.py -a 192.168.0.66 -p 8888 -u TestSender1
 # client.py 192.168.0.49 8888 -m send -u TestSender1

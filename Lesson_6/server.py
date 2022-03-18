@@ -394,7 +394,7 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 		print(server_start_message)
 
 		#Инициализация базы данных
-		self.database = ServerStorage(
+		database = ServerStorage(
 			os.path.join(
 				self.config['SETTINGS']['Database_path'],
 				self.config['SETTINGS']['Database_file']))
@@ -409,9 +409,9 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 		# module_main_server.start()
 
 		# Создание экземпляра класса - сервера и его запуск:
-		self.server = MessageProcessor(self.listen_address, self.listen_port, self.database)
-		self.server.daemon = True
-		self.server.start()
+		server = MessageProcessor(self.listen_address, self.listen_port, database)
+		server.daemon = True
+		server.start()
 
 		# Если  указан параметр без GUI то запускаем простенький обработчик
 		# консольного ввода
@@ -420,21 +420,21 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 				command = input('Введите exit для завершения работы сервера.')
 				if command == 'exit':
 					# Если выход, то завршаем основной цикл сервера.
-					self.server.running = False
-					self.server.join()
+					server.running = False
+					server.join()
 					break
 		# Если не указан запуск без GUI, то запускаем GUI:
 		else:
 			# Создаём графическое окуружение для сервера:
-			self.server_app = QApplication(sys.argv)
-			self.server_app.setAttribute(Qt.AA_DisableWindowContextHelpButton)
-			self.main_window = MainWindow(self.database, self.server, self.config)
+			server_app = QApplication(sys.argv)
+			server_app.setAttribute(Qt.AA_DisableWindowContextHelpButton)
+			main_window = MainWindow(database, server, self.config)
 
 			# Запускаем GUI
-			self.server_app.exec_()
+			server_app.exec_()
 
 			# По закрытию окон останавливаем обработчик сообщений
-			self.server.running = False
+			server.running = False
 
 
 		# # Запуск консольного интерфейса сервера

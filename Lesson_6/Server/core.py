@@ -7,7 +7,7 @@ import hmac
 import binascii
 import os
 from common.metaclasses import ServerMaker
-from common.descryptors import Port
+from common.descryptors import Port, IP_Address
 from common.variables import *
 from common.utils import send_message, get_message
 from common.loging_decos import Log, login_required
@@ -23,11 +23,12 @@ class MessageProcessor(threading.Thread):
     Работает в качестве отдельного потока.
     '''
     port = Port()
+    ip_address = IP_Address()
 
     def __init__(self, listen_address, listen_port, database):
         # Параментры подключения
-        self.addr = listen_address
-        self.port = listen_port
+        self.listen_address = listen_address
+        self.listen_port = listen_port
 
         # База данных сервера
         self.database = database
@@ -51,10 +52,10 @@ class MessageProcessor(threading.Thread):
         # Конструктор предка
         super().__init__()
 
-    def main_server_process(self):
+    def run(self):
         '''Метод основной цикл потока.'''
         # Инициализация Сокета
-        self.init_socket()
+        self.server_socket()
 
         # Основной цикл программы сервера
         while self.running:
@@ -106,10 +107,12 @@ class MessageProcessor(threading.Thread):
     def server_socket(self):
         '''Метод инициализатор сокета.'''
         SERVER_LOGGER.info(
-            f'Запущен сервер, порт для подключений: {self.port} , адрес с которого принимаются подключения: {self.addr}. Если адрес не указан, принимаются соединения с любых адресов.')
+            f'Запущен сервер, порт для подключений: {self.listen_port} , '
+            f'адрес с которого принимаются подключения: {self.listen_address}. '
+            f'Если адрес не указан, принимаются соединения с любых адресов.')
         # Готовим сокет
         transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        transport.bind((self.addr, self.port))
+        transport.bind((self.listen_address, self.listen_port))
         transport.settimeout(0.5)
 
         # Начинаем слушать сокет.

@@ -1398,3 +1398,455 @@ sgvwbnguqerhf;
 2022-03-18 00:50:33,214 INFO client_transport.py Попытка подключения №4
 2022-03-18 00:50:34,216 INFO client_transport.py Попытка подключения №5
 2022-03-18 00:50:35,217 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-18 00:58:17,160 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 00:58:17,934 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 00:58:23,200 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 00:58:23,227 INFO client_transport.py Попытка подключения №1
+2022-03-18 00:58:29,229 INFO client_transport.py Попытка подключения №2
+2022-03-18 00:58:30,230 INFO client_transport.py Попытка подключения №3
+2022-03-18 00:58:31,231 INFO client_transport.py Попытка подключения №4
+2022-03-18 00:58:32,231 INFO client_transport.py Попытка подключения №5
+2022-03-18 00:58:33,232 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-18 00:58:54,565 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 00:58:55,270 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 00:58:55,340 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 00:58:55,371 INFO client_transport.py Попытка подключения №1
+2022-03-18 00:58:55,371 DEBUG client_transport.py Connection established.
+2022-03-18 00:58:55,372 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 00:58:55,387 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 00:58:55,387 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647554335.387707, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 00:58:55,885 DEBUG client_transport.py Server response = {'response': 511, 'bin': '0b28700b1a32e09d54bdae8fdc74433b9902eac9ff1576a6a253c95b9bd8f8d9a31f374d50288e74fd3f4befd65bf7f20da0cbb993409c1ddf8eb766db678f3a'}.
+2022-03-18 00:58:55,886 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 00:58:55,886 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-18 00:58:55,914 CRITICAL client_transport.py Потеряно соединение с сервером.
+2022-03-18 00:59:14,619 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 00:59:15,311 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 00:59:15,383 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 00:59:15,415 INFO client_transport.py Попытка подключения №1
+2022-03-18 00:59:15,416 DEBUG client_transport.py Connection established.
+2022-03-18 00:59:15,416 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 00:59:15,429 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 00:59:15,429 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647554355.429779, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 00:59:15,927 DEBUG client_transport.py Server response = {'response': 511, 'bin': '3a4ffb81e0e38de37e8ca7af353d56c09589fff1f0a9a5f92e35b33ebce54a94eacddf99ddad39710b94c196959cc3f22bb85722f91a22cae2da8f5043af62fb'}.
+2022-03-18 00:59:15,928 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 00:59:15,928 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-18 00:59:16,468 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-18 00:59:16,468 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647554356.468208, 'user': 'TestSender1'}
+2022-03-18 00:59:16,961 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender1', 'test1']}
+2022-03-18 00:59:16,983 DEBUG client.py Transport ready.
+2022-03-18 00:59:16,984 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-18 00:59:20,538 DEBUG client_transport.py Запрос публичного ключа для TestSender1
+2022-03-18 00:59:20,990 DEBUG main_window.py Загружен открытый ключ для TestSender1
+2022-03-18 00:59:24,513 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647554364.5129821, 'mess_text': 'X4SHe4/YyKu1JPLJfdI8BCV8YqDFvj9fymnkInRiztzc/Atz+7injNwhgiw3CJbF9FNhzXofbdL7y87G0wC1aioTDg3+WT+nEi0FPgJkWkxnr2318zCZDyXbmLdgRMK6nCrgnD3slNH8A08tV+4G1xPsyg0JcgNDMc5qMN2JwHRFXU1tQwrhV6mtSvcX4Ki+CfI0ygc54SNyjwDULDTyOUywBwTm9sIKX+tyZ5YFRcm5MneNOvGvYcbepldbjg7Op1lzwAVIbVzhDKcNAdy2kQtq7VKPs7yTWXKI+7Xb0gGWLW7TwlHDVB7ZfN8Rwn7x+icg7PumiOkMSYebn1e8SA=='}
+2022-03-18 00:59:25,026 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647554364.5129821, 'mess_text': 'X4SHe4/YyKu1JPLJfdI8BCV8YqDFvj9fymnkInRiztzc/Atz+7injNwhgiw3CJbF9FNhzXofbdL7y87G0wC1aioTDg3+WT+nEi0FPgJkWkxnr2318zCZDyXbmLdgRMK6nCrgnD3slNH8A08tV+4G1xPsyg0JcgNDMc5qMN2JwHRFXU1tQwrhV6mtSvcX4Ki+CfI0ygc54SNyjwDULDTyOUywBwTm9sIKX+tyZ5YFRcm5MneNOvGvYcbepldbjg7Op1lzwAVIbVzhDKcNAdy2kQtq7VKPs7yTWXKI+7Xb0gGWLW7TwlHDVB7ZfN8Rwn7x+icg7PumiOkMSYebn1e8SA=='}
+2022-03-18 00:59:25,027 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:X4SHe4/YyKu1JPLJfdI8BCV8YqDFvj9fymnkInRiztzc/Atz+7injNwhgiw3CJbF9FNhzXofbdL7y87G0wC1aioTDg3+WT+nEi0FPgJkWkxnr2318zCZDyXbmLdgRMK6nCrgnD3slNH8A08tV+4G1xPsyg0JcgNDMc5qMN2JwHRFXU1tQwrhV6mtSvcX4Ki+CfI0ygc54SNyjwDULDTyOUywBwTm9sIKX+tyZ5YFRcm5MneNOvGvYcbepldbjg7Op1lzwAVIbVzhDKcNAdy2kQtq7VKPs7yTWXKI+7Xb0gGWLW7TwlHDVB7ZfN8Rwn7x+icg7PumiOkMSYebn1e8SA==
+2022-03-18 00:59:25,043 INFO client_transport.py Отправлено сообщение для пользователя TestSender1
+2022-03-18 00:59:25,045 DEBUG main_window.py Отправлено сообщение для TestSender1: veerverw
+2022-03-18 00:59:25,526 DEBUG client_transport.py Принято сообщение с сервера: {'response': 200}
+2022-03-18 00:59:25,526 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 00:59:28,071 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647554368.071393, 'mess_text': 'LNBhPDj7aJscUcZIYbqnxJb/7LuT8HTBaPq9Oayqj2HXab+GfCst1JCmtXO0ONwsABVXQMjD1oBiH3JxURcESPEiMbTUgZklfVp5rhMfTrm7/qc6BcI6Jiw4JAP5x8TSfgyR8u8XgXs4slYqwgOyFXDk0r7YbwLztOktr6yQAIiJuyuQPkHe/mpenuCoTg5eMnR4YX2SVJ3rtM7D3p4uOYOUgwDNjmb4R0eUXZ8cb/gGJY2xIsqoN0vkHfN5xrfJ54mOYErFRLQ/nPzIEdCWg/tvRD78QxuMuTYvb8Zzv31sfVUdBZnPIIG605Kd+TKiBEUjJKkFtPee6RnQZcPUjA=='}
+2022-03-18 00:59:29,060 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647554368.071393, 'mess_text': 'LNBhPDj7aJscUcZIYbqnxJb/7LuT8HTBaPq9Oayqj2HXab+GfCst1JCmtXO0ONwsABVXQMjD1oBiH3JxURcESPEiMbTUgZklfVp5rhMfTrm7/qc6BcI6Jiw4JAP5x8TSfgyR8u8XgXs4slYqwgOyFXDk0r7YbwLztOktr6yQAIiJuyuQPkHe/mpenuCoTg5eMnR4YX2SVJ3rtM7D3p4uOYOUgwDNjmb4R0eUXZ8cb/gGJY2xIsqoN0vkHfN5xrfJ54mOYErFRLQ/nPzIEdCWg/tvRD78QxuMuTYvb8Zzv31sfVUdBZnPIIG605Kd+TKiBEUjJKkFtPee6RnQZcPUjA=='}
+2022-03-18 00:59:29,060 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:LNBhPDj7aJscUcZIYbqnxJb/7LuT8HTBaPq9Oayqj2HXab+GfCst1JCmtXO0ONwsABVXQMjD1oBiH3JxURcESPEiMbTUgZklfVp5rhMfTrm7/qc6BcI6Jiw4JAP5x8TSfgyR8u8XgXs4slYqwgOyFXDk0r7YbwLztOktr6yQAIiJuyuQPkHe/mpenuCoTg5eMnR4YX2SVJ3rtM7D3p4uOYOUgwDNjmb4R0eUXZ8cb/gGJY2xIsqoN0vkHfN5xrfJ54mOYErFRLQ/nPzIEdCWg/tvRD78QxuMuTYvb8Zzv31sfVUdBZnPIIG605Kd+TKiBEUjJKkFtPee6RnQZcPUjA==
+2022-03-18 00:59:29,079 INFO client_transport.py Отправлено сообщение для пользователя TestSender1
+2022-03-18 00:59:29,081 DEBUG main_window.py Отправлено сообщение для TestSender1: sdvdsavsdv
+2022-03-18 00:59:29,543 DEBUG client_transport.py Принято сообщение с сервера: {'response': 200}
+2022-03-18 00:59:29,543 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 00:59:35,709 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-18 00:59:36,576 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-18 01:03:41,609 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 01:03:42,445 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 01:03:42,516 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 01:03:42,548 INFO client_transport.py Попытка подключения №1
+2022-03-18 01:03:48,550 INFO client_transport.py Попытка подключения №2
+2022-03-18 01:03:49,551 INFO client_transport.py Попытка подключения №3
+2022-03-18 01:03:50,553 INFO client_transport.py Попытка подключения №4
+2022-03-18 01:03:51,554 INFO client_transport.py Попытка подключения №5
+2022-03-18 01:03:52,556 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-18 01:08:03,042 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 01:08:03,882 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 01:08:03,966 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 01:08:03,989 INFO client_transport.py Попытка подключения №1
+2022-03-18 01:08:09,992 INFO client_transport.py Попытка подключения №2
+2022-03-18 01:08:10,994 INFO client_transport.py Попытка подключения №3
+2022-03-18 01:08:12,004 INFO client_transport.py Попытка подключения №4
+2022-03-18 01:08:13,005 INFO client_transport.py Попытка подключения №5
+2022-03-18 01:08:14,007 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-18 01:31:02,333 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 01:31:03,202 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 01:31:03,282 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 01:31:03,315 INFO client_transport.py Попытка подключения №1
+2022-03-18 01:31:09,317 INFO client_transport.py Попытка подключения №2
+2022-03-18 01:31:10,318 INFO client_transport.py Попытка подключения №3
+2022-03-18 01:31:11,320 INFO client_transport.py Попытка подключения №4
+2022-03-18 01:31:12,322 INFO client_transport.py Попытка подключения №5
+2022-03-18 01:31:13,323 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-18 01:33:55,950 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 01:33:56,790 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 01:33:56,879 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 01:33:56,913 INFO client_transport.py Попытка подключения №1
+2022-03-18 01:33:56,913 DEBUG client_transport.py Connection established.
+2022-03-18 01:33:56,913 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 01:33:56,926 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 01:33:56,926 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647556436.926778, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 01:33:57,434 DEBUG client_transport.py Server response = {'response': 511, 'bin': '0a60ddf53ac2aa36b1626d7f13ac2f7e85a1ecafd1ab39b01ef172d40ba166084692ff04845561fc534d966dab16efc68e20c4de478d13329c2daf53b2d9a31a'}.
+2022-03-18 01:33:57,435 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 01:33:57,435 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-18 01:33:57,960 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-18 01:33:57,960 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647556437.960438, 'user': 'TestSender1'}
+2022-03-18 01:33:58,461 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-18 01:33:58,461 DEBUG client.py Transport ready.
+2022-03-18 01:33:58,461 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-18 01:34:29,969 DEBUG client_transport.py Создание контакта TestSender1
+2022-03-18 01:34:30,172 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 01:34:30,181 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x1270c1670>
+2022-03-18 01:34:34,280 DEBUG client_transport.py Запрос публичного ключа для TestSender1
+2022-03-18 01:34:34,702 DEBUG main_window.py Загружен открытый ключ для TestSender1
+2022-03-18 01:34:38,061 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647556478.061405, 'mess_text': 'Xq3xAPg2LDAESsjUPiUDeZOWpR7Okg9xPfA7mLVPd9wJcoYvKm6ttB4xv29AncxvouJz9tjuBbDKS5n9S2EsfE9eGU2s2VVGON99OYAf3A2QpZqzghow39/Z89zjQsU/18og2A2JnMSj8YBlXn7ySFlj9mIvbB/N9BkMg+OtMQm/dBAg1hAqJBxxaaKbOCRTfzvy9AETNWNi2Bf/bUjsOA3CcctnrQ67e6TNh1R8yW9i2D6kDl+8zffLDYchtd/RutAT/7VJn2th/aTcHm+KCaxBSZ3IntwCwmnHTKqnwrxMGAwPp/RhxndaqBYnbJC+hKgkVCV8SEKtUD5iIZpv/A=='}
+2022-03-18 01:34:38,268 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647556478.061405, 'mess_text': 'Xq3xAPg2LDAESsjUPiUDeZOWpR7Okg9xPfA7mLVPd9wJcoYvKm6ttB4xv29AncxvouJz9tjuBbDKS5n9S2EsfE9eGU2s2VVGON99OYAf3A2QpZqzghow39/Z89zjQsU/18og2A2JnMSj8YBlXn7ySFlj9mIvbB/N9BkMg+OtMQm/dBAg1hAqJBxxaaKbOCRTfzvy9AETNWNi2Bf/bUjsOA3CcctnrQ67e6TNh1R8yW9i2D6kDl+8zffLDYchtd/RutAT/7VJn2th/aTcHm+KCaxBSZ3IntwCwmnHTKqnwrxMGAwPp/RhxndaqBYnbJC+hKgkVCV8SEKtUD5iIZpv/A=='}
+2022-03-18 01:34:38,269 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:Xq3xAPg2LDAESsjUPiUDeZOWpR7Okg9xPfA7mLVPd9wJcoYvKm6ttB4xv29AncxvouJz9tjuBbDKS5n9S2EsfE9eGU2s2VVGON99OYAf3A2QpZqzghow39/Z89zjQsU/18og2A2JnMSj8YBlXn7ySFlj9mIvbB/N9BkMg+OtMQm/dBAg1hAqJBxxaaKbOCRTfzvy9AETNWNi2Bf/bUjsOA3CcctnrQ67e6TNh1R8yW9i2D6kDl+8zffLDYchtd/RutAT/7VJn2th/aTcHm+KCaxBSZ3IntwCwmnHTKqnwrxMGAwPp/RhxndaqBYnbJC+hKgkVCV8SEKtUD5iIZpv/A==
+2022-03-18 01:34:38,285 INFO client_transport.py Отправлено сообщение для пользователя TestSender1
+2022-03-18 01:34:38,287 DEBUG main_window.py Отправлено сообщение для TestSender1: wdwdwq
+2022-03-18 01:34:38,638 DEBUG client_transport.py Принято сообщение с сервера: {'response': 200}
+2022-03-18 01:34:38,638 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 01:34:44,695 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647556484.695488, 'mess_text': 'GSkQm9DGEg5ViiYvr1x7o4AoVoHIzpVbU12Q+Pe8rcAyypcwKG376E+f/qL+lune0e1vfxAO8D0cA3sCSgRn9FclemO5AndmfKN5hE0hhFt/F134gtQ92a+5IDTlWrUlcNZKr9frfYoZWhoeowDriGwbsXIMgwjO2nvi8+NxHxTwTzTFPS6ag6gmRIMas+Oitvx12SS6e7f9sqhd2PwuR4dipflLy/Ajl1U8T0IHHUlYj6nzrKxODJb2nmnMSKmH1l59AelqRVa/v0cVKsE9cb/I6k9HQJn4e/EC9Y6O7Te60LgmLkwbJoHLvjfO7JCaMg1MA5LmQM5RnLKGbmqa/Q=='}
+2022-03-18 01:34:44,817 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647556484.695488, 'mess_text': 'GSkQm9DGEg5ViiYvr1x7o4AoVoHIzpVbU12Q+Pe8rcAyypcwKG376E+f/qL+lune0e1vfxAO8D0cA3sCSgRn9FclemO5AndmfKN5hE0hhFt/F134gtQ92a+5IDTlWrUlcNZKr9frfYoZWhoeowDriGwbsXIMgwjO2nvi8+NxHxTwTzTFPS6ag6gmRIMas+Oitvx12SS6e7f9sqhd2PwuR4dipflLy/Ajl1U8T0IHHUlYj6nzrKxODJb2nmnMSKmH1l59AelqRVa/v0cVKsE9cb/I6k9HQJn4e/EC9Y6O7Te60LgmLkwbJoHLvjfO7JCaMg1MA5LmQM5RnLKGbmqa/Q=='}
+2022-03-18 01:34:44,818 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:GSkQm9DGEg5ViiYvr1x7o4AoVoHIzpVbU12Q+Pe8rcAyypcwKG376E+f/qL+lune0e1vfxAO8D0cA3sCSgRn9FclemO5AndmfKN5hE0hhFt/F134gtQ92a+5IDTlWrUlcNZKr9frfYoZWhoeowDriGwbsXIMgwjO2nvi8+NxHxTwTzTFPS6ag6gmRIMas+Oitvx12SS6e7f9sqhd2PwuR4dipflLy/Ajl1U8T0IHHUlYj6nzrKxODJb2nmnMSKmH1l59AelqRVa/v0cVKsE9cb/I6k9HQJn4e/EC9Y6O7Te60LgmLkwbJoHLvjfO7JCaMg1MA5LmQM5RnLKGbmqa/Q==
+2022-03-18 01:34:44,835 INFO client_transport.py Отправлено сообщение для пользователя TestSender1
+2022-03-18 01:34:44,837 DEBUG main_window.py Отправлено сообщение для TestSender1: dsfsdfsdfsd
+2022-03-18 01:34:45,660 DEBUG client_transport.py Принято сообщение с сервера: {'response': 200}
+2022-03-18 01:34:45,661 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 01:34:50,680 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-18 01:34:51,183 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-18 01:47:58,895 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 01:47:59,645 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 01:47:59,727 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 01:47:59,753 INFO client_transport.py Попытка подключения №1
+2022-03-18 01:48:05,755 INFO client_transport.py Попытка подключения №2
+2022-03-18 01:48:06,757 INFO client_transport.py Попытка подключения №3
+2022-03-18 01:48:07,758 INFO client_transport.py Попытка подключения №4
+2022-03-18 01:48:08,759 INFO client_transport.py Попытка подключения №5
+2022-03-18 01:48:09,761 CRITICAL client_transport.py Не удалось установить соединение с сервером
+2022-03-18 02:03:14,437 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 02:03:15,298 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 02:03:15,378 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 02:03:15,414 INFO client_transport.py Попытка подключения №1
+2022-03-18 02:03:15,414 DEBUG client_transport.py Connection established.
+2022-03-18 02:03:15,414 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 02:03:15,427 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 02:03:15,428 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647558195.428642, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 02:03:15,931 DEBUG client_transport.py Server response = {'response': 511, 'bin': 'b1f1bfad1e30e36ae850131f8f9ff252fe201c161bc5d9873db60e6eede1db12f1796e0e1c261656dfc9e53b6643b6a69dd5beb3cc9dc1d6b184f6d139f06fc2'}.
+2022-03-18 02:03:15,931 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 02:03:15,932 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-18 02:03:16,461 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-18 02:03:16,461 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647558196.46172, 'user': 'TestSender1'}
+2022-03-18 02:03:16,959 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender1']}
+2022-03-18 02:03:16,975 DEBUG client.py Transport ready.
+2022-03-18 02:03:16,976 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-18 02:03:22,108 DEBUG client_transport.py Запрос публичного ключа для TestSender1
+2022-03-18 02:03:22,493 DEBUG main_window.py Загружен открытый ключ для TestSender1
+2022-03-18 02:03:25,545 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647558205.545068, 'mess_text': 'cn0XUdnHC9J+TS5+botq4oNFSYKbhMmzCJtVKXzCOn+2zJA+GuprkXkVPHS751vKRYXbr8jI2APOUvwtziYhVLHDj1VElw6V3+zZtqtKjW016guZWipJSxDU5DXFlLtF21wwa97+u578iYzzCO3cRoMiOvhxvMH0J2+by4w+91YyOyUwtVf6GZSX1XaPlwgeYkWx9AZK1P0YExMIqs7vuWZw+cIMLzMku9lYNeEbEYQwT+aVd23GShsricb6LPoMvHl3IWURzoMJs+bPPzavUyTW24/mq7nls6b2RiluXakVEF04JXrxQVDQ6murLGoU5Hs+F2Wel2N2AVkCuBOxMg=='}
+2022-03-18 02:03:26,527 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647558205.545068, 'mess_text': 'cn0XUdnHC9J+TS5+botq4oNFSYKbhMmzCJtVKXzCOn+2zJA+GuprkXkVPHS751vKRYXbr8jI2APOUvwtziYhVLHDj1VElw6V3+zZtqtKjW016guZWipJSxDU5DXFlLtF21wwa97+u578iYzzCO3cRoMiOvhxvMH0J2+by4w+91YyOyUwtVf6GZSX1XaPlwgeYkWx9AZK1P0YExMIqs7vuWZw+cIMLzMku9lYNeEbEYQwT+aVd23GShsricb6LPoMvHl3IWURzoMJs+bPPzavUyTW24/mq7nls6b2RiluXakVEF04JXrxQVDQ6murLGoU5Hs+F2Wel2N2AVkCuBOxMg=='}
+2022-03-18 02:03:26,528 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:cn0XUdnHC9J+TS5+botq4oNFSYKbhMmzCJtVKXzCOn+2zJA+GuprkXkVPHS751vKRYXbr8jI2APOUvwtziYhVLHDj1VElw6V3+zZtqtKjW016guZWipJSxDU5DXFlLtF21wwa97+u578iYzzCO3cRoMiOvhxvMH0J2+by4w+91YyOyUwtVf6GZSX1XaPlwgeYkWx9AZK1P0YExMIqs7vuWZw+cIMLzMku9lYNeEbEYQwT+aVd23GShsricb6LPoMvHl3IWURzoMJs+bPPzavUyTW24/mq7nls6b2RiluXakVEF04JXrxQVDQ6murLGoU5Hs+F2Wel2N2AVkCuBOxMg==
+2022-03-18 02:03:26,544 INFO client_transport.py Отправлено сообщение для пользователя TestSender1
+2022-03-18 02:03:26,546 DEBUG main_window.py Отправлено сообщение для TestSender1: juyilk,mfg
+2022-03-18 02:03:27,043 DEBUG client_transport.py Принято сообщение с сервера: {'response': 200}
+2022-03-18 02:03:27,043 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 02:03:40,759 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-18 02:03:41,610 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-18 02:05:28,387 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 02:05:29,282 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 02:05:29,379 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 02:05:29,411 INFO client_transport.py Попытка подключения №1
+2022-03-18 02:05:29,411 DEBUG client_transport.py Connection established.
+2022-03-18 02:05:29,412 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 02:05:29,426 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 02:05:29,427 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647558329.4272158, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 02:05:29,926 DEBUG client_transport.py Server response = {'response': 511, 'bin': '36d0e5617cd74279d1c49582a83791f2f6547b79bd944b99c74159b988a1bc24631cb27ae6a09d8cd21cf664128d383dbbd79bc941d3888598b3a5dd70fb5728'}.
+2022-03-18 02:05:29,927 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 02:05:29,927 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-18 02:05:30,463 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-18 02:05:30,463 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647558330.463711, 'user': 'TestSender1'}
+2022-03-18 02:05:30,958 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender1']}
+2022-03-18 02:05:30,967 DEBUG client.py Transport ready.
+2022-03-18 02:05:30,967 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-18 02:10:07,091 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 02:10:07,809 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 02:10:07,896 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 02:10:07,928 INFO client_transport.py Попытка подключения №1
+2022-03-18 02:10:07,928 DEBUG client_transport.py Connection established.
+2022-03-18 02:10:07,928 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 02:10:07,939 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 02:10:07,940 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647558607.9407082, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 02:10:08,440 DEBUG client_transport.py Server response = {'response': 511, 'bin': 'f7d8e3b3b798cf4e7641e7be5bbade13b98d344c6bb15569cb9fc951d384074378d9a65a4c5e1d143e02831873560c0599d01062ae65bba66b06fdd9c22ffe13'}.
+2022-03-18 02:10:08,440 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 02:10:08,440 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-18 02:10:08,973 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-18 02:10:08,973 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647558608.973949, 'user': 'TestSender1'}
+2022-03-18 02:10:09,480 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender1']}
+2022-03-18 02:10:09,502 DEBUG client.py Transport ready.
+2022-03-18 02:10:09,516 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-18 02:10:58,636 DEBUG client_transport.py Запрос публичного ключа для TestSender1
+2022-03-18 02:10:58,741 DEBUG main_window.py Загружен открытый ключ для TestSender1
+2022-03-18 02:11:01,814 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647558661.814739, 'mess_text': 'AXQKgy+n1obsG7xtV73WSgooBfWcSbypv0Y5yGwWiGAE9757byd/Zy4jDsKgjZqN0knguVQ78JBQKaAZ3Qym1x6CaFVkOKvAr333xpS6uubqxyilN8zji5WvzQmmcI16MdU7qPEu74g/5YjHcmHFHBzueuLdlMauKslfcPAqxvnd1HiszGctXhBd5EIGrAknJOHX5TOAUyiW+iJWQLYguk9DnS9x5+25+CHNsKNUfpeD+d3V2iX58n8oa8j8NjOtCBRmJK9qFavRFz8KZGx0xMztH/Bpt84QdZAw9CB7F2t5CxJPKwGr8JjVjr9rW8SS7T4zsmnDcswJdyGzxta1ww=='}
+2022-03-18 02:11:02,296 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647558661.814739, 'mess_text': 'AXQKgy+n1obsG7xtV73WSgooBfWcSbypv0Y5yGwWiGAE9757byd/Zy4jDsKgjZqN0knguVQ78JBQKaAZ3Qym1x6CaFVkOKvAr333xpS6uubqxyilN8zji5WvzQmmcI16MdU7qPEu74g/5YjHcmHFHBzueuLdlMauKslfcPAqxvnd1HiszGctXhBd5EIGrAknJOHX5TOAUyiW+iJWQLYguk9DnS9x5+25+CHNsKNUfpeD+d3V2iX58n8oa8j8NjOtCBRmJK9qFavRFz8KZGx0xMztH/Bpt84QdZAw9CB7F2t5CxJPKwGr8JjVjr9rW8SS7T4zsmnDcswJdyGzxta1ww=='}
+2022-03-18 02:11:02,296 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:AXQKgy+n1obsG7xtV73WSgooBfWcSbypv0Y5yGwWiGAE9757byd/Zy4jDsKgjZqN0knguVQ78JBQKaAZ3Qym1x6CaFVkOKvAr333xpS6uubqxyilN8zji5WvzQmmcI16MdU7qPEu74g/5YjHcmHFHBzueuLdlMauKslfcPAqxvnd1HiszGctXhBd5EIGrAknJOHX5TOAUyiW+iJWQLYguk9DnS9x5+25+CHNsKNUfpeD+d3V2iX58n8oa8j8NjOtCBRmJK9qFavRFz8KZGx0xMztH/Bpt84QdZAw9CB7F2t5CxJPKwGr8JjVjr9rW8SS7T4zsmnDcswJdyGzxta1ww==
+2022-03-18 02:18:50,542 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 02:18:51,476 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 02:18:51,563 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 02:18:51,593 INFO client_transport.py Попытка подключения №1
+2022-03-18 02:18:51,593 DEBUG client_transport.py Connection established.
+2022-03-18 02:18:51,593 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 02:18:51,604 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 02:18:51,605 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647559131.605314, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 02:18:56,606 DEBUG client_transport.py Connection error.
+Traceback (most recent call last):
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/Client/client_transport.py", line 115, in connection_init
+    ans = get_message(self.transport)
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/common/utils.py", line 19, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-18 02:20:23,121 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 02:20:23,874 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 02:20:23,963 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 02:20:23,992 INFO client_transport.py Попытка подключения №1
+2022-03-18 02:20:23,992 DEBUG client_transport.py Connection established.
+2022-03-18 02:20:23,992 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 02:20:24,002 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 02:20:24,003 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647559224.003396, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 02:20:29,004 DEBUG client_transport.py Connection error.
+Traceback (most recent call last):
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/Client/client_transport.py", line 114, in connection_init
+    ans = get_message(self.transport)
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/common/utils.py", line 19, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-18 02:20:53,468 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 02:20:54,219 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 02:20:54,290 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 02:20:54,320 INFO client_transport.py Попытка подключения №1
+2022-03-18 02:20:54,321 DEBUG client_transport.py Connection established.
+2022-03-18 02:20:54,321 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 02:20:54,335 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 02:20:54,336 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647559254.3361988, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 02:20:59,337 DEBUG client_transport.py Connection error.
+Traceback (most recent call last):
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/Client/client_transport.py", line 115, in connection_init
+    ans = get_message(self.transport)
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/common/utils.py", line 19, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-18 22:48:19,351 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 22:48:20,026 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 22:48:20,110 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 22:48:20,144 INFO client_transport.py Попытка подключения №1
+2022-03-18 22:48:20,145 DEBUG client_transport.py Connection established.
+2022-03-18 22:48:20,145 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 22:48:20,158 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 22:48:20,159 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647632900.159328, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 22:48:20,662 DEBUG client_transport.py Server response = {'response': 511, 'bin': '071b3e72e8bf1dcde20a9be5fdf2b54141625782b7307e75e28805c6dd2690832455cc466bfe4124257f2ff88611b8c5252a694ce6f8b4c613f44f1dfb346cce'}.
+2022-03-18 22:48:20,662 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 22:48:20,662 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-18 22:48:21,196 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1, TestSender1
+2022-03-18 22:48:21,196 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647632901.196688, 'user': 'TestSender1'}
+2022-03-18 22:48:21,689 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender1']}
+2022-03-18 22:48:21,700 DEBUG client.py Transport ready.
+2022-03-18 22:48:21,700 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-18 22:48:28,989 DEBUG client_transport.py Запрос публичного ключа для TestSender1
+2022-03-18 22:48:29,740 DEBUG main_window.py Загружен открытый ключ для TestSender1
+2022-03-18 22:48:33,385 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647632913.3857548, 'mess_text': 'WqrNTmAQineiX8wIP9iQUPwr30CV+CIscsYDbrcQh8OUzRaBKpYMZG6KXr875yXWeSpoQ1CdZWIPFHjDv1UHABd68VyJxOpnrI5xV3OPlo++SnBm2dtkwMQwuUhlbRwRZwqAXszRIF5yQlaOJKYLqrtvWo0iSo+w/sBl3fNpQAipqjXFa3n1UDOj8VOCSs+99hOyJRfhJZMwszmSmcu2ZYjsE9Co5Eyeo5p/+3AytjLouAlshPlCJREvLvFZ18rcSWs/ODCjiyuQ3mypET5Z/nAMrmawBcldeukrIZQhjTmix9pm9zolJbtEfT4xZCvjZkHg+wJGByn3Sc+NLgLWnw=='}
+2022-03-18 22:48:34,287 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647632913.3857548, 'mess_text': 'WqrNTmAQineiX8wIP9iQUPwr30CV+CIscsYDbrcQh8OUzRaBKpYMZG6KXr875yXWeSpoQ1CdZWIPFHjDv1UHABd68VyJxOpnrI5xV3OPlo++SnBm2dtkwMQwuUhlbRwRZwqAXszRIF5yQlaOJKYLqrtvWo0iSo+w/sBl3fNpQAipqjXFa3n1UDOj8VOCSs+99hOyJRfhJZMwszmSmcu2ZYjsE9Co5Eyeo5p/+3AytjLouAlshPlCJREvLvFZ18rcSWs/ODCjiyuQ3mypET5Z/nAMrmawBcldeukrIZQhjTmix9pm9zolJbtEfT4xZCvjZkHg+wJGByn3Sc+NLgLWnw=='}
+2022-03-18 22:48:34,287 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:WqrNTmAQineiX8wIP9iQUPwr30CV+CIscsYDbrcQh8OUzRaBKpYMZG6KXr875yXWeSpoQ1CdZWIPFHjDv1UHABd68VyJxOpnrI5xV3OPlo++SnBm2dtkwMQwuUhlbRwRZwqAXszRIF5yQlaOJKYLqrtvWo0iSo+w/sBl3fNpQAipqjXFa3n1UDOj8VOCSs+99hOyJRfhJZMwszmSmcu2ZYjsE9Co5Eyeo5p/+3AytjLouAlshPlCJREvLvFZ18rcSWs/ODCjiyuQ3mypET5Z/nAMrmawBcldeukrIZQhjTmix9pm9zolJbtEfT4xZCvjZkHg+wJGByn3Sc+NLgLWnw==
+2022-03-18 22:49:09,540 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 22:49:10,213 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 22:49:10,301 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 22:49:10,329 INFO client_transport.py Попытка подключения №1
+2022-03-18 22:49:10,329 DEBUG client_transport.py Connection established.
+2022-03-18 22:49:10,330 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 22:49:10,340 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 22:49:10,340 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647632950.340884, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 22:49:15,342 DEBUG client_transport.py Connection error.
+Traceback (most recent call last):
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/Client/client_transport.py", line 115, in connection_init
+    ans = get_message(self.transport)
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/common/utils.py", line 19, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-18 22:49:47,208 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2', '-pass', 'TestSender2'] функции client_password).
+2022-03-18 22:49:47,867 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender2
+2022-03-18 22:49:50,021 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 22:49:50,051 INFO client_transport.py Попытка подключения №1
+2022-03-18 22:49:50,051 DEBUG client_transport.py Connection established.
+2022-03-18 22:49:50,051 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 22:49:50,061 DEBUG client_transport.py Passwd hash ready: b'06fcdffddec7e78359e545fd7ddea8503f24aae5109c6f456a2b9a056daa55ac107a66296d3d019f57fde19f655c0a1db4b2782b5f2085d43b2068a40376ccf8'
+2022-03-18 22:49:50,062 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647632990.062412, 'user': {'account_name': 'TestSender2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5gCYYMZBJOBGTby39FrQ\nJWoMLt2d97+Qp9goqQutPQE/kKZWjJYvfAVYcn6SQm2FA1KVR4jo8toQy27q8tee\nh0Srur4sSjtMUv6TMqeSRETlo7LFcVgl0S/RVHHEXAqs2gmFbAGOQRl2UKqksedV\no/o/88mZMNQh+q/Pf9jGgZrid9OI40Un20adJ+fowht35uY+Nthfunz97VoWGqsN\nDsHN21frUJ7LDwvea1i2+clm1TNj03ZkfFDE+BWA/wDmqfkj5EiVroUTYfFehdw/\nuNXxP2BzCNNuVkxm/DO88YMn17ukUDq6KI4tGwXeUARH1DtyuXqcg5ZzGo/fFYep\nxQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 22:49:55,063 DEBUG client_transport.py Connection error.
+Traceback (most recent call last):
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/Client/client_transport.py", line 115, in connection_init
+    ans = get_message(self.transport)
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/common/utils.py", line 19, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+socket.timeout: timed out
+2022-03-18 22:50:27,357 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2', '-pass', 'TestSender2'] функции client_password).
+2022-03-18 22:50:28,046 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender2
+2022-03-18 22:50:28,114 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 22:50:28,146 INFO client_transport.py Попытка подключения №1
+2022-03-18 22:50:28,146 DEBUG client_transport.py Connection established.
+2022-03-18 22:50:28,146 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 22:50:28,158 DEBUG client_transport.py Passwd hash ready: b'06fcdffddec7e78359e545fd7ddea8503f24aae5109c6f456a2b9a056daa55ac107a66296d3d019f57fde19f655c0a1db4b2782b5f2085d43b2068a40376ccf8'
+2022-03-18 22:50:28,159 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647633028.159625, 'user': {'account_name': 'TestSender2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5gCYYMZBJOBGTby39FrQ\nJWoMLt2d97+Qp9goqQutPQE/kKZWjJYvfAVYcn6SQm2FA1KVR4jo8toQy27q8tee\nh0Srur4sSjtMUv6TMqeSRETlo7LFcVgl0S/RVHHEXAqs2gmFbAGOQRl2UKqksedV\no/o/88mZMNQh+q/Pf9jGgZrid9OI40Un20adJ+fowht35uY+Nthfunz97VoWGqsN\nDsHN21frUJ7LDwvea1i2+clm1TNj03ZkfFDE+BWA/wDmqfkj5EiVroUTYfFehdw/\nuNXxP2BzCNNuVkxm/DO88YMn17ukUDq6KI4tGwXeUARH1DtyuXqcg5ZzGo/fFYep\nxQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 22:50:28,662 DEBUG client_transport.py Server response = {'response': 511, 'bin': '9ab89b635100d89989139a2d1130800271c3453d0da95edcdf93bce985099cd84082b250aade6e49bf1438b934dbb11a8f2d87bc54e7702c3fe560afb37007f4'}.
+2022-03-18 22:50:28,663 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 22:50:28,663 DEBUG client_transport.py Запрос списка известных пользователей TestSender2
+2022-03-18 22:50:29,202 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1, TestSender2
+2022-03-18 22:50:29,202 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647633029.202382, 'user': 'TestSender2'}
+2022-03-18 22:50:29,694 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-18 22:50:29,694 DEBUG client.py Transport ready.
+2022-03-18 22:50:29,694 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-18 22:50:35,089 DEBUG client_transport.py Создание контакта TestSender2
+2022-03-18 22:50:35,234 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 22:50:35,242 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x1285bc790>
+2022-03-18 22:50:39,027 DEBUG client_transport.py Запрос публичного ключа для TestSender2
+2022-03-18 22:50:39,279 DEBUG main_window.py Загружен открытый ключ для TestSender2
+2022-03-18 22:50:42,044 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender2', 'time': 1647633042.0445929, 'mess_text': 'cAxMVHkoD66umYtwkNMae5BPyV9BLt6FgK+1UHolcaW+PrXAvCo52qCZdiOe5DG5oMiCeppaNQyU950MOzWFGIPiTPJJ4H3iomCWJlpP4K5jh9DcYaJePgtb23sAPHqYzjQALZawgXqJYCLP/a2Dk9z3EySGUBP0cIijfqGOI2CuqwClYy4xSZyKrONClTVezqzvsV8sUjxLMfqV7UezHvtMYIQ8OXTKpCfl2RFP/LwWrzJq0wC2ROuO44m6s9qlI5sL8bU4ZM/HLKoRE9ZytMfFdKM2SrULmp5yxB+KLs/6RUx4OHKSw2PKRWrwJFCgqu5z6uC1TE7Xa00pRr+YXg=='}
+2022-03-18 22:50:42,322 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender2', 'time': 1647633042.0445929, 'mess_text': 'cAxMVHkoD66umYtwkNMae5BPyV9BLt6FgK+1UHolcaW+PrXAvCo52qCZdiOe5DG5oMiCeppaNQyU950MOzWFGIPiTPJJ4H3iomCWJlpP4K5jh9DcYaJePgtb23sAPHqYzjQALZawgXqJYCLP/a2Dk9z3EySGUBP0cIijfqGOI2CuqwClYy4xSZyKrONClTVezqzvsV8sUjxLMfqV7UezHvtMYIQ8OXTKpCfl2RFP/LwWrzJq0wC2ROuO44m6s9qlI5sL8bU4ZM/HLKoRE9ZytMfFdKM2SrULmp5yxB+KLs/6RUx4OHKSw2PKRWrwJFCgqu5z6uC1TE7Xa00pRr+YXg=='}
+2022-03-18 22:50:42,322 DEBUG client_transport.py Получено сообщение от пользователя TestSender2:cAxMVHkoD66umYtwkNMae5BPyV9BLt6FgK+1UHolcaW+PrXAvCo52qCZdiOe5DG5oMiCeppaNQyU950MOzWFGIPiTPJJ4H3iomCWJlpP4K5jh9DcYaJePgtb23sAPHqYzjQALZawgXqJYCLP/a2Dk9z3EySGUBP0cIijfqGOI2CuqwClYy4xSZyKrONClTVezqzvsV8sUjxLMfqV7UezHvtMYIQ8OXTKpCfl2RFP/LwWrzJq0wC2ROuO44m6s9qlI5sL8bU4ZM/HLKoRE9ZytMfFdKM2SrULmp5yxB+KLs/6RUx4OHKSw2PKRWrwJFCgqu5z6uC1TE7Xa00pRr+YXg==
+2022-03-18 22:54:19,165 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1', '-pass', 'TestSender1'] функции client_password).
+2022-03-18 22:54:19,829 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender1
+2022-03-18 22:54:19,915 DEBUG client.py Keys sucsessfully loaded.
+2022-03-18 22:54:19,938 INFO client_transport.py Попытка подключения №1
+2022-03-18 22:54:19,939 DEBUG client_transport.py Connection established.
+2022-03-18 22:54:19,939 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 22:54:19,950 DEBUG client_transport.py Passwd hash ready: b'c6c2b95b1b7877e6a1f921d991a99f680bb6e6b983e505d9a3c38e49c6ef993d79fac38f5b2ae05e691817c9c8974ee224ec83016188d4eab8fc415b7f02e81e'
+2022-03-18 22:54:19,950 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647633259.950837, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 22:54:20,450 DEBUG client_transport.py Server response = {'response': 511, 'bin': 'a57661ea674eb23f0abefe79766679eea42e39bd6f8c9967b5de67600c6e0055c244baa6c1589eba09fd84d61fa158b447989965c541a5336d36af6aee313465'}.
+2022-03-18 22:54:20,450 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 22:54:20,450 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-18 22:54:20,984 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1, TestSender1
+2022-03-18 22:54:20,984 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647633260.984833, 'user': 'TestSender1'}
+2022-03-18 22:54:21,476 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender1']}
+2022-03-18 22:54:21,494 DEBUG client.py Transport ready.
+2022-03-18 22:54:21,494 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-18 22:54:23,625 DEBUG client_transport.py Запрос публичного ключа для TestSender1
+2022-03-18 22:54:23,992 DEBUG main_window.py Загружен открытый ключ для TestSender1
+2022-03-18 22:54:27,156 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647633267.156696, 'mess_text': 'BcPkvnH1f32+MEo0lfnQXEXKvkdWRY4wyN29kgHHrOtsCOCmHWevzmDrVbEMX0d+mFee2vYlFPrAfoSOkNgz6YS6b8hD6g01ELMmAorvv63ZkTDptZpx8hPx40LG+AGGjI/nRuIrTRU8U1cXhwcgnkWfXpIoINdNm3aZ5xSM6DeOudbaWWN5qbBoLTKQjDYRVqOkUfWS2vGWaXhPvIETuwA1At+C8PfLdxhTS+b4Qk7RJeX/M/2T22gqckcc/ck46/J2bbj7b2oMCsVbp4x8Sgki4KY987Ww65s6KBzuaib9YvLK5Xl16otT4u9O+imA/IgVRPT+Yebh1fmibNialw=='}
+2022-03-18 22:54:28,030 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647633267.156696, 'mess_text': 'BcPkvnH1f32+MEo0lfnQXEXKvkdWRY4wyN29kgHHrOtsCOCmHWevzmDrVbEMX0d+mFee2vYlFPrAfoSOkNgz6YS6b8hD6g01ELMmAorvv63ZkTDptZpx8hPx40LG+AGGjI/nRuIrTRU8U1cXhwcgnkWfXpIoINdNm3aZ5xSM6DeOudbaWWN5qbBoLTKQjDYRVqOkUfWS2vGWaXhPvIETuwA1At+C8PfLdxhTS+b4Qk7RJeX/M/2T22gqckcc/ck46/J2bbj7b2oMCsVbp4x8Sgki4KY987Ww65s6KBzuaib9YvLK5Xl16otT4u9O+imA/IgVRPT+Yebh1fmibNialw=='}
+2022-03-18 22:54:28,031 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:BcPkvnH1f32+MEo0lfnQXEXKvkdWRY4wyN29kgHHrOtsCOCmHWevzmDrVbEMX0d+mFee2vYlFPrAfoSOkNgz6YS6b8hD6g01ELMmAorvv63ZkTDptZpx8hPx40LG+AGGjI/nRuIrTRU8U1cXhwcgnkWfXpIoINdNm3aZ5xSM6DeOudbaWWN5qbBoLTKQjDYRVqOkUfWS2vGWaXhPvIETuwA1At+C8PfLdxhTS+b4Qk7RJeX/M/2T22gqckcc/ck46/J2bbj7b2oMCsVbp4x8Sgki4KY987Ww65s6KBzuaib9YvLK5Xl16otT4u9O+imA/IgVRPT+Yebh1fmibNialw==
+2022-03-18 22:54:28,052 INFO client_transport.py Отправлено сообщение для пользователя TestSender1
+2022-03-18 22:54:28,055 DEBUG main_window.py Отправлено сообщение для TestSender1: zvasdvav
+2022-03-18 22:54:28,536 DEBUG client_transport.py Принято сообщение с сервера: {'response': 200}
+2022-03-18 22:54:28,536 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 22:54:33,937 DEBUG client_transport.py Создание контакта TestSender2
+2022-03-18 22:54:34,083 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 22:54:34,087 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x124247d30>
+2022-03-18 23:00:56,214 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/client2.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2', '-pass', 'TestSender2'] функции client_password).
+2022-03-18 23:00:56,928 INFO client2.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888, пользователь TestSender2
+2022-03-18 23:00:57,007 DEBUG client2.py Keys sucsessfully loaded.
+2022-03-18 23:00:57,043 INFO client_transport.py Попытка подключения №1
+2022-03-18 23:00:57,043 DEBUG client_transport.py Connection established.
+2022-03-18 23:00:57,043 DEBUG client_transport.py Starting auth dialog.
+2022-03-18 23:00:57,054 DEBUG client_transport.py Passwd hash ready: b'06fcdffddec7e78359e545fd7ddea8503f24aae5109c6f456a2b9a056daa55ac107a66296d3d019f57fde19f655c0a1db4b2782b5f2085d43b2068a40376ccf8'
+2022-03-18 23:00:57,055 DEBUG client_transport.py Presense message = {'action': 'presence', 'time': 1647633657.055153, 'user': {'account_name': 'TestSender2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5gCYYMZBJOBGTby39FrQ\nJWoMLt2d97+Qp9goqQutPQE/kKZWjJYvfAVYcn6SQm2FA1KVR4jo8toQy27q8tee\nh0Srur4sSjtMUv6TMqeSRETlo7LFcVgl0S/RVHHEXAqs2gmFbAGOQRl2UKqksedV\no/o/88mZMNQh+q/Pf9jGgZrid9OI40Un20adJ+fowht35uY+Nthfunz97VoWGqsN\nDsHN21frUJ7LDwvea1i2+clm1TNj03ZkfFDE+BWA/wDmqfkj5EiVroUTYfFehdw/\nuNXxP2BzCNNuVkxm/DO88YMn17ukUDq6KI4tGwXeUARH1DtyuXqcg5ZzGo/fFYep\nxQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 23:00:57,554 DEBUG client_transport.py Server response = {'response': 511, 'bin': '658897cfe03eef992f1f0ca1dd70ee3448fdbe808f791b7bd1816a5b39711e9f8cc99f8abc5aef7333af33ce3fddcbda80a9f8d11a33feda3560bf5a6411aa74'}.
+2022-03-18 23:00:57,554 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:00:57,555 DEBUG client_transport.py Запрос списка известных пользователей TestSender2
+2022-03-18 23:00:58,090 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1, TestSender2
+2022-03-18 23:00:58,090 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647633658.090948, 'user': 'TestSender2'}
+2022-03-18 23:00:58,581 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender2']}
+2022-03-18 23:00:58,599 DEBUG client2.py Transport ready.
+2022-03-18 23:00:58,600 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-18 23:01:01,710 DEBUG client_transport.py Запрос публичного ключа для TestSender2
+2022-03-18 23:01:02,112 DEBUG main_window.py Загружен открытый ключ для TestSender2
+2022-03-18 23:01:04,679 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender2', 'time': 1647633664.679816, 'mess_text': 'EaIvkq9gewvw5kG0iDejDDosLexvuvOLm6ztXZKjzQxYfZFWRXkJS7yl4X9pGbMtzTSK+3NCx49FTcugaK/1VQmlWlMvbi6kN+T4oV/a+lN7TZYsy6VinWWD6w5ErBvDUg1W5r8+aIBVPFDUGGxLB049paSKsmbsaWtxJmeE5n2m6zogXPDoJTzafvjNiV3A188Cf3PqOnoNb0mN8+sw5AsGYj5AdcTjrOlsYclL4HC7HjDkih0KPEGzWjdgwSuIW74NtxEG+x2TraWUHi9IlUl+xEXNxBP1P3nGrWfLWAAQh0lB4l8pfN2yj52FRzlUxOCmGmBBGFGW6UDOHJTlaQ=='}
+2022-03-18 23:01:05,131 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender2', 'time': 1647633664.679816, 'mess_text': 'EaIvkq9gewvw5kG0iDejDDosLexvuvOLm6ztXZKjzQxYfZFWRXkJS7yl4X9pGbMtzTSK+3NCx49FTcugaK/1VQmlWlMvbi6kN+T4oV/a+lN7TZYsy6VinWWD6w5ErBvDUg1W5r8+aIBVPFDUGGxLB049paSKsmbsaWtxJmeE5n2m6zogXPDoJTzafvjNiV3A188Cf3PqOnoNb0mN8+sw5AsGYj5AdcTjrOlsYclL4HC7HjDkih0KPEGzWjdgwSuIW74NtxEG+x2TraWUHi9IlUl+xEXNxBP1P3nGrWfLWAAQh0lB4l8pfN2yj52FRzlUxOCmGmBBGFGW6UDOHJTlaQ=='}
+2022-03-18 23:01:05,131 DEBUG client_transport.py Получено сообщение от пользователя TestSender2:EaIvkq9gewvw5kG0iDejDDosLexvuvOLm6ztXZKjzQxYfZFWRXkJS7yl4X9pGbMtzTSK+3NCx49FTcugaK/1VQmlWlMvbi6kN+T4oV/a+lN7TZYsy6VinWWD6w5ErBvDUg1W5r8+aIBVPFDUGGxLB049paSKsmbsaWtxJmeE5n2m6zogXPDoJTzafvjNiV3A188Cf3PqOnoNb0mN8+sw5AsGYj5AdcTjrOlsYclL4HC7HjDkih0KPEGzWjdgwSuIW74NtxEG+x2TraWUHi9IlUl+xEXNxBP1P3nGrWfLWAAQh0lB4l8pfN2yj52FRzlUxOCmGmBBGFGW6UDOHJTlaQ==
+2022-03-18 23:01:05,147 INFO client_transport.py Отправлено сообщение для пользователя TestSender2
+2022-03-18 23:01:05,149 DEBUG main_window.py Отправлено сообщение для TestSender2: rhbrymjteyuj
+2022-03-18 23:01:05,641 DEBUG client_transport.py Принято сообщение с сервера: {'response': 200}
+2022-03-18 23:01:05,641 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:01:08,622 DEBUG client_transport.py Создание контакта TestSender1
+2022-03-18 23:01:09,173 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:01:09,178 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x124e80ca0>
+2022-03-18 23:01:11,211 DEBUG client_transport.py Запрос публичного ключа для TestSender1
+2022-03-18 23:01:11,681 DEBUG main_window.py Загружен открытый ключ для TestSender1
+2022-03-18 23:01:14,129 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender1', 'time': 1647633674.12918, 'mess_text': 'OpHXoJb0tpC68O6SbnBGba+Pk8hMLIog9HfqwrHsb1rswmwQT8C98Ussx2cud9oMDI0NtzkTFOn1R4db1sNOUR73sB4DCVbELsS4v0Lkxdcs0tI3MhK20mksKnI45a/1fCvtgDDcbu28ZeCK+HitjO0tHmOf+NRp2heMf2sJ3/ht9JUDa8+QxuiW8QdMR/8f4bBLL96r2PqN52rXGPpywdxdK4BhLcNkPX0DgUczPwPuWTTDyKe609eUh1vD/VTF+SDvtKz06QV97uDDKcjTvGXGMjVi/iiE8DBIBOxkoFti69OUlUVsQnu3mfp7ijmpjeRPZVqCenNGgVDndy/OLQ=='}
+2022-03-18 23:01:14,209 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:01:14,209 INFO client_transport.py Отправлено сообщение для пользователя TestSender1
+2022-03-18 23:01:14,209 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender1', 'time': 1647633674.12918, 'mess_text': 'OpHXoJb0tpC68O6SbnBGba+Pk8hMLIog9HfqwrHsb1rswmwQT8C98Ussx2cud9oMDI0NtzkTFOn1R4db1sNOUR73sB4DCVbELsS4v0Lkxdcs0tI3MhK20mksKnI45a/1fCvtgDDcbu28ZeCK+HitjO0tHmOf+NRp2heMf2sJ3/ht9JUDa8+QxuiW8QdMR/8f4bBLL96r2PqN52rXGPpywdxdK4BhLcNkPX0DgUczPwPuWTTDyKe609eUh1vD/VTF+SDvtKz06QV97uDDKcjTvGXGMjVi/iiE8DBIBOxkoFti69OUlUVsQnu3mfp7ijmpjeRPZVqCenNGgVDndy/OLQ=='}
+2022-03-18 23:01:14,211 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender1', 'time': 1647633674.12918, 'mess_text': 'OpHXoJb0tpC68O6SbnBGba+Pk8hMLIog9HfqwrHsb1rswmwQT8C98Ussx2cud9oMDI0NtzkTFOn1R4db1sNOUR73sB4DCVbELsS4v0Lkxdcs0tI3MhK20mksKnI45a/1fCvtgDDcbu28ZeCK+HitjO0tHmOf+NRp2heMf2sJ3/ht9JUDa8+QxuiW8QdMR/8f4bBLL96r2PqN52rXGPpywdxdK4BhLcNkPX0DgUczPwPuWTTDyKe609eUh1vD/VTF+SDvtKz06QV97uDDKcjTvGXGMjVi/iiE8DBIBOxkoFti69OUlUVsQnu3mfp7ijmpjeRPZVqCenNGgVDndy/OLQ=='}
+2022-03-18 23:01:14,211 DEBUG client_transport.py Получено сообщение от пользователя TestSender2:OpHXoJb0tpC68O6SbnBGba+Pk8hMLIog9HfqwrHsb1rswmwQT8C98Ussx2cud9oMDI0NtzkTFOn1R4db1sNOUR73sB4DCVbELsS4v0Lkxdcs0tI3MhK20mksKnI45a/1fCvtgDDcbu28ZeCK+HitjO0tHmOf+NRp2heMf2sJ3/ht9JUDa8+QxuiW8QdMR/8f4bBLL96r2PqN52rXGPpywdxdK4BhLcNkPX0DgUczPwPuWTTDyKe609eUh1vD/VTF+SDvtKz06QV97uDDKcjTvGXGMjVi/iiE8DBIBOxkoFti69OUlUVsQnu3mfp7ijmpjeRPZVqCenNGgVDndy/OLQ==
+2022-03-18 23:01:14,212 DEBUG main_window.py Отправлено сообщение для TestSender1: sdVGSfvrew
+2022-03-18 23:01:19,402 DEBUG client_transport.py Запрос публичного ключа для TestSender2
+2022-03-18 23:01:19,746 DEBUG main_window.py Загружен открытый ключ для TestSender2
+2022-03-18 23:01:24,890 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633684.8900092, 'mess_text': 'IhkQ0lMM3TYD+lHlht45HjzEz9QgpYiR9NGy8g3vXYJ+VBjk4T0whBiG8q596c5rQF0/v960oQXjVMQMXlt8fUYi9SKfkHMgGZlKbZOJ2jffimydUox12r3AqlcD1zc2k2GoqJvILD1LbI1hI3oZ05qqGAud3jKySnZJdxubYei19xxjr1lIYWadl+8mi8iRAWwu3rMtKRiUX3OFAXK/2nLUKvvdQIGyroDJtspRewtES2sJRQmmkY87nG6S/ml/hmDdDln48C1WbgLiy7sDRip70zF1ZixhxtnY4YjznRBMVosYPzo2yv3FiSo8Fau8Tf8UTKIov3QvfZ8J8uUBoA=='}
+2022-03-18 23:01:25,298 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:01:25,298 INFO client_transport.py Отправлено сообщение для пользователя TestSender2
+2022-03-18 23:01:25,301 DEBUG main_window.py Отправлено сообщение для TestSender2: xvbverabre
+2022-03-18 23:01:26,261 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633684.8900092, 'mess_text': 'IhkQ0lMM3TYD+lHlht45HjzEz9QgpYiR9NGy8g3vXYJ+VBjk4T0whBiG8q596c5rQF0/v960oQXjVMQMXlt8fUYi9SKfkHMgGZlKbZOJ2jffimydUox12r3AqlcD1zc2k2GoqJvILD1LbI1hI3oZ05qqGAud3jKySnZJdxubYei19xxjr1lIYWadl+8mi8iRAWwu3rMtKRiUX3OFAXK/2nLUKvvdQIGyroDJtspRewtES2sJRQmmkY87nG6S/ml/hmDdDln48C1WbgLiy7sDRip70zF1ZixhxtnY4YjznRBMVosYPzo2yv3FiSo8Fau8Tf8UTKIov3QvfZ8J8uUBoA=='}
+2022-03-18 23:01:26,262 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633684.8900092, 'mess_text': 'IhkQ0lMM3TYD+lHlht45HjzEz9QgpYiR9NGy8g3vXYJ+VBjk4T0whBiG8q596c5rQF0/v960oQXjVMQMXlt8fUYi9SKfkHMgGZlKbZOJ2jffimydUox12r3AqlcD1zc2k2GoqJvILD1LbI1hI3oZ05qqGAud3jKySnZJdxubYei19xxjr1lIYWadl+8mi8iRAWwu3rMtKRiUX3OFAXK/2nLUKvvdQIGyroDJtspRewtES2sJRQmmkY87nG6S/ml/hmDdDln48C1WbgLiy7sDRip70zF1ZixhxtnY4YjznRBMVosYPzo2yv3FiSo8Fau8Tf8UTKIov3QvfZ8J8uUBoA=='}
+2022-03-18 23:01:26,262 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:IhkQ0lMM3TYD+lHlht45HjzEz9QgpYiR9NGy8g3vXYJ+VBjk4T0whBiG8q596c5rQF0/v960oQXjVMQMXlt8fUYi9SKfkHMgGZlKbZOJ2jffimydUox12r3AqlcD1zc2k2GoqJvILD1LbI1hI3oZ05qqGAud3jKySnZJdxubYei19xxjr1lIYWadl+8mi8iRAWwu3rMtKRiUX3OFAXK/2nLUKvvdQIGyroDJtspRewtES2sJRQmmkY87nG6S/ml/hmDdDln48C1WbgLiy7sDRip70zF1ZixhxtnY4YjznRBMVosYPzo2yv3FiSo8Fau8Tf8UTKIov3QvfZ8J8uUBoA==
+2022-03-18 23:01:30,231 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633690.23121, 'mess_text': 'YdCNVHNS3dydu2G3rIIXk4ga+C3sw+7Uat514fRuo67GTBXq4zDTDH6knUgqMzH0dNsfu4XFr/kVepXlsXvJBzZWY83Tk0Dky8IgFKAFIotWlBTPF10xwCwd0VSxWUeYKceZNKLAD9eoBKCEIkVPWkEUVnuTmJFWHAs7xdXQj/37XCtWVmwBCdeZrbCUKiGVxiOVpJEL3QeGXNd/qHDA4oUmD06sWtMUG9C7sSlwvjds+HZhXGv8RKGFeFlynFOXhEILv1fx33nTkoSgbRf08j0gX5KOKxIhzaJnxHaUaVc6qONPz+Gnrzygldvjyvb2hpxlaJBXJtUoMzHX3bRTmw=='}
+2022-03-18 23:01:30,325 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633690.23121, 'mess_text': 'YdCNVHNS3dydu2G3rIIXk4ga+C3sw+7Uat514fRuo67GTBXq4zDTDH6knUgqMzH0dNsfu4XFr/kVepXlsXvJBzZWY83Tk0Dky8IgFKAFIotWlBTPF10xwCwd0VSxWUeYKceZNKLAD9eoBKCEIkVPWkEUVnuTmJFWHAs7xdXQj/37XCtWVmwBCdeZrbCUKiGVxiOVpJEL3QeGXNd/qHDA4oUmD06sWtMUG9C7sSlwvjds+HZhXGv8RKGFeFlynFOXhEILv1fx33nTkoSgbRf08j0gX5KOKxIhzaJnxHaUaVc6qONPz+Gnrzygldvjyvb2hpxlaJBXJtUoMzHX3bRTmw=='}
+2022-03-18 23:01:30,325 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:01:30,325 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633690.23121, 'mess_text': 'YdCNVHNS3dydu2G3rIIXk4ga+C3sw+7Uat514fRuo67GTBXq4zDTDH6knUgqMzH0dNsfu4XFr/kVepXlsXvJBzZWY83Tk0Dky8IgFKAFIotWlBTPF10xwCwd0VSxWUeYKceZNKLAD9eoBKCEIkVPWkEUVnuTmJFWHAs7xdXQj/37XCtWVmwBCdeZrbCUKiGVxiOVpJEL3QeGXNd/qHDA4oUmD06sWtMUG9C7sSlwvjds+HZhXGv8RKGFeFlynFOXhEILv1fx33nTkoSgbRf08j0gX5KOKxIhzaJnxHaUaVc6qONPz+Gnrzygldvjyvb2hpxlaJBXJtUoMzHX3bRTmw=='}
+2022-03-18 23:01:30,325 INFO client_transport.py Отправлено сообщение для пользователя TestSender2
+2022-03-18 23:01:30,325 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:YdCNVHNS3dydu2G3rIIXk4ga+C3sw+7Uat514fRuo67GTBXq4zDTDH6knUgqMzH0dNsfu4XFr/kVepXlsXvJBzZWY83Tk0Dky8IgFKAFIotWlBTPF10xwCwd0VSxWUeYKceZNKLAD9eoBKCEIkVPWkEUVnuTmJFWHAs7xdXQj/37XCtWVmwBCdeZrbCUKiGVxiOVpJEL3QeGXNd/qHDA4oUmD06sWtMUG9C7sSlwvjds+HZhXGv8RKGFeFlynFOXhEILv1fx33nTkoSgbRf08j0gX5KOKxIhzaJnxHaUaVc6qONPz+Gnrzygldvjyvb2hpxlaJBXJtUoMzHX3bRTmw==
+2022-03-18 23:01:30,328 DEBUG main_window.py Отправлено сообщение для TestSender2: sdbverb
+2022-03-18 23:01:34,347 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender1', 'time': 1647633694.3471591, 'mess_text': 'Roo+KNjcp7k3FzIIIzmbPGVaDMVVXBkRj4PiZwjDFSiD0LTCF61HSEqDfmI4DhFDSrclV90olCfdlLiTnP41Eua4JvBityLVq/MxE2ekQLmNGNezrlTfX+t+/Y/xsrCQO+oAFx20eBuJAYGMzH5sBI1rg9IaDZpo4pNz5B/uwiz8DQqkBs/77pMzrpyclzy9ohSFraolvJTjxBYcPLMvBXN7l5OEV+8wrd5gIySKuQMgMwSjYp0fc7rA28/ROnS/u61fD5tGymzV5NsHYHO5PxdSp8Bbzr0AZxjlYpEVnNSL91DR7+klx7VRKIGkgp0zFKnxfShOLdsOxAo2zsoITg=='}
+2022-03-18 23:01:35,371 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:01:35,371 INFO client_transport.py Отправлено сообщение для пользователя TestSender1
+2022-03-18 23:01:35,374 DEBUG main_window.py Отправлено сообщение для TestSender1: zdfbreb
+2022-03-18 23:01:36,363 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender1', 'time': 1647633694.3471591, 'mess_text': 'Roo+KNjcp7k3FzIIIzmbPGVaDMVVXBkRj4PiZwjDFSiD0LTCF61HSEqDfmI4DhFDSrclV90olCfdlLiTnP41Eua4JvBityLVq/MxE2ekQLmNGNezrlTfX+t+/Y/xsrCQO+oAFx20eBuJAYGMzH5sBI1rg9IaDZpo4pNz5B/uwiz8DQqkBs/77pMzrpyclzy9ohSFraolvJTjxBYcPLMvBXN7l5OEV+8wrd5gIySKuQMgMwSjYp0fc7rA28/ROnS/u61fD5tGymzV5NsHYHO5PxdSp8Bbzr0AZxjlYpEVnNSL91DR7+klx7VRKIGkgp0zFKnxfShOLdsOxAo2zsoITg=='}
+2022-03-18 23:01:36,363 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender1', 'time': 1647633694.3471591, 'mess_text': 'Roo+KNjcp7k3FzIIIzmbPGVaDMVVXBkRj4PiZwjDFSiD0LTCF61HSEqDfmI4DhFDSrclV90olCfdlLiTnP41Eua4JvBityLVq/MxE2ekQLmNGNezrlTfX+t+/Y/xsrCQO+oAFx20eBuJAYGMzH5sBI1rg9IaDZpo4pNz5B/uwiz8DQqkBs/77pMzrpyclzy9ohSFraolvJTjxBYcPLMvBXN7l5OEV+8wrd5gIySKuQMgMwSjYp0fc7rA28/ROnS/u61fD5tGymzV5NsHYHO5PxdSp8Bbzr0AZxjlYpEVnNSL91DR7+klx7VRKIGkgp0zFKnxfShOLdsOxAo2zsoITg=='}
+2022-03-18 23:01:36,363 DEBUG client_transport.py Получено сообщение от пользователя TestSender2:Roo+KNjcp7k3FzIIIzmbPGVaDMVVXBkRj4PiZwjDFSiD0LTCF61HSEqDfmI4DhFDSrclV90olCfdlLiTnP41Eua4JvBityLVq/MxE2ekQLmNGNezrlTfX+t+/Y/xsrCQO+oAFx20eBuJAYGMzH5sBI1rg9IaDZpo4pNz5B/uwiz8DQqkBs/77pMzrpyclzy9ohSFraolvJTjxBYcPLMvBXN7l5OEV+8wrd5gIySKuQMgMwSjYp0fc7rA28/ROnS/u61fD5tGymzV5NsHYHO5PxdSp8Bbzr0AZxjlYpEVnNSL91DR7+klx7VRKIGkgp0zFKnxfShOLdsOxAo2zsoITg==
+2022-03-18 23:01:40,918 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633700.918168, 'mess_text': 'Sp2EghNcQX0CGSgpAGcyk/7dKFZwsjR0tgfpAUzz9H1NTnr212mdYNIDV3TXcMqpponjnLzdVUGgKnF+caF2NqeOT9eAY7siwc1jOr9Np9t2X2Lr+kfj1DE/DXYuZPUTkXmbMXtRsPNJ0fnVBnbFcQyl1auWu1QwoOqBmg+FfAnAU/EXe65rJhhDe7/Byl1/boAcelVuiVCHaIfSg5O13DmQnQF2tc4MTHKMQCV2inIROcVXTeTNTCbDen/PpbkznJd8323EEYoy1mPV/rFwlps1xSgnlPSJRKOnSUL17xyqKFmQ+EeTWvZjeiD/Uv+ptCbHGKl7taYjTtGZH4+1SA=='}
+2022-03-18 23:01:41,412 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:01:41,412 INFO client_transport.py Отправлено сообщение для пользователя TestSender2
+2022-03-18 23:01:41,414 DEBUG main_window.py Отправлено сообщение для TestSender2: zxbdfbf
+2022-03-18 23:01:41,871 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633700.918168, 'mess_text': 'Sp2EghNcQX0CGSgpAGcyk/7dKFZwsjR0tgfpAUzz9H1NTnr212mdYNIDV3TXcMqpponjnLzdVUGgKnF+caF2NqeOT9eAY7siwc1jOr9Np9t2X2Lr+kfj1DE/DXYuZPUTkXmbMXtRsPNJ0fnVBnbFcQyl1auWu1QwoOqBmg+FfAnAU/EXe65rJhhDe7/Byl1/boAcelVuiVCHaIfSg5O13DmQnQF2tc4MTHKMQCV2inIROcVXTeTNTCbDen/PpbkznJd8323EEYoy1mPV/rFwlps1xSgnlPSJRKOnSUL17xyqKFmQ+EeTWvZjeiD/Uv+ptCbHGKl7taYjTtGZH4+1SA=='}
+2022-03-18 23:01:41,871 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633700.918168, 'mess_text': 'Sp2EghNcQX0CGSgpAGcyk/7dKFZwsjR0tgfpAUzz9H1NTnr212mdYNIDV3TXcMqpponjnLzdVUGgKnF+caF2NqeOT9eAY7siwc1jOr9Np9t2X2Lr+kfj1DE/DXYuZPUTkXmbMXtRsPNJ0fnVBnbFcQyl1auWu1QwoOqBmg+FfAnAU/EXe65rJhhDe7/Byl1/boAcelVuiVCHaIfSg5O13DmQnQF2tc4MTHKMQCV2inIROcVXTeTNTCbDen/PpbkznJd8323EEYoy1mPV/rFwlps1xSgnlPSJRKOnSUL17xyqKFmQ+EeTWvZjeiD/Uv+ptCbHGKl7taYjTtGZH4+1SA=='}
+2022-03-18 23:01:41,871 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:Sp2EghNcQX0CGSgpAGcyk/7dKFZwsjR0tgfpAUzz9H1NTnr212mdYNIDV3TXcMqpponjnLzdVUGgKnF+caF2NqeOT9eAY7siwc1jOr9Np9t2X2Lr+kfj1DE/DXYuZPUTkXmbMXtRsPNJ0fnVBnbFcQyl1auWu1QwoOqBmg+FfAnAU/EXe65rJhhDe7/Byl1/boAcelVuiVCHaIfSg5O13DmQnQF2tc4MTHKMQCV2inIROcVXTeTNTCbDen/PpbkznJd8323EEYoy1mPV/rFwlps1xSgnlPSJRKOnSUL17xyqKFmQ+EeTWvZjeiD/Uv+ptCbHGKl7taYjTtGZH4+1SA==
+2022-03-18 23:01:45,299 DEBUG client_transport.py Запрос публичного ключа для TestSender2
+2022-03-18 23:01:45,437 DEBUG main_window.py Загружен открытый ключ для TestSender2
+2022-03-18 23:01:50,739 DEBUG client_transport.py Запрос публичного ключа для TestSender1
+2022-03-18 23:01:50,968 DEBUG main_window.py Загружен открытый ключ для TestSender1
+2022-03-18 23:01:52,644 DEBUG client_transport.py Запрос публичного ключа для TestSender2
+2022-03-18 23:01:52,985 DEBUG main_window.py Загружен открытый ключ для TestSender2
+2022-03-18 23:01:55,386 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender2', 'time': 1647633715.386254, 'mess_text': 'BIcRYEyfSNMV8sNo1vi4fdGRcibihS1itLtR6sv4xaU7N02ndA3YbAc6jnU5gYPfmK3fN/mEDzWDQ4gx0yXGPOzt8JD0uPscdvjEFqpj7bb0eQCAcJhX0uDFYPKXmEG4xDGlrp3F+q+ZjV2zPfgo9t7xm6vI8ovLW7aqNUMglpifKVeAj1mBg7z7G8bG9nt9GiAKVJW2jX4C273JsrAfMQeO9rPd8jolEcjvTHzL9Lgqy17uREEiUq7tMRDJsJZ0OOVPK6mEeO8FVPUGxD2R4ViprGeg06mt4lhnK0kM6FwlNEa/F4e7h8C7TCdnNe38xGo7eUg8H2E7bQthwcQ8xA=='}
+2022-03-18 23:01:55,508 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender2', 'time': 1647633715.386254, 'mess_text': 'BIcRYEyfSNMV8sNo1vi4fdGRcibihS1itLtR6sv4xaU7N02ndA3YbAc6jnU5gYPfmK3fN/mEDzWDQ4gx0yXGPOzt8JD0uPscdvjEFqpj7bb0eQCAcJhX0uDFYPKXmEG4xDGlrp3F+q+ZjV2zPfgo9t7xm6vI8ovLW7aqNUMglpifKVeAj1mBg7z7G8bG9nt9GiAKVJW2jX4C273JsrAfMQeO9rPd8jolEcjvTHzL9Lgqy17uREEiUq7tMRDJsJZ0OOVPK6mEeO8FVPUGxD2R4ViprGeg06mt4lhnK0kM6FwlNEa/F4e7h8C7TCdnNe38xGo7eUg8H2E7bQthwcQ8xA=='}
+2022-03-18 23:01:55,509 DEBUG client_transport.py Получено сообщение от пользователя TestSender2:BIcRYEyfSNMV8sNo1vi4fdGRcibihS1itLtR6sv4xaU7N02ndA3YbAc6jnU5gYPfmK3fN/mEDzWDQ4gx0yXGPOzt8JD0uPscdvjEFqpj7bb0eQCAcJhX0uDFYPKXmEG4xDGlrp3F+q+ZjV2zPfgo9t7xm6vI8ovLW7aqNUMglpifKVeAj1mBg7z7G8bG9nt9GiAKVJW2jX4C273JsrAfMQeO9rPd8jolEcjvTHzL9Lgqy17uREEiUq7tMRDJsJZ0OOVPK6mEeO8FVPUGxD2R4ViprGeg06mt4lhnK0kM6FwlNEa/F4e7h8C7TCdnNe38xGo7eUg8H2E7bQthwcQ8xA==
+2022-03-18 23:01:55,526 INFO client_transport.py Отправлено сообщение для пользователя TestSender2
+2022-03-18 23:01:55,529 DEBUG main_window.py Отправлено сообщение для TestSender2: xfzbdr
+2022-03-18 23:01:56,425 DEBUG client_transport.py Принято сообщение с сервера: {'response': 200}
+2022-03-18 23:01:56,425 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:01:58,968 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633718.968844, 'mess_text': '14WeaAgwRqm5cxHgk06L2UDSwmaDjV0fLdVEcO0CQUWDkFEUSOw4MW+8DKBAr4Z/dHpxsXaWOcslebp6jq2liHkVZAy2nSe2++1sG3wZOhdJUfIdUAYmstYogsmfnaq0UKJ/DSXy5+aHA+pnuCwtBRXfPM6wdJPzeECkSqaJpuB9s2J+MVH2Tq6XLTBatSpMaUASk/F+vbzppLULfrw3HAFXnTOVDQfpjKPkusW4dxZgZjumqnIaV2bcAyPmQ2wtd32fFl6AaSRq/LJze87vlXUcLauS1VEetkFZeqX4eNPJmdn/hLAr1nOA0nY7jzFwSPiwuis7cztkXvB5MOUu3A=='}
+2022-03-18 23:01:59,041 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633718.968844, 'mess_text': '14WeaAgwRqm5cxHgk06L2UDSwmaDjV0fLdVEcO0CQUWDkFEUSOw4MW+8DKBAr4Z/dHpxsXaWOcslebp6jq2liHkVZAy2nSe2++1sG3wZOhdJUfIdUAYmstYogsmfnaq0UKJ/DSXy5+aHA+pnuCwtBRXfPM6wdJPzeECkSqaJpuB9s2J+MVH2Tq6XLTBatSpMaUASk/F+vbzppLULfrw3HAFXnTOVDQfpjKPkusW4dxZgZjumqnIaV2bcAyPmQ2wtd32fFl6AaSRq/LJze87vlXUcLauS1VEetkFZeqX4eNPJmdn/hLAr1nOA0nY7jzFwSPiwuis7cztkXvB5MOUu3A=='}
+2022-03-18 23:01:59,041 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:01:59,041 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633718.968844, 'mess_text': '14WeaAgwRqm5cxHgk06L2UDSwmaDjV0fLdVEcO0CQUWDkFEUSOw4MW+8DKBAr4Z/dHpxsXaWOcslebp6jq2liHkVZAy2nSe2++1sG3wZOhdJUfIdUAYmstYogsmfnaq0UKJ/DSXy5+aHA+pnuCwtBRXfPM6wdJPzeECkSqaJpuB9s2J+MVH2Tq6XLTBatSpMaUASk/F+vbzppLULfrw3HAFXnTOVDQfpjKPkusW4dxZgZjumqnIaV2bcAyPmQ2wtd32fFl6AaSRq/LJze87vlXUcLauS1VEetkFZeqX4eNPJmdn/hLAr1nOA0nY7jzFwSPiwuis7cztkXvB5MOUu3A=='}
+2022-03-18 23:01:59,041 INFO client_transport.py Отправлено сообщение для пользователя TestSender2
+2022-03-18 23:01:59,041 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:14WeaAgwRqm5cxHgk06L2UDSwmaDjV0fLdVEcO0CQUWDkFEUSOw4MW+8DKBAr4Z/dHpxsXaWOcslebp6jq2liHkVZAy2nSe2++1sG3wZOhdJUfIdUAYmstYogsmfnaq0UKJ/DSXy5+aHA+pnuCwtBRXfPM6wdJPzeECkSqaJpuB9s2J+MVH2Tq6XLTBatSpMaUASk/F+vbzppLULfrw3HAFXnTOVDQfpjKPkusW4dxZgZjumqnIaV2bcAyPmQ2wtd32fFl6AaSRq/LJze87vlXUcLauS1VEetkFZeqX4eNPJmdn/hLAr1nOA0nY7jzFwSPiwuis7cztkXvB5MOUu3A==
+2022-03-18 23:01:59,044 DEBUG main_window.py Отправлено сообщение для TestSender2: xdvbsdbvsd
+2022-03-18 23:02:01,622 DEBUG client_transport.py Запрос публичного ключа для TestSender1
+2022-03-18 23:02:02,069 DEBUG main_window.py Загружен открытый ключ для TestSender1
+2022-03-18 23:02:09,543 DEBUG client_transport.py Запрос публичного ключа для TestSender1
+2022-03-18 23:02:09,619 DEBUG main_window.py Загружен открытый ключ для TestSender1
+2022-03-18 23:02:13,127 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633733.127889, 'mess_text': 'VUe9SIRVHZ2zb1CVf7aSj8G1TouRr+OYVUbUthimjO7KhNmHVWeGx/EjsXKTtT7KyzK9gGRtwqag+NYq/S4wrHRjEpal5PY5MNUoeyqcaSp8Dm5jjk0z9rzzRgj79ZHUdDldqYS3qYMzRBlTH6vN3ojkKSkhNAmpfgeb0XgQt/QWs6DVMcsbUnmyES4YxfPf+tjKl1PRZSAPiK4YHNBECZyfduhiUHYEDOQnEkc+YYMB6UCMAt+lNgeNoWD7uaYJRAmBi2N019jHLKIiYlEtlgDSXXS7W9NtfJAOvMPFcG3t/9Fu7fDqiY1YuNxiAOQNp2ae5P0TvP9fez4iDZzdsA=='}
+2022-03-18 23:02:13,150 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:02:13,150 INFO client_transport.py Отправлено сообщение для пользователя TestSender2
+2022-03-18 23:02:13,153 DEBUG main_window.py Отправлено сообщение для TestSender2: zxbvdfbxbvdsfb
+2022-03-18 23:02:13,596 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633733.127889, 'mess_text': 'VUe9SIRVHZ2zb1CVf7aSj8G1TouRr+OYVUbUthimjO7KhNmHVWeGx/EjsXKTtT7KyzK9gGRtwqag+NYq/S4wrHRjEpal5PY5MNUoeyqcaSp8Dm5jjk0z9rzzRgj79ZHUdDldqYS3qYMzRBlTH6vN3ojkKSkhNAmpfgeb0XgQt/QWs6DVMcsbUnmyES4YxfPf+tjKl1PRZSAPiK4YHNBECZyfduhiUHYEDOQnEkc+YYMB6UCMAt+lNgeNoWD7uaYJRAmBi2N019jHLKIiYlEtlgDSXXS7W9NtfJAOvMPFcG3t/9Fu7fDqiY1YuNxiAOQNp2ae5P0TvP9fez4iDZzdsA=='}
+2022-03-18 23:02:13,597 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633733.127889, 'mess_text': 'VUe9SIRVHZ2zb1CVf7aSj8G1TouRr+OYVUbUthimjO7KhNmHVWeGx/EjsXKTtT7KyzK9gGRtwqag+NYq/S4wrHRjEpal5PY5MNUoeyqcaSp8Dm5jjk0z9rzzRgj79ZHUdDldqYS3qYMzRBlTH6vN3ojkKSkhNAmpfgeb0XgQt/QWs6DVMcsbUnmyES4YxfPf+tjKl1PRZSAPiK4YHNBECZyfduhiUHYEDOQnEkc+YYMB6UCMAt+lNgeNoWD7uaYJRAmBi2N019jHLKIiYlEtlgDSXXS7W9NtfJAOvMPFcG3t/9Fu7fDqiY1YuNxiAOQNp2ae5P0TvP9fez4iDZzdsA=='}
+2022-03-18 23:02:13,597 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:VUe9SIRVHZ2zb1CVf7aSj8G1TouRr+OYVUbUthimjO7KhNmHVWeGx/EjsXKTtT7KyzK9gGRtwqag+NYq/S4wrHRjEpal5PY5MNUoeyqcaSp8Dm5jjk0z9rzzRgj79ZHUdDldqYS3qYMzRBlTH6vN3ojkKSkhNAmpfgeb0XgQt/QWs6DVMcsbUnmyES4YxfPf+tjKl1PRZSAPiK4YHNBECZyfduhiUHYEDOQnEkc+YYMB6UCMAt+lNgeNoWD7uaYJRAmBi2N019jHLKIiYlEtlgDSXXS7W9NtfJAOvMPFcG3t/9Fu7fDqiY1YuNxiAOQNp2ae5P0TvP9fez4iDZzdsA==
+2022-03-18 23:02:16,748 DEBUG client_transport.py Запрос публичного ключа для TestSender2
+2022-03-18 23:02:17,181 DEBUG main_window.py Загружен открытый ключ для TestSender2
+2022-03-18 23:02:20,289 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633740.289012, 'mess_text': 'ekCfG6k+VZy6/3vlTPEZWyP+awVTUS9v7ugmUz9PjEeXsqlaBuK2DhFTDl0Uz9D0hydSCSeMWa/7kfsja9SowkVNlTHOAJ9K7HedYSx+qXjeXaw4LwBgr1ko3mFt0g5IkXUywN3Hs3sbQv4rpSGvuVoHY+PY81haSnKum3YLwegmsfQARNkXjBxCMK4ysl3D59GtKKgSsS54wVx6EsXTaM6QpJbKxARljq4VDjQyemGb1AO1s6y7Lw6QFVCCgDugfENcIc4Xg3IVSw0HWHDbi8SuqRiUTPeyyKVVKYIRaEBEJs8BsPKiRxAt351R8TGI0GpxeEuH7NLRS3Tonudvfw=='}
+2022-03-18 23:02:20,709 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633740.289012, 'mess_text': 'ekCfG6k+VZy6/3vlTPEZWyP+awVTUS9v7ugmUz9PjEeXsqlaBuK2DhFTDl0Uz9D0hydSCSeMWa/7kfsja9SowkVNlTHOAJ9K7HedYSx+qXjeXaw4LwBgr1ko3mFt0g5IkXUywN3Hs3sbQv4rpSGvuVoHY+PY81haSnKum3YLwegmsfQARNkXjBxCMK4ysl3D59GtKKgSsS54wVx6EsXTaM6QpJbKxARljq4VDjQyemGb1AO1s6y7Lw6QFVCCgDugfENcIc4Xg3IVSw0HWHDbi8SuqRiUTPeyyKVVKYIRaEBEJs8BsPKiRxAt351R8TGI0GpxeEuH7NLRS3Tonudvfw=='}
+2022-03-18 23:02:20,709 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender2', 'time': 1647633740.289012, 'mess_text': 'ekCfG6k+VZy6/3vlTPEZWyP+awVTUS9v7ugmUz9PjEeXsqlaBuK2DhFTDl0Uz9D0hydSCSeMWa/7kfsja9SowkVNlTHOAJ9K7HedYSx+qXjeXaw4LwBgr1ko3mFt0g5IkXUywN3Hs3sbQv4rpSGvuVoHY+PY81haSnKum3YLwegmsfQARNkXjBxCMK4ysl3D59GtKKgSsS54wVx6EsXTaM6QpJbKxARljq4VDjQyemGb1AO1s6y7Lw6QFVCCgDugfENcIc4Xg3IVSw0HWHDbi8SuqRiUTPeyyKVVKYIRaEBEJs8BsPKiRxAt351R8TGI0GpxeEuH7NLRS3Tonudvfw=='}
+2022-03-18 23:02:20,709 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:ekCfG6k+VZy6/3vlTPEZWyP+awVTUS9v7ugmUz9PjEeXsqlaBuK2DhFTDl0Uz9D0hydSCSeMWa/7kfsja9SowkVNlTHOAJ9K7HedYSx+qXjeXaw4LwBgr1ko3mFt0g5IkXUywN3Hs3sbQv4rpSGvuVoHY+PY81haSnKum3YLwegmsfQARNkXjBxCMK4ysl3D59GtKKgSsS54wVx6EsXTaM6QpJbKxARljq4VDjQyemGb1AO1s6y7Lw6QFVCCgDugfENcIc4Xg3IVSw0HWHDbi8SuqRiUTPeyyKVVKYIRaEBEJs8BsPKiRxAt351R8TGI0GpxeEuH7NLRS3Tonudvfw==
+2022-03-18 23:02:20,709 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-18 23:02:20,709 INFO client_transport.py Отправлено сообщение для пользователя TestSender2
+2022-03-18 23:02:20,713 DEBUG main_window.py Отправлено сообщение для TestSender2: xzbfdbdf
+2022-03-18 23:02:28,005 DEBUG client_transport.py Запрос публичного ключа для TestSender1
+2022-03-18 23:02:28,263 DEBUG main_window.py Загружен открытый ключ для TestSender1
+2022-03-18 23:02:51,575 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-18 23:02:51,934 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-18 23:02:53,146 DEBUG client_transport.py Транспорт завершает работу.
