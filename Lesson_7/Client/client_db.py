@@ -28,11 +28,12 @@ class ClientDatabase:
             self.name = contact
 
     # Конструктор класса:
-    def __init__(self, name):
+    def __init__(self, client_name):
         # Создаём движок базы данных, поскольку разрешено несколько клиентов одновременно, каждый должен иметь свою БД
         # Поскольку клиент мультипоточный необходимо отключить проверки на подключения с разных потоков,
         # иначе sqlite3.ProgrammingError
-        self.database_engine = create_engine(f'sqlite:///Client/client_{name}.db3', echo=False, pool_recycle=7200,
+        self.database_engine = create_engine(f'sqlite:///Client/client_{client_name}.db3',
+                                             echo=False, pool_recycle=7200,
                                              connect_args={'check_same_thread': False})
 
         # Создаём объект MetaData
@@ -94,6 +95,10 @@ class ClientDatabase:
             user_row = self.KnownUsers(user)
             self.session.add(user_row)
         self.session.commit()
+
+    def contacts_clear(self):
+        '''Метод очищающий таблицу со списком контактов.'''
+        self.session.query(self.Contacts).delete()
 
     # Функция сохраняющяя сообщения
     def save_message(self, from_user, to_user, message):
