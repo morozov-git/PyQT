@@ -44,7 +44,9 @@ class ClientApp(metaclass=ClientMaker):
 
     # @classmethod
     def create_exit_message(self):
-        """Функция создаёт словарь с сообщением о выходе"""
+        """
+        Функция для консольного интерфейса
+        Функция создаёт словарь с сообщением о выходе"""
         return {
             ACTION: EXIT,
             TIME: time.time(),
@@ -54,7 +56,10 @@ class ClientApp(metaclass=ClientMaker):
     # @classmethod
     # def message_from_server(cls, sock, username):
     def message_from_server(self, transport, client_name):
-        """Функция - обработчик сообщений других пользователей, поступающих с сервера"""
+        """
+        Функция для консольного интерфейса
+        Функция - обработчик сообщений других пользователей, поступающих с сервера
+        """
 
         while True:
             time.sleep(1)
@@ -99,7 +104,8 @@ class ClientApp(metaclass=ClientMaker):
     # @classmethod
     def create_message(self, client_name='Guest'):
         """
-        Функция запрашивает текст сообщения и возвращает его.
+        Функция для консольного интерфейса
+        запрашивает текст сообщения и возвращает его.
         Так же завершает работу при вводе подобной комманды
         """
         to_user = input('Введите получателя сообщения: ')
