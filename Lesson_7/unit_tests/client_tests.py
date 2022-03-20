@@ -1,16 +1,16 @@
-import sys
-import os
+
 import unittest
 # sys.path.append(os.path.join(os.getcwd(), '..'))
-from Lesson_5.common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE, TEST_MESSAGE, DEFAULT_PORT
-from ..client import ClientApp
+from Lesson_5.common.variables import RESPONSE, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE, TEST_MESSAGE
+from client import ClientApp
+
 
 class TeasClientApp(unittest.TestCase):
 
 	def test_create_presence(self):
 		test = ClientApp.create_presence()
-		test[TIME] = 1.1  	# время необходимо приравнять принудительно
-							# иначе тест никогда не будет пройден
+		test[TIME] = 1.1  # время необходимо приравнять принудительно
+		# иначе тест никогда не будет пройден
 		self.assertEqual(test, {ACTION: PRESENCE, TIME: 1.1, USER: {ACCOUNT_NAME: 'Guest'}})
 
 	def test_200_answer(self):
@@ -18,16 +18,16 @@ class TeasClientApp(unittest.TestCase):
 
 	def test_no_response(self):
 		self.assertRaises(ValueError, ClientApp.process_answer, {TEST_MESSAGE: 'TestMessage'})
-					# (что ожидаем в ответе, в какую фунтцию отправляем запрос, данные запроса)
-		# self.assertRaises(ValueError, ClientApp.process_answer, {ERROR: 'Bad Request'})
+
+	# (что ожидаем в ответе, в какую фунтцию отправляем запрос, данные запроса)
+	# self.assertRaises(ValueError, ClientApp.process_answer, {ERROR: 'Bad Request'})
 
 	def test_main_bad_port(self):
 		self.assertEqual(ClientApp.main('test', 'client.py', '192.168.0.100', 888), 'BAD PORT')
-		# self.assertRaises(ValueError, ClientApp.main('test', 'client.py', '192.168.0.100', 888))
+	# self.assertRaises(ValueError, ClientApp.main('test', 'client.py', '192.168.0.100', 888))
 
-		# Николай, подскажите, как поймать исключение SystemExit, чтобы не отключать завершение программы в client.py
 
 
 # client.py 192.168.0.100 8079
 if __name__ == '__main__':
-    unittest.main()
+	unittest.main()

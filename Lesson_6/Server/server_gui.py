@@ -52,7 +52,7 @@ import binascii
 
 
 class MainWindow(QMainWindow):
-    '''Класс - основное окно сервера.'''
+    """Класс - основное окно сервера."""
 
     def __init__(self, database, server, config):
         # Конструктор предка
@@ -177,9 +177,7 @@ class MainWindow(QMainWindow):
 
 
 class DelUserDialog(QDialog):
-    '''
-    Класс - диалог выбора контакта для удаления.
-    '''
+    """Класс - диалог выбора контакта для удаления."""
 
     def __init__(self, database, server):
         super().__init__()
@@ -229,9 +227,7 @@ class DelUserDialog(QDialog):
 
 
 class StatWindow(QDialog):
-    '''
-    Класс - окно со статистикой пользователей
-    '''
+    """Класс - окно со статистикой пользователей"""
 
     def __init__(self, database):
         super().__init__()
@@ -283,15 +279,14 @@ class StatWindow(QDialog):
 
 
 class ConfigWindow(QDialog):
-    '''Класс окно настроек.'''
-
+    """Класс окно настроек."""
     def __init__(self, config):
         super().__init__()
         self.config = config
         self.initUI()
 
     def initUI(self):
-        '''Настройки окна'''
+        """Настройки окна"""
         self.setFixedSize(365, 260)
         self.setWindowTitle('Настройки сервера')
         self.setAttribute(Qt.WA_DeleteOnClose)
@@ -367,7 +362,7 @@ class ConfigWindow(QDialog):
         self.save_btn.clicked.connect(self.save_server_config)
 
     def open_file_dialog(self):
-        '''Метод обработчик открытия окна выбора папки.'''
+        """Метод обработчик открытия окна выбора папки."""
         global dialog
         dialog = QFileDialog(self)
         path = dialog.getExistingDirectory()
@@ -376,11 +371,8 @@ class ConfigWindow(QDialog):
         self.db_path.insert(path)
 
     def save_server_config(self):
-        '''
-        Метод сохранения настроек.
-        Проверяет правильность введённых данных и
-        если всё правильно сохраняет ini файл.
-        '''
+        """Метод сохранения настроек.Проверяет правильность введённых данных и
+        если всё правильно сохраняет ini файл."""
         global config_window
         message = QMessageBox()
         self.config['SETTINGS']['Database_path'] = self.db_path.text()
@@ -405,7 +397,7 @@ class ConfigWindow(QDialog):
 
 
 class RegisterUser(QDialog):
-    '''Класс диалог регистрации пользователя на сервере.'''
+    """Класс диалог регистрации пользователя на сервере."""
 
     def __init__(self, database, server):
         super().__init__()
@@ -456,9 +448,7 @@ class RegisterUser(QDialog):
         self.show()
 
     def save_data(self):
-        '''
-        Метод проверки правильности ввода и сохранения в базу нового пользователя.
-        '''
+        """Метод проверки правильности ввода и сохранения в базу нового пользователя."""
         if not self.client_name.text():
             self.messages.critical(
                 self, 'Ошибка', 'Не указано имя пользователя.')
@@ -488,8 +478,9 @@ class RegisterUser(QDialog):
             self.close()
 
 
-# Класс окна с историей пользователей
+
 class HistoryWindow(QDialog):
+    """Класс окна с историей пользователей"""
     #QWidget в QDialog - нет развертывания и скрытия только 2 кнопки
     #крыть и ?
     def __init__(self):
@@ -497,7 +488,7 @@ class HistoryWindow(QDialog):
         self.initUI()
 
     def initUI(self):
-        # Настройки окна:
+        """Настройки окна"""
         self.setWindowTitle('Статистика клиентов')
         self.setFixedSize(600, 700)
         self.setAttribute(Qt.WA_DeleteOnClose)

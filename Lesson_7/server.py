@@ -1,29 +1,23 @@
 """Программа-сервер"""
 import configparser
 import os
-import socket
 import sys
 
-from PyQt5.QtCore import QTimer
 from PyQt5.QtWidgets import QApplication, QMessageBox
 from PyQt5.QtCore import Qt
 from common.variables import *
-from common.utils import get_message, send_message, arg_parser
+from common.utils import  arg_parser
 import logging
-import time
 
 from core import MessageProcessor
-import select
 from descrptors import Port, IP_Address
-from common.loging_decos import Log, login_required
-from common.metaclasses import ServerMaker
+# from common.loging_decos import Log, login_required
+# from common.metaclasses import ServerMaker
 import threading
-from server_gui import MainWindow, ConfigWindow, RegisterUser, DelUserDialog, ConfigWindow,  HistoryWindow #, gui_create_model, create_stat_model
+from server_gui import MainWindow, ConfigWindow, HistoryWindow  # , gui_create_model, create_stat_model
 from common.loging_decos import Log
 from Server.core import MessageProcessor
 from Server.server_db import ServerStorage
-
-
 
 # Инициализация серверного логера
 SERVER_LOGGER = logging.getLogger('server')
@@ -35,7 +29,7 @@ conflag_lock = threading.Lock()
 
 
 @Log()
-class ServerApp(): #class ServerApp(metaclass=ServerMaker):
+class ServerApp():  # class ServerApp(metaclass=ServerMaker):
 
 	listen_port = Port()
 	listen_address = IP_Address()
@@ -162,8 +156,9 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 	# 			f'отправка сообщения невозможна.')
 
 	'''Консольный интерфейс сервера (Справка по командам)'''
+
 	def print_help(self):
-		'''Справка по командам интерфейса'''
+		"""Справка по командам интерфейса"""
 		print('Поддерживаемые комманды:')
 		print('users - список известных пользователей')
 		print('connected - список подключенных пользователей')
@@ -172,8 +167,9 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 		print('help - вывод справки по поддерживаемым командам')
 
 	'''Консольный интерфейс сервера (работа с БД)'''
+
 	def server_iterface(self):
-		'''Консольный интерфейс сервера (работа с БД)'''
+		"""Консольный интерфейс сервера (работа с БД)"""
 		# Печатаем справку:
 		self.print_help()
 
@@ -285,6 +281,7 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 	# 			break
 
 	"""Перенесена в модуль Server.core"""
+
 	# def server_socket(self):
 	# 	'''Функция запуска сокета для сервера'''
 	# 	# Готовим сокет
@@ -297,8 +294,8 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 	# 	transport.listen(MAX_CONNECTIONS)
 
 	def list_update(self):
-		'''Функция обновляющяя список подключённых пользователей,
-		проверяет флаг подключения, и если надо обновляет список'''
+		"""Функция обновляющяя список подключённых пользователей,
+		проверяет флаг подключения, и если надо обновляет список"""
 		global new_connection
 		if new_connection:
 			self.main_window.active_clients_table.setModel(
@@ -309,7 +306,7 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 				new_connection = False
 
 	def show_statistics(self):
-		'''Функция создающяя окно со статистикой клиентов'''
+		"""Функция создающяя окно со статистикой клиентов"""
 		global stat_window
 		stat_window = HistoryWindow()
 		stat_window.history_table.setModel(create_stat_model(self.database))
@@ -320,12 +317,11 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 
 	@Log()
 	def config_load(self):
-		'''Парсер конфигурационного ini файла.'''
+		"""Парсер конфигурационного ini файла."""
 		config = configparser.ConfigParser()
 		dir_path = os.path.dirname(os.path.realpath(__file__))
 		config.read(f"{dir_path}/{'server.ini'}")
-		# Если конфиг файл загружен правильно, запускаемся, иначе конфиг по
-		# умолчанию.
+		# Если конфиг файл загружен правильно, запускаемся, иначе конфиг по умолчанию.
 		if 'SETTINGS' in config:
 			return config
 		else:
@@ -337,7 +333,7 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 			return config
 
 	def server_config(self):
-		'''Функция создающяя окно с настройками сервера.'''
+		"""Функция создающяя окно с настройками сервера."""
 		global config_window
 		# Создаём окно и заносим в него текущие параметры
 		config_window = ConfigWindow()
@@ -348,7 +344,7 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 		config_window.save_btn.clicked.connect(self.save_server_config)
 
 	def save_server_config(self):
-		'''Функция сохранения настроек'''
+		"""Функция сохранения настроек"""
 		global config_window
 		message = QMessageBox()
 		self.config['SETTINGS']['Database_path'] = config_window.db_path.text()
@@ -374,7 +370,7 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 
 	# @classmethod
 	def main(self, *args, **kwargs):
-		''' Функция запуска сервера '''
+		"""Функция запуска сервера"""
 
 		# Загрузка файла конфигурации сервера
 		self.config = ServerApp.config_load()
@@ -393,7 +389,7 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 		SERVER_LOGGER.debug(server_start_message)
 		print(server_start_message)
 
-		#Инициализация базы данных
+		# Инициализация базы данных
 		database = ServerStorage(
 			os.path.join(
 				self.config['SETTINGS']['Database_path'],
@@ -436,67 +432,64 @@ class ServerApp(): #class ServerApp(metaclass=ServerMaker):
 			# По закрытию окон останавливаем обработчик сообщений
 			server.running = False
 
+	# # Запуск консольного интерфейса сервера
+	# module_server_iterface = threading.Thread(target=self.server_iterface, daemon=True)
+	# module_server_iterface.daemon = True
+	# module_server_iterface.start()
 
-		# # Запуск консольного интерфейса сервера
-		# module_server_iterface = threading.Thread(target=self.server_iterface, daemon=True)
-		# module_server_iterface.daemon = True
-		# module_server_iterface.start()
+	# # Создаём графическое окуружение для сервера:
+	# server_app = QApplication(sys.argv)
+	# self.main_window = MainWindow()
+	# # ЗАПУСК РАБОТАЕТ ПАРАЛЕЛЬНО СЕРВЕРУ
+	# # ГЛАВНОМ ПОТОКЕ ЗАПУСКАЕМ НАШ GUI - ГРАФИЧЕСКИЙ ИНТЕРФЕС ПОЛЬЗОВАТЕЛЯ
 
-		# # Создаём графическое окуружение для сервера:
-		# server_app = QApplication(sys.argv)
-		# self.main_window = MainWindow()
-		# # ЗАПУСК РАБОТАЕТ ПАРАЛЕЛЬНО СЕРВЕРУ
-		# # ГЛАВНОМ ПОТОКЕ ЗАПУСКАЕМ НАШ GUI - ГРАФИЧЕСКИЙ ИНТЕРФЕС ПОЛЬЗОВАТЕЛЯ
+	# # Инициализируем параметры в Главное окно
+	# self.main_window.statusBar().showMessage('Server Working')  # подвал
+	# self.main_window.active_clients_table.setModel(
+	# 	gui_create_model(self.database))  # заполняем таблицу основного окна делаем разметку и заполянем ее
+	# self.main_window.active_clients_table.resizeColumnsToContents()
+	# self.main_window.active_clients_table.resizeRowsToContents()
+	#
+	# # Таймер, обновляющий список клиентов 1 раз в секунду
+	# timer = QTimer()
+	# timer.timeout.connect(self.list_update)
+	# timer.start(1000)
 
-		# # Инициализируем параметры в Главное окно
-		# self.main_window.statusBar().showMessage('Server Working')  # подвал
-		# self.main_window.active_clients_table.setModel(
-		# 	gui_create_model(self.database))  # заполняем таблицу основного окна делаем разметку и заполянем ее
-		# self.main_window.active_clients_table.resizeColumnsToContents()
-		# self.main_window.active_clients_table.resizeRowsToContents()
-		#
-		# # Таймер, обновляющий список клиентов 1 раз в секунду
-		# timer = QTimer()
-		# timer.timeout.connect(self.list_update)
-		# timer.start(1000)
+	# # Связываем кнопки с процедурами
+	# self.main_window.refresh_button.triggered.connect(self.list_update)
+	# self.main_window.show_history_button.triggered.connect(self.show_statistics)
+	# self.main_window.config_btn.triggered.connect(self.server_config)
+	#
+	# # Запускаем GUI в отдельном потоке
+	# module_server_gui = threading.Thread(target=server_app.exec_(), daemon=True)
+	# module_server_gui.daemon = True
+	# module_server_gui.start()
+	# server_app.exec_()
 
-		# # Связываем кнопки с процедурами
-		# self.main_window.refresh_button.triggered.connect(self.list_update)
-		# self.main_window.show_history_button.triggered.connect(self.show_statistics)
-		# self.main_window.config_btn.triggered.connect(self.server_config)
-		#
-		# # Запускаем GUI в отдельном потоке
-		# module_server_gui = threading.Thread(target=server_app.exec_(), daemon=True)
-		# module_server_gui.daemon = True
-		# module_server_gui.start()
-		# server_app.exec_()
-
-		# # основной цикл, если один из потоков завершён, то значит или потеряно соединение или пользователь
-		# # ввёл exit. Поскольку все события обработываются в потоках, достаточно просто завершить цикл.
-		# while True:
-		# 	time.sleep(1)
-		# 	if module_main_server.is_alive() and module_server_gui.is_alive():  # module_server_iterface.is_alive() and
-		# 		# if not module_server_iterface.is_alive():
-		# 		# 	self.command = 'exit'
-		# 		# 	time.sleep(1)
-		# 		# 	print('Server stopped')
-		# 		# 	sys.exit(0)
-		# 		continue
-		# 	self.command = 'exit'
-		# 	break
-		# time.sleep(1)
-		# print('Server stopped')
-		# sys.exit(0)
-
-
+	# # основной цикл, если один из потоков завершён, то значит или потеряно соединение или пользователь
+	# # ввёл exit. Поскольку все события обработываются в потоках, достаточно просто завершить цикл.
+	# while True:
+	# 	time.sleep(1)
+	# 	if module_main_server.is_alive() and module_server_gui.is_alive():  # module_server_iterface.is_alive() and
+	# 		# if not module_server_iterface.is_alive():
+	# 		# 	self.command = 'exit'
+	# 		# 	time.sleep(1)
+	# 		# 	print('Server stopped')
+	# 		# 	sys.exit(0)
+	# 		continue
+	# 	self.command = 'exit'
+	# 	break
+	# time.sleep(1)
+	# print('Server stopped')
+	# sys.exit(0)
 
 
 if __name__ == '__main__':
 	listen_address, listen_port, gui_flag = arg_parser()
 	ServerApp = ServerApp(listen_address, listen_port, gui_flag)
 	ServerApp.main()
-	# time.sleep(1)
-	# sys.exit(0)
+# time.sleep(1)
+# sys.exit(0)
 
 # server.py -a 192.168.0.50 -p 8888
 # server.py -p 8888 -a 192.168.0.74
