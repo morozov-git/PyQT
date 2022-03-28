@@ -1,6 +1,7 @@
 """ Дескрипторы. """
 
 import logging
+import sys
 from ipaddress import ip_address
 
 logger = logging.getLogger('server')
@@ -16,7 +17,7 @@ class Port:
 		if not 1023 < value < 65536:
 			logger.critical(
 				f'Попытка запуска сервера с указанием неподходящего порта {value}. Допустимы адреса с 1024 до 65535.')
-			exit(1)
+			sys.exit(1)
 		# Если порт прошел проверку, добавляем его в список атрибутов экземпляра
 		instance.__dict__[self.name] = value
 
@@ -39,7 +40,7 @@ class IpAddress:
 			# right_ip = value
 		except ValueError:
 			logger.critical(f"Введен некорректный IP-адрес: {value}")
-			exit(1)
+			sys.exit(1)
 
 	def __set_name__(self, owner, name):
 		# owner - <class '__main__.Server'>

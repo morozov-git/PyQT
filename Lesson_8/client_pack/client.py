@@ -6,17 +6,17 @@ import time
 
 from PyQt5.QtWidgets import QApplication, QMessageBox
 from Crypto.PublicKey import RSA
-from common.utils import get_message, send_message, arg_parser
-from common.loging_decos import Log
-from common.errors import ReqFieldMissingError, ServerError, IncorrectDataRecivedError
+from client_pack.common.utils import get_message, send_message, arg_parser
+from client_pack.common.loging_decos import Log
+from client_pack.common.errors import ReqFieldMissingError, ServerError, IncorrectDataRecivedError
 import threading
-from common.descryptors import Port, IpAddress
-from common.metaclasses import ClientMaker
-from Client.client_db import ClientDatabase
-from Client.main_window import ClientMainWindow
-from Client.start_dialog import UserNameDialog
-from Client.client_transport import ClientTransport
-from common.variables import *
+from client_pack.common.descryptors import Port, IpAddress
+from client_pack.common.metaclasses import ClientMaker
+from client_pack.Client.client_db import ClientDatabase
+from client_pack.Client.main_window import ClientMainWindow
+from client_pack.Client.start_dialog import UserNameDialog
+from client_pack.Client.client_transport import ClientTransport
+from client_pack.common.variables import *
 
 
 # Инициализация клиентского логера
@@ -279,7 +279,7 @@ class ClientApp():  #  metaclass=ClientMaker
 				self.client_password = start_dialog.client_password.text()
 				CLIENT_LOGGER.debug(f'Using USERNAME = {self.client_name}, PASSWORD = {self.client_password}.')
 			else:
-				exit(0)
+				sys.exit(0)
 
 		CLIENT_LOGGER.info(f'Запущен клиент с парамертами: адрес сервера: {self.server_address}, '
 						   f'порт: {self.server_port}, пользователь {self.client_name}')
@@ -291,8 +291,8 @@ class ClientApp():  #  metaclass=ClientMaker
 				sys.argv = args
 
 		# Загружаем ключи с файла, если же файла нет, то генерируем новую пару.
-		dir_path = os.path.dirname(os.path.realpath(__file__))
-		key_file = os.path.join(dir_path, f'Client/{self.client_name}.key')
+		dir_path = os.getcwd()
+		key_file = os.path.join(dir_path, f'{self.client_name}.key')
 		if not os.path.exists(key_file):
 			keys = RSA.generate(2048, os.urandom)
 			with open(key_file, 'wb') as key:

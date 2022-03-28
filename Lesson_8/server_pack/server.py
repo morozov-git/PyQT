@@ -6,19 +6,19 @@ import sys
 
 from PyQt5.QtWidgets import QApplication, QMessageBox
 from PyQt5.QtCore import Qt
-from common.utils import arg_parser
+from server_pack.common.utils import arg_parser
 import logging
 
-from Server.core import MessageProcessor
-from common.descryptors import Port, IpAddress
+# from server_pack.Server.core import MessageProcessor
+from server_pack.common.descryptors import Port, IpAddress
 # from common.loging_decos import Log, login_required
 # from common.metaclasses import ServerMaker
 import threading
-from server_gui import MainWindow, ConfigWindow  # , gui_create_model, create_stat_model
-from common.loging_decos import Log
-from Server.core import MessageProcessor
-from Server.server_db import ServerStorage
-from common.variables import *
+from server_pack.Server.server_gui import MainWindow, ConfigWindow  # , gui_create_model, create_stat_model
+from server_pack.common.loging_decos import Log
+from server_pack.Server.core import MessageProcessor
+from server_pack.Server.server_db import ServerStorage
+from server_pack.common.variables import *
 
 # Инициализация серверного логера
 SERVER_LOGGER = logging.getLogger('server')
@@ -124,7 +124,7 @@ class ServerApp():  # class ServerApp(metaclass=ServerMaker):
 		""" Парсер конфигурационного ini файла. """
 
 		config = configparser.ConfigParser()
-		dir_path = os.path.dirname(os.path.realpath(__file__))
+		dir_path = os.getcwd()
 		config.read(f"{dir_path}/{'server.ini'}")
 		# Если конфиг файл загружен правильно, запускаемся, иначе конфиг по умолчанию.
 		if 'SETTINGS' in config:
