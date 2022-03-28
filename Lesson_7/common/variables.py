@@ -1,4 +1,4 @@
-"""Константы"""
+""" Константы. """
 
 import logging
 
@@ -29,6 +29,7 @@ RESPONSE = 'response'
 ERROR = 'error'
 MESSAGE = 'message'
 MESSAGE_TEXT = 'mess_text'
+TEST_MESSAGE = 'TestMessage'
 EXIT = 'exit'
 GET_CONTACTS = 'get_contacts'
 LIST_INFO = 'data_list'
@@ -36,7 +37,6 @@ REMOVE_CONTACT = 'remove'
 ADD_CONTACT = 'add'
 USERS_REQUEST = 'get_users'
 PUBLIC_KEY_REQUEST = 'pubkey_need'
-
 
 # Текущий уровень логирования
 LOGGING_LEVEL = logging.DEBUG

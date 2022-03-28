@@ -1,5 +1,5 @@
-import sys
-import os
+""" Тесты для модуля сервера. """
+
 import unittest
 # sys.path.append(os.path.join(os.getcwd(), '..'))
 from Lesson_5.common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE
@@ -13,34 +13,55 @@ class TestServerApp(unittest.TestCase):
 	TEST_USER = 'test_user'
 
 	def test_no_action(self):
-		self.assertEqual(ServerApp.process_client_message(
-			{TIME: self.TEST_TIME, USER: {ACCOUNT_NAME: 'Guest'}}), self.error_response)
-
+		self.assertEqual(
+			ServerApp.process_client_message({TIME: self.TEST_TIME, USER: {ACCOUNT_NAME: 'Guest'}}),
+			self.error_response
+		)
 
 	def test_no_time(self):
-		self.assertEqual(ServerApp.process_client_message(
-			{ACTION: PRESENCE, USER: {ACCOUNT_NAME: 'Guest'}}), self.error_response)
+		self.assertEqual(
+			ServerApp.process_client_message({ACTION: PRESENCE, USER: {ACCOUNT_NAME: 'Guest'}}),
+			self.error_response
+		)
 
 	def test_no_user(self):
-		self.assertEqual(ServerApp.process_client_message(
-			{ACTION: PRESENCE, TIME: self.TEST_TIME}), self.error_response)
+		self.assertEqual(
+			ServerApp.process_client_message({ACTION: PRESENCE, TIME: self.TEST_TIME}),
+			self.error_response
+		)
 
 	def test_unknown_user(self):
-		self.assertEqual(ServerApp.process_client_message(
-			{ACTION: PRESENCE,
-			 TIME: self.TEST_TIME,
-			 USER: {ACCOUNT_NAME: self.TEST_USER}}), self.error_response)
+		self.assertEqual(
+			ServerApp.process_client_message({
+				ACTION: PRESENCE,
+				TIME: self.TEST_TIME,
+				USER: {ACCOUNT_NAME: self.TEST_USER}
+			}),
+			self.error_response
+		)
 
 	def test_right_response(self):
-		self.assertEqual(ServerApp.process_client_message(
-			{ACTION: PRESENCE,
-			 TIME: self.TEST_TIME, USER: {ACCOUNT_NAME: 'Guest'}}), self.right_response)
+		self.assertEqual(
+			ServerApp.process_client_message({
+				ACTION: PRESENCE,
+				TIME: self.TEST_TIME,
+				USER: {ACCOUNT_NAME: 'Guest'}
+			}),
+			self.right_response
+		)
 
 	def test_main_bad_port(self):
-		self.assertEqual(ServerApp.main('test', 'server_with_db.py', '-p', 888, '-a', '192.168.0.86'), 'BAD PORT')
+		self.assertEqual(
+			ServerApp.main('test', 'server_with_db.py', '-p', 888, '-a', '192.168.0.86'),
+			'BAD PORT'
+		)
 
 	def test_main_not_port(self):
-		self.assertEqual(ServerApp.main('test', 'server_with_db.py', '-a', '192.168.0.86', '-p'), 'PORT NOT SET')
+		self.assertEqual(
+			ServerApp.main('test', 'server_with_db.py', '-a', '192.168.0.86', '-p'),
+			'PORT NOT SET'
+		)
+
 
 if __name__ == '__main__':
 	unittest.main()

@@ -1,7 +1,8 @@
+""" Тесты для модуля клиента. """
 
 import unittest
 # sys.path.append(os.path.join(os.getcwd(), '..'))
-from Lesson_5.common.variables import RESPONSE, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE, TEST_MESSAGE
+from common.variables import RESPONSE, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE, TEST_MESSAGE
 from client import ClientApp
 
 
@@ -24,8 +25,7 @@ class TeasClientApp(unittest.TestCase):
 
 	def test_main_bad_port(self):
 		self.assertEqual(ClientApp.main('test', 'client.py', '192.168.0.100', 888), 'BAD PORT')
-	# self.assertRaises(ValueError, ClientApp.main('test', 'client.py', '192.168.0.100', 888))
-
+# self.assertRaises(ValueError, ClientApp.main('test', 'client.py', '192.168.0.100', 888))
 
 
 # client.py 192.168.0.100 8079
