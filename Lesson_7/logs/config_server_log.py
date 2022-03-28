@@ -1,8 +1,7 @@
-"""Кофнфиг серверного логгера"""
+""" Кофнфиг серверного логгера. """
 
 import sys
 import os
-import logging
 import logging.handlers
 from common.variables import LOGGING_LEVEL
 sys.path.append('../')

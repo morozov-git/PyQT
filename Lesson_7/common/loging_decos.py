@@ -1,11 +1,8 @@
-"""Декораторы"""
+""" Декораторы. """
 
 import sys
 import logging
-import logs.config_server_log
-import logs.config_client_log
 import traceback
-import inspect
 import socket
 
 # метод определения модуля, источника запуска.
@@ -22,32 +19,26 @@ else:
 
 
 class Log:
-    """Класс-декоратор"""
+    """ Класс-декоратор для логирования в поекте. """
+
     def __call__(self, func_to_log):
         def log_saver(*args, **kwargs):
-            """Обертка"""
+            """сохранение логов DEBUG"""
             ret = func_to_log(*args, **kwargs)
             # ret = __call__(self)
             # ret = self
             LOGGER.debug(f'Запущено приложение {func_to_log.__name__},'
                          f'c параметрами {traceback.sys.argv}'
                          f' функции {traceback.format_stack()[0].strip().split()[-1]}.')
-                        # f'Вызов из функции {inspect.stack()[1][3]}'
             return ret
         return log_saver
 
 
-
-
 def login_required(func):
-    '''
-    Декоратор, проверяющий, что клиент авторизован на сервере.
-    Проверяет, что передаваемый объект сокета находится в
-    списке авторизованных клиентов.
-    За исключением передачи словаря-запроса
-    на авторизацию. Если клиент не авторизован,
-    генерирует исключение TypeError
-    '''
+    """ Декоратор, проверяющий, что клиент авторизован на сервере.
+    Проверяет, что передаваемый объект сокета находится в списке авторизованных клиентов.
+    За исключением передачи словаря-запроса на авторизацию.
+    Если клиент не авторизован, генерирует исключение TypeError. """
 
     def checker(*args, **kwargs):
         # проверяем, что первый аргумент - экземпляр MessageProcessor
