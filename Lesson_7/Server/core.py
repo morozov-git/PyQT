@@ -8,11 +8,9 @@ import json
 import hmac
 import binascii
 import os
-from common.metaclasses import ServerMaker
-from common.descryptors import Port, IpAddress
-from common.variables import *
-from common.utils import send_message, get_message
-from common.loging_decos import Log, login_required
+from client_pack.common.descryptors import Port, IpAddress
+from client_pack.common import send_message, get_message
+from client_pack.common import login_required
 
 # Загрузка логера
 SERVER_LOGGER = logging.getLogger('server')

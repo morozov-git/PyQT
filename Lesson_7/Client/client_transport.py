@@ -7,9 +7,7 @@ import hashlib
 import hmac
 from PyQt5.QtCore import pyqtSignal, QObject
 import binascii
-from common.utils import *
-from common.variables import *
-from common.errors import ServerError
+from client_pack.common import ServerError
 
 sys.path.append('../')
 

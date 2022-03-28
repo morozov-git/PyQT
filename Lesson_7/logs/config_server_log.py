@@ -3,7 +3,7 @@
 import sys
 import os
 import logging.handlers
-from common.variables import LOGGING_LEVEL
+from client_pack.common.variables import LOGGING_LEVEL
 sys.path.append('../')
 
 # создаём формировщик логов (formatter):

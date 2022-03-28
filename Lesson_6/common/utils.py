@@ -5,7 +5,6 @@ import sys
 
 from variables import MAX_PACKAGE_LENGTH, ENCODING
 import argparse
-from common.variables import *
 
 
 def get_message(client):

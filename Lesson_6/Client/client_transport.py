@@ -2,15 +2,11 @@ import socket
 import sys
 import time
 import logging
-import json
 import threading
 from PyQt5.QtCore import pyqtSignal, QObject
-from loging_decos import Log
 
 sys.path.append('../')
-from common.utils import *
-from common.variables import *
-from common.errors import ServerError
+from client_pack.common import ServerError
 
 # Логер и объект блокировки для работы с сокетом.
 CLIENT_LOGGER = logging.getLogger('client')

@@ -6,11 +6,9 @@ import json
 import hmac
 import binascii
 import os
-from common.metaclasses import ServerMaker
-from common.descryptors import Port, IP_Address
-from common.variables import *
-from common.utils import send_message, get_message
-from common.loging_decos import Log, login_required
+from descryptors import Port, IpAddress
+from utils import send_message, get_message
+from common import login_required
 
 # Загрузка логера
 SERVER_LOGGER = logging.getLogger('server')
@@ -23,7 +21,7 @@ class MessageProcessor(threading.Thread):
     Работает в качестве отдельного потока.
     '''
     port = Port()
-    ip_address = IP_Address()
+    ip_address = IpAddress()
 
     def __init__(self, listen_address, listen_port, database):
         # Параментры подключения

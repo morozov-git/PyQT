@@ -9,11 +9,10 @@ import sys
 import json
 import base64
 
-from Client.main_window_conv import Ui_MainClientWindow
-from Client.add_contact import AddContactDialog
-from Client.del_contact import DelContactDialog
-from common.errors import ServerError
-from common.variables import *
+from client_pack.Client import Ui_MainClientWindow
+from client_pack.Client import AddContactDialog
+from client_pack.Client import DelContactDialog
+from client_pack.common import ServerError
 
 sys.path.append('./')
 logger = logging.getLogger('client')
