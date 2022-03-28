@@ -1,0 +1,952 @@
+
+2022-03-16 16:43:02,016 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50 , порт: 8888, имя пользователя: TestSender2
+2022-03-16 16:43:02,017 DEBUG decos.py Была вызвана функция create_presence c параметрами ('TestSender2',) , {}. Вызов из модуля __main__
+2022-03-16 16:43:02,017 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2
+2022-03-16 16:43:02,550 DEBUG decos.py Была вызвана функция process_response_ans c параметрами ({'response': 200},) , {}. Вызов из модуля __main__
+2022-03-16 16:43:02,550 DEBUG client.py Разбор приветственного сообщения от сервера: {'response': 200}
+2022-03-16 16:43:02,550 INFO client.py Установлено соединение с сервером. Ответ сервера: 200 : OK
+2022-03-16 16:43:02,583 DEBUG client.py Запрос списка известных пользователей TestSender2
+2022-03-16 16:43:03,071 DEBUG client.py Запрос контакт листа для пользователся TestSender2
+2022-03-16 16:43:03,071 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647438183.071338, 'user': 'TestSender2'}
+2022-03-16 16:43:03,561 DEBUG client.py Получен ответ {'response': 202, 'data_list': ['TestSender1', 'TestSender21']}
+2022-03-16 16:43:03,585 DEBUG client.py Запущены процессы
+2022-03-16 16:43:26,580 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender2', 'to': 'TestSender2', 'time': 1647438206.580317, 'mess_text': 'sdfsdfs'}
+2022-03-16 16:43:26,585 INFO client.py Отправлено сообщение для пользователя TestSender2
+2022-03-16 16:43:26,703 INFO client.py Получено сообщение от пользователя TestSender2:
+sdfsdfs
+2022-03-16 16:43:36,815 INFO client.py Завершение работы по команде пользователя.
+2022-03-16 16:47:00,093 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2'] функции client_name).
+2022-03-16 16:47:00,094 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 16:47:00,095 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2
+2022-03-16 16:47:00,361 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 16:47:00,362 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 16:47:00,362 DEBUG client.py Запущены процессы
+2022-03-16 16:47:01,367 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-16 17:23:00,294 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2'] функции client_name).
+2022-03-16 17:23:00,295 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:23:00,295 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2
+2022-03-16 17:23:00,825 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 17:23:00,825 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 17:23:00,854 DEBUG client.py Запрос списка известных пользователей TestSender2
+2022-03-16 17:23:01,336 DEBUG client.py Запрос контакт листа для пользователся TestSender2
+2022-03-16 17:23:01,336 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647440581.3365781, 'user': 'TestSender2'}
+2022-03-16 17:23:01,847 DEBUG client.py Получен ответ {'response': 202, 'data_list': ['TestSender1', 'TestSender21']}
+2022-03-16 17:23:01,863 DEBUG client.py Запущены процессы
+2022-03-16 17:23:03,868 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-16 17:24:36,011 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2'] функции client_name).
+2022-03-16 17:24:36,012 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:24:36,012 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2
+2022-03-16 17:24:36,013 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 17:24:36,013 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 17:24:36,046 DEBUG client.py Запрос списка известных пользователей TestSender2
+2022-03-16 17:25:01,440 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2'] функции client_name).
+2022-03-16 17:25:01,440 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:25:01,441 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2
+2022-03-16 17:25:01,441 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 17:25:01,441 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 17:25:01,471 DEBUG client.py Запрос списка известных пользователей TestSender2
+2022-03-16 17:25:18,450 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender22'] функции client_name).
+2022-03-16 17:25:18,450 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:25:18,450 DEBUG client.py Сформировано presence сообщение для пользователя TestSender22
+2022-03-16 17:25:18,469 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 17:25:18,469 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 17:25:18,506 DEBUG client.py Запрос списка известных пользователей TestSender22
+2022-03-16 17:25:18,978 DEBUG client.py Запрос контакт листа для пользователся TestSender22
+2022-03-16 17:25:18,978 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647440718.978705, 'user': 'TestSender22'}
+2022-03-16 17:25:19,477 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 17:25:19,477 DEBUG client.py Запущены процессы
+2022-03-16 17:25:21,481 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-16 17:26:10,059 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender22'] функции client_name).
+2022-03-16 17:26:10,059 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:26:10,060 DEBUG client.py Сформировано presence сообщение для пользователя TestSender22
+2022-03-16 17:26:10,564 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 17:26:10,564 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 17:26:10,597 DEBUG client.py Запрос списка известных пользователей TestSender22
+2022-03-16 17:26:20,455 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 17:26:20,464 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:26:20,465 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 17:26:20,474 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 17:26:20,474 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 17:26:20,504 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 17:26:20,996 DEBUG client.py Запрос контакт листа для пользователся TestSender212
+2022-03-16 17:26:20,996 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647440780.996932, 'user': 'TestSender212'}
+2022-03-16 17:26:21,490 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 17:26:21,491 DEBUG client.py Запущены процессы
+2022-03-16 17:26:23,497 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-16 17:45:21,409 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 17:45:21,409 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:45:21,409 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 17:45:21,431 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 17:45:21,431 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 17:45:21,465 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 17:45:21,952 DEBUG client.py Запрос контакт листа для пользователся TestSender212
+2022-03-16 17:45:21,952 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647441921.952724, 'user': 'TestSender212'}
+2022-03-16 17:45:22,444 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 17:45:22,445 DEBUG client.py Запущены процессы
+2022-03-16 17:54:20,471 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 17:54:20,474 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:54:20,474 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 17:54:20,762 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 17:54:20,762 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 17:54:47,650 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 17:54:47,651 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:54:47,651 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 17:54:47,652 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 17:54:47,652 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 17:54:47,680 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 17:55:27,491 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 17:55:27,492 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:55:27,492 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 17:55:27,579 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 17:55:27,579 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 17:55:27,607 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 17:56:13,514 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 17:56:13,514 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:56:13,514 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 17:56:13,601 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 17:56:13,601 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 17:56:49,768 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 17:56:49,769 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:56:49,769 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 17:56:49,901 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 17:56:49,901 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 17:56:49,934 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 17:58:33,196 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 17:58:33,197 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:58:33,197 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 17:58:33,325 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 17:58:33,325 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 17:58:33,366 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 17:59:37,534 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 17:59:37,535 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 17:59:37,536 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 17:59:37,623 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 17:59:37,623 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 17:59:37,650 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 18:01:58,169 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 18:01:58,170 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:01:58,170 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 18:01:58,257 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:01:58,257 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:06:29,562 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 18:06:29,563 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:06:52,506 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 18:06:52,506 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:06:52,507 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 18:06:53,036 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 18:06:53,036 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 18:06:53,072 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 18:06:53,559 DEBUG client.py Запрос контакт листа для пользователся TestSender212
+2022-03-16 18:06:53,559 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647443213.559372, 'user': 'TestSender212'}
+2022-03-16 18:06:54,050 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 18:06:54,051 DEBUG client.py Запущены процессы
+2022-03-16 18:14:20,960 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 18:14:20,961 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:14:20,961 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 18:14:21,130 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:14:21,130 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:14:21,183 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 18:16:45,035 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 18:16:45,035 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:16:45,035 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 18:16:45,249 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:16:45,249 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:16:45,300 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 18:21:46,252 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 18:21:46,252 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:21:46,253 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 18:21:46,478 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:21:46,478 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:25:17,240 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 18:25:17,240 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:25:17,241 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 18:25:17,369 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:25:17,369 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:25:17,408 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 18:26:32,072 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 18:26:32,073 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:26:32,074 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 18:26:32,454 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:26:32,455 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:26:32,506 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 18:28:47,352 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции client_name).
+2022-03-16 18:28:47,352 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:28:47,353 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 18:28:47,480 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:28:47,481 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:28:47,518 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 18:29:09,937 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender212'] функции main().
+2022-03-16 18:29:09,943 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:29:29,832 DEBUG client.py Сформировано presence сообщение для пользователя TestSender212
+2022-03-16 18:30:32,750 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:30:33,377 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:30:36,191 DEBUG client.py Запрос списка известных пользователей TestSender212
+2022-03-16 18:30:56,697 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2112'] функции client_name).
+2022-03-16 18:30:56,697 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:30:56,698 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2112
+2022-03-16 18:30:56,921 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 18:30:56,921 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 18:30:56,959 DEBUG client.py Запрос списка известных пользователей TestSender2112
+2022-03-16 18:33:42,139 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2112'] функции client_name).
+2022-03-16 18:33:42,140 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:33:42,140 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2112
+2022-03-16 18:33:42,267 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:33:42,267 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:33:42,300 DEBUG client.py Запрос списка известных пользователей TestSender2112
+2022-03-16 18:33:54,684 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender21112'] функции client_name).
+2022-03-16 18:33:54,684 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:33:54,685 DEBUG client.py Сформировано presence сообщение для пользователя TestSender21112
+2022-03-16 18:33:54,825 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 18:33:54,825 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 18:33:54,863 DEBUG client.py Запрос списка известных пользователей TestSender21112
+2022-03-16 18:35:26,735 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender21112'] функции client_name).
+2022-03-16 18:35:26,735 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:35:26,735 DEBUG client.py Сформировано presence сообщение для пользователя TestSender21112
+2022-03-16 18:35:26,863 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:35:26,863 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:35:26,898 DEBUG client.py Запрос списка известных пользователей TestSender21112
+2022-03-16 18:35:38,538 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender221112'] функции client_name).
+2022-03-16 18:35:38,539 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:35:38,539 DEBUG client.py Сформировано presence сообщение для пользователя TestSender221112
+2022-03-16 18:35:38,725 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 18:35:38,725 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 18:35:38,766 DEBUG client.py Запрос списка известных пользователей TestSender221112
+2022-03-16 18:35:39,242 DEBUG client.py Запрос контакт листа для пользователся TestSender221112
+2022-03-16 18:35:39,242 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647444939.242213, 'user': 'TestSender221112'}
+2022-03-16 18:35:39,732 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 18:35:39,733 DEBUG client.py Запущены процессы
+2022-03-16 18:36:00,726 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1647444960.726942, 'from': 'Guest', 'to': 'TestSender221112', 'mess_text': 'dsadasdasfd'}
+2022-03-16 18:39:23,206 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender221112'] функции client_name).
+2022-03-16 18:39:23,207 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:39:23,207 DEBUG client.py Сформировано presence сообщение для пользователя TestSender221112
+2022-03-16 18:39:23,335 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:39:23,335 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:39:23,377 DEBUG client.py Запрос списка известных пользователей TestSender221112
+2022-03-16 18:39:34,509 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2w21112'] функции client_name).
+2022-03-16 18:39:34,510 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:39:34,510 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2w21112
+2022-03-16 18:39:34,646 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 18:39:34,646 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 18:39:34,685 DEBUG client.py Запрос списка известных пользователей TestSender2w21112
+2022-03-16 18:39:35,162 DEBUG client.py Запрос контакт листа для пользователся TestSender2w21112
+2022-03-16 18:39:35,163 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647445175.163163, 'user': 'TestSender2w21112'}
+2022-03-16 18:39:35,652 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 18:39:35,653 DEBUG client.py Запущены процессы
+2022-03-16 18:39:51,354 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1647445191.3548229, 'from': 'Guest', 'to': 'TestSender2w21112', 'mess_text': 'sdfdsaf'}
+2022-03-16 18:39:51,710 INFO client.py Отправлено сообщение для пользователя TestSender2w21112
+2022-03-16 18:40:54,985 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1647445254.9853902, 'from': 'Guest', 'to': 'TestSender2w21112', 'mess_text': 'dsfsdfsd'}
+2022-03-16 18:40:54,989 INFO client.py Отправлено сообщение для пользователя TestSender2w21112
+2022-03-16 18:41:05,829 INFO client.py Завершение работы по команде пользователя.
+2022-03-16 18:41:17,466 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2w21112'] функции client_name).
+2022-03-16 18:41:17,467 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:41:17,467 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2w21112
+2022-03-16 18:41:17,468 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:41:17,468 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:41:17,511 DEBUG client.py Запрос списка известных пользователей TestSender2w21112
+2022-03-16 18:41:32,135 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2ww21112'] функции client_name).
+2022-03-16 18:41:32,135 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:41:32,135 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2ww21112
+2022-03-16 18:41:32,143 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 18:41:32,143 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 18:41:32,179 DEBUG client.py Запрос списка известных пользователей TestSender2ww21112
+2022-03-16 18:41:32,664 DEBUG client.py Запрос контакт листа для пользователся TestSender2ww21112
+2022-03-16 18:41:32,665 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647445292.6652029, 'user': 'TestSender2ww21112'}
+2022-03-16 18:41:33,155 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 18:41:33,156 DEBUG client.py Запущены процессы
+2022-03-16 18:41:56,833 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1647445316.833815, 'from': 'Guest', 'to': 'TestSender2ww21112', 'mess_text': 'asdfasdfads'}
+2022-03-16 18:41:57,234 INFO client.py Отправлено сообщение для пользователя TestSender2ww21112
+2022-03-16 18:41:58,247 INFO client.py Получено сообщение от пользователя Guest:
+asdfasdfads
+2022-03-16 18:44:02,647 INFO client.py Завершение работы по команде пользователя.
+2022-03-16 18:45:34,363 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2ww21112'] функции client_name).
+2022-03-16 18:45:34,364 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:45:34,364 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2ww21112
+2022-03-16 18:45:34,452 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:45:34,452 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:45:34,494 DEBUG client.py Запрос списка известных пользователей TestSender2ww21112
+2022-03-16 18:45:53,154 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2www21112'] функции client_name).
+2022-03-16 18:45:53,155 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:45:53,155 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2www21112
+2022-03-16 18:45:53,341 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 18:45:53,341 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 18:45:53,378 DEBUG client.py Запрос списка известных пользователей TestSender2www21112
+2022-03-16 18:45:53,857 DEBUG client.py Запрос контакт листа для пользователся TestSender2www21112
+2022-03-16 18:45:53,857 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647445553.8576798, 'user': 'TestSender2www21112'}
+2022-03-16 18:45:54,346 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 18:45:54,346 DEBUG client.py Запущены процессы
+2022-03-16 18:46:03,737 ERROR client.py Попытка отправить сообщение незарегистрированому получателю: TestSender2www2111
+2022-03-16 18:46:28,102 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1647445588.102293, 'from': 'Guest', 'to': 'TestSender2www21112', 'mess_text': 'sdgfsfd'}
+2022-03-16 18:46:28,455 INFO client.py Отправлено сообщение для пользователя TestSender2www21112
+2022-03-16 18:46:29,469 INFO client.py Получено сообщение от пользователя Guest:
+sdgfsfd
+2022-03-16 18:55:23,143 INFO client.py Завершение работы по команде пользователя.
+2022-03-16 18:56:02,236 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2wwww21112'] функции main().
+2022-03-16 18:56:20,073 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:57:51,842 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2wwww21112
+2022-03-16 18:58:36,729 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2wwww21112'] функции client_name).
+2022-03-16 18:58:36,729 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:58:36,730 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2wwww21112
+2022-03-16 18:58:37,234 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 18:58:37,235 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 18:58:37,282 DEBUG client.py Запрос списка известных пользователей TestSender2wwww21112
+2022-03-16 18:58:48,604 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2wwwww21112'] функции client_name).
+2022-03-16 18:58:48,605 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 18:58:48,605 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2wwwww21112
+2022-03-16 18:58:48,617 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 18:58:48,617 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 18:58:48,652 DEBUG client.py Запрос списка известных пользователей TestSender2wwwww21112
+2022-03-16 18:58:49,132 DEBUG client.py Запрос контакт листа для пользователся TestSender2wwwww21112
+2022-03-16 18:58:49,132 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647446329.132889, 'user': 'TestSender2wwwww21112'}
+2022-03-16 18:58:49,625 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 18:58:49,626 DEBUG client.py Запущены процессы
+2022-03-16 18:59:06,620 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1647446346.620529, 'from': 'Guest', 'to': 'TestSender2wwwww21112', 'mess_text': 'dafsfgrefgewr'}
+2022-03-16 18:59:06,631 INFO client.py Отправлено сообщение для пользователя TestSender2wwwww21112
+2022-03-16 18:59:06,741 INFO client.py Получено сообщение от пользователя Guest:
+dafsfgrefgewr
+2022-03-16 18:59:30,806 INFO client.py Завершение работы по команде пользователя.
+2022-03-16 19:11:10,668 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2wwwwww21112'] функции client_name).
+2022-03-16 19:11:10,668 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 19:11:10,669 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2wwwwww21112
+2022-03-16 19:11:10,852 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 19:11:10,852 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 19:11:10,893 DEBUG client.py Запрос списка известных пользователей TestSender2wwwwww21112
+2022-03-16 19:14:55,155 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2wwwwww21112'] функции client_name).
+2022-03-16 19:14:55,155 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 19:14:55,156 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2wwwwww21112
+2022-03-16 19:14:55,244 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 19:14:55,244 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 19:14:55,275 DEBUG client.py Запрос списка известных пользователей TestSender2wwwwww21112
+2022-03-16 19:15:12,958 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2cwwwwww21112'] функции client_name).
+2022-03-16 19:15:12,958 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 19:15:12,959 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2cwwwwww21112
+2022-03-16 19:15:13,201 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 19:15:13,201 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 19:15:13,238 DEBUG client.py Запрос списка известных пользователей TestSender2cwwwwww21112
+2022-03-16 19:18:26,068 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2cqwwwwww21112'] функции main().
+2022-03-16 19:18:31,048 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 19:18:42,450 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2cqwwwwww21112
+2022-03-16 19:19:09,524 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 19:19:11,102 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 19:19:24,805 DEBUG client.py Запрос списка известных пользователей TestSender2cqwwwwww21112
+2022-03-16 19:22:00,071 DEBUG client.py Запрос контакт листа для пользователся TestSender2cqwwwwww21112
+2022-03-16 19:22:01,517 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647447720.072383, 'user': 'TestSender2cqwwwwww21112'}
+2022-03-16 19:22:27,390 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 19:23:15,986 DEBUG client.py Запущены процессы
+2022-03-16 19:24:10,043 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1647447850.043762, 'from': 'TestSender2cqwwwwww21112', 'to': 'TestSender2cqwwwwww21112', 'mess_text': 'fdsgffdhrtwbyer'}
+2022-03-16 19:24:10,068 INFO client.py Отправлено сообщение для пользователя TestSender2cqwwwwww21112
+2022-03-16 19:24:42,252 INFO client.py Получено сообщение от пользователя TestSender2cqwwwwww21112:
+fdsgffdhrtwbyer
+2022-03-16 19:30:40,990 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2acqwwwwww21112'] функции client_name).
+2022-03-16 19:30:40,991 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 19:32:18,979 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2acqwwwwww21112'] функции client_name).
+2022-03-16 19:32:18,980 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 19:32:18,980 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2acqwwwwww21112
+2022-03-16 19:32:19,184 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 19:32:19,184 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 19:32:19,221 DEBUG client.py Запрос списка известных пользователей TestSender2acqwwwwww21112
+2022-03-16 19:32:19,699 DEBUG client.py Запрос контакт листа для пользователся TestSender2acqwwwwww21112
+2022-03-16 19:32:19,699 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647448339.699413, 'user': 'TestSender2acqwwwwww21112'}
+2022-03-16 19:32:20,199 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 19:32:20,200 DEBUG client.py Запущены процессы
+2022-03-16 19:32:44,032 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1647448364.03235, 'from': 'TestSender2acqwwwwww21112', 'to': 'TestSender2acqwwwwww21112', 'mess_text': 'gtykmjuytensrw'}
+2022-03-16 19:32:44,274 INFO client.py Отправлено сообщение для пользователя TestSender2acqwwwwww21112
+2022-03-16 19:32:45,290 INFO client.py Получено сообщение от пользователя TestSender2acqwwwwww21112:
+gtykmjuytensrw
+2022-03-16 19:37:11,950 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2acqwwwwww21112'] функции client_name).
+2022-03-16 19:37:11,951 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 19:37:11,951 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2acqwwwwww21112
+2022-03-16 19:37:12,078 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 19:37:12,078 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 19:37:12,113 DEBUG client.py Запрос списка известных пользователей TestSender2acqwwwwww21112
+2022-03-16 19:44:21,638 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2acqwwwwww21112'] функции client_name).
+2022-03-16 19:44:21,640 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 19:44:21,641 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2acqwwwwww21112
+2022-03-16 19:44:21,778 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 19:44:21,778 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 19:44:21,813 DEBUG client.py Запрос списка известных пользователей TestSender2acqwwwwww21112
+2022-03-16 19:49:30,684 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2acqwwwwww21112'] функции client_name).
+2022-03-16 19:49:30,686 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 19:49:30,687 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2acqwwwwww21112
+2022-03-16 19:50:23,552 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2acqwwwwww21112'] функции client_name).
+2022-03-16 19:50:23,553 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 19:50:23,553 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2acqwwwwww21112
+2022-03-16 19:51:40,915 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2acqwwwwww21112'] функции client_name).
+2022-03-16 19:51:40,915 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 19:51:40,916 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2acqwwwwww21112
+2022-03-16 20:15:59,911 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2acqwwwwww21112'] функции client_name).
+2022-03-16 20:15:59,912 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 20:15:59,912 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2acqwwwwww21112
+2022-03-16 20:18:53,336 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2acqwwwwww21112'] функции client_name).
+2022-03-16 20:18:53,337 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 20:18:53,337 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2acqwwwwww21112
+2022-03-16 20:31:18,127 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2acqwwwwww21112'] функции client_name).
+2022-03-16 20:31:18,127 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 20:31:18,127 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2acqwwwwww21112
+2022-03-16 20:31:18,146 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 20:31:18,146 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 20:31:18,181 DEBUG client.py Запрос списка известных пользователей TestSender2acqwwwwww21112
+2022-03-16 20:31:18,670 DEBUG client.py Запрос контакт листа для пользователся TestSender2acqwwwwww21112
+2022-03-16 20:31:18,670 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647451878.6704938, 'user': 'TestSender2acqwwwwww21112'}
+2022-03-16 20:31:19,163 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 20:31:19,163 DEBUG client.py Запущены процессы
+2022-03-16 20:31:50,916 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1647451910.9165728, 'from': 'TestSender2acqwwwwww21112', 'to': 'TestSender2acqwwwwww21112', 'mess_text': 'sdgdsfagafsdg'}
+2022-03-16 20:31:51,278 INFO client.py Отправлено сообщение для пользователя TestSender2acqwwwwww21112
+2022-03-16 20:31:52,295 INFO client.py Получено сообщение от пользователя TestSender2acqwwwwww21112:
+sdgdsfagafsdg
+2022-03-16 20:32:24,412 DEBUG client.py Создание контакта TestSender4
+2022-03-16 20:33:05,375 INFO client.py Завершение работы по команде пользователя.
+2022-03-16 20:33:05,532 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-16 20:33:33,193 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2'] функции client_name).
+2022-03-16 20:33:33,194 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 20:33:33,195 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2
+2022-03-16 20:33:33,714 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 20:33:33,714 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 20:33:33,740 DEBUG client.py Запрос списка известных пользователей TestSender2
+2022-03-16 20:33:34,238 DEBUG client.py Запрос контакт листа для пользователся TestSender2
+2022-03-16 20:33:34,238 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647452014.238252, 'user': 'TestSender2'}
+2022-03-16 20:33:34,725 DEBUG client.py Получен ответ {'response': 202, 'data_list': ['TestSender1', 'TestSender21']}
+2022-03-16 20:33:34,751 DEBUG client.py Запущены процессы
+2022-03-16 20:33:52,503 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1647452032.502934, 'from': 'TestSender2', 'to': 'TestSender2', 'mess_text': 'sgvwbnguqerhf;'}
+2022-03-16 20:33:52,807 INFO client.py Отправлено сообщение для пользователя TestSender2
+2022-03-16 20:33:53,819 INFO client.py Получено сообщение от пользователя TestSender2:
+sgvwbnguqerhf;
+2022-03-16 20:33:59,975 INFO client.py Завершение работы по команде пользователя.
+2022-03-16 20:34:00,845 CRITICAL client.py Потеряно соединение с сервером.
+2022-03-16 21:13:35,216 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2'] функции client_name).
+2022-03-16 21:13:35,440 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:13:35,440 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2
+2022-03-16 21:13:35,556 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 21:13:35,556 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 21:13:35,600 DEBUG client.py Запрос списка известных пользователей TestSender2
+2022-03-16 21:14:36,713 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2'] функции client_name).
+2022-03-16 21:14:36,904 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:14:36,905 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2
+2022-03-16 21:14:36,923 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 21:14:36,923 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 21:14:36,956 DEBUG client.py Запрос списка известных пользователей TestSender2
+2022-03-16 21:14:37,445 DEBUG client.py Запрос контакт листа для пользователся TestSender2
+2022-03-16 21:14:37,446 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647454477.4461231, 'user': 'TestSender2'}
+2022-03-16 21:14:37,938 DEBUG client.py Получен ответ {'response': 202, 'data_list': ['TestSender1', 'TestSender21']}
+2022-03-16 21:14:37,962 DEBUG client.py Запущены процессы
+2022-03-16 21:16:58,260 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2'] функции client_name).
+2022-03-16 21:16:58,452 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:16:58,453 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2
+2022-03-16 21:16:58,453 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 21:16:58,453 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 21:16:58,487 DEBUG client.py Запрос списка известных пользователей TestSender2
+2022-03-16 21:17:53,525 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2'] функции client_name).
+2022-03-16 21:17:53,700 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:17:53,700 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2
+2022-03-16 21:17:53,739 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 21:17:53,739 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 21:17:53,774 DEBUG client.py Запрос списка известных пользователей TestSender2
+2022-03-16 21:17:54,259 DEBUG client.py Запрос контакт листа для пользователся TestSender2
+2022-03-16 21:17:54,259 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647454674.2595189, 'user': 'TestSender2'}
+2022-03-16 21:17:54,752 DEBUG client.py Получен ответ {'response': 202, 'data_list': ['TestSender1', 'TestSender21']}
+2022-03-16 21:34:04,485 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2'] функции client_name).
+2022-03-16 21:34:04,745 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:34:04,745 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2
+2022-03-16 21:34:04,832 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 21:34:04,832 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 21:34:04,867 DEBUG client.py Запрос списка известных пользователей TestSender2
+2022-03-16 21:35:44,231 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender23'] функции client_name).
+2022-03-16 21:35:44,413 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:35:44,414 DEBUG client.py Сформировано presence сообщение для пользователя TestSender23
+2022-03-16 21:35:44,427 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 21:35:44,427 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 21:35:44,465 DEBUG client.py Запрос списка известных пользователей TestSender23
+2022-03-16 21:35:44,951 DEBUG client.py Запрос контакт листа для пользователся TestSender23
+2022-03-16 21:35:44,952 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647455744.952, 'user': 'TestSender23'}
+2022-03-16 21:35:45,443 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 21:38:03,226 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233'] функции client_name).
+2022-03-16 21:38:03,457 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:38:03,458 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233
+2022-03-16 21:38:03,601 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 21:38:03,602 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 21:38:03,642 DEBUG client.py Запрос списка известных пользователей TestSender233
+2022-03-16 21:40:00,716 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233'] функции client_name).
+2022-03-16 21:40:00,914 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:40:00,914 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233
+2022-03-16 21:40:01,001 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 21:40:01,001 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 21:40:55,147 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233'] функции main().
+2022-03-16 21:41:01,028 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:41:08,188 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233
+2022-03-16 21:41:45,676 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233'] функции client_name).
+2022-03-16 21:41:45,881 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:41:45,881 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233
+2022-03-16 21:41:45,882 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 21:41:45,883 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 21:41:53,209 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233'] функции client_name).
+2022-03-16 21:41:53,402 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:41:53,403 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233
+2022-03-16 21:41:53,403 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 21:41:53,404 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 21:43:43,563 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233'] функции client_name).
+2022-03-16 21:43:43,737 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:43:43,737 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233
+2022-03-16 21:43:43,763 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 21:43:43,763 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 21:44:42,168 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233'] функции client_name).
+2022-03-16 21:44:42,353 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:44:42,354 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233
+2022-03-16 21:45:28,882 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233'] функции client_name).
+2022-03-16 21:45:29,048 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:45:29,048 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233
+2022-03-16 21:45:29,074 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 21:45:29,074 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 21:46:36,071 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233'] функции client_name).
+2022-03-16 21:46:36,247 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:46:36,247 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233
+2022-03-16 21:46:36,248 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 21:46:36,248 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 21:46:36,288 DEBUG client.py Запрос списка известных пользователей TestSender233
+2022-03-16 21:47:54,220 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2333'] функции client_name).
+2022-03-16 21:47:54,407 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:47:54,407 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2333
+2022-03-16 21:47:54,431 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 21:47:54,431 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 21:47:54,463 DEBUG client.py Запрос списка известных пользователей TestSender2333
+2022-03-16 21:47:55,319 DEBUG client.py Запрос контакт листа для пользователся TestSender2333
+2022-03-16 21:47:55,320 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647456475.319995, 'user': 'TestSender2333'}
+2022-03-16 21:47:55,811 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 21:50:00,323 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2333'] функции client_name).
+2022-03-16 21:50:00,569 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:50:00,569 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2333
+2022-03-16 21:50:00,570 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 21:50:00,570 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 21:50:00,607 DEBUG client.py Запрос списка известных пользователей TestSender2333
+2022-03-16 21:50:15,169 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender23333'] функции client_name).
+2022-03-16 21:50:15,352 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:50:15,352 DEBUG client.py Сформировано presence сообщение для пользователя TestSender23333
+2022-03-16 21:54:49,448 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender23333'] функции client_name).
+2022-03-16 21:54:49,671 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:54:49,671 DEBUG client.py Сформировано presence сообщение для пользователя TestSender23333
+2022-03-16 21:54:49,816 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 21:54:49,816 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 21:54:49,850 DEBUG client.py Запрос списка известных пользователей TestSender23333
+2022-03-16 21:55:07,565 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233333'] функции client_name).
+2022-03-16 21:55:07,775 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:55:07,775 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233333
+2022-03-16 21:55:07,889 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 21:55:07,889 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 21:55:07,924 DEBUG client.py Запрос списка известных пользователей TestSender233333
+2022-03-16 21:57:46,456 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233333'] функции client_name).
+2022-03-16 21:57:46,657 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:57:46,658 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233333
+2022-03-16 21:57:46,676 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 21:57:46,676 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 21:57:46,710 DEBUG client.py Запрос списка известных пользователей TestSender233333
+2022-03-16 21:57:47,193 DEBUG client.py Запрос контакт листа для пользователся TestSender233333
+2022-03-16 21:57:47,193 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647457067.193751, 'user': 'TestSender233333'}
+2022-03-16 21:57:47,692 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 21:59:38,424 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233333'] функции main().
+2022-03-16 21:59:44,620 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 21:59:55,304 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233333
+2022-03-16 22:09:02,003 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender233333'] функции client_name).
+2022-03-16 22:09:02,004 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:09:02,004 DEBUG client.py Сформировано presence сообщение для пользователя TestSender233333
+2022-03-16 22:09:02,005 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 22:09:02,005 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 22:09:02,046 DEBUG client.py Запрос списка известных пользователей TestSender233333
+2022-03-16 22:10:06,678 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender2333333'] функции client_name).
+2022-03-16 22:10:06,678 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:10:06,678 DEBUG client.py Сформировано presence сообщение для пользователя TestSender2333333
+2022-03-16 22:10:06,865 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 22:10:06,865 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 22:10:06,902 DEBUG client.py Запрос списка известных пользователей TestSender2333333
+2022-03-16 22:10:24,364 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:10:24,364 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:10:24,364 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2022-03-16 22:10:24,373 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 22:10:24,373 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 22:10:24,412 DEBUG client.py Запрос списка известных пользователей Guest
+2022-03-16 22:10:24,898 DEBUG client.py Запрос контакт листа для пользователся Guest
+2022-03-16 22:10:24,898 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647457824.898226, 'user': 'Guest'}
+2022-03-16 22:10:25,389 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 22:10:35,728 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции main().
+2022-03-16 22:10:38,884 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:10:45,385 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2022-03-16 22:10:52,664 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 22:10:53,251 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 22:10:56,242 DEBUG client.py Запрос списка известных пользователей Guest
+2022-03-16 22:12:12,381 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:13:08,546 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:14:17,920 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:16:22,893 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:16:23,097 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:16:23,097 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2022-03-16 22:16:44,642 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:16:44,867 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:16:44,868 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2022-03-16 22:16:44,874 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 22:16:44,874 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 22:16:44,945 DEBUG client.py Запрос списка известных пользователей Guest
+2022-03-16 22:18:52,009 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:18:52,201 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:18:52,201 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2022-03-16 22:18:52,230 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 22:18:52,230 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 22:18:52,274 DEBUG client.py Запрос списка известных пользователей Guest
+2022-03-16 22:18:52,752 DEBUG client.py Запрос контакт листа для пользователся Guest
+2022-03-16 22:18:52,752 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647458332.7527812, 'user': 'Guest'}
+2022-03-16 22:18:53,249 DEBUG client.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-16 22:19:58,461 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:19:58,659 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:19:58,660 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2022-03-16 22:19:58,663 DEBUG client.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-16 22:19:58,663 INFO client.py Принят ответ от сервера 400 : Имя пользователя уже занято.
+2022-03-16 22:19:58,700 DEBUG client.py Запрос списка известных пользователей Guest
+2022-03-16 22:20:17,656 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции main().
+2022-03-16 22:20:25,874 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:20:31,784 DEBUG client.py Сформировано presence сообщение для пользователя Guest
+2022-03-16 22:29:09,715 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции main().
+2022-03-16 22:30:48,397 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции main().
+2022-03-16 22:31:16,319 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:31:57,565 DEBUG client.py Сформировано presence сообщение для пользователя dsjfghsdgafjhg
+2022-03-16 22:32:44,485 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:32:48,051 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:32:48,051 DEBUG client.py Сформировано presence сообщение для пользователя dwqdqwd
+2022-03-16 22:32:48,575 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 22:32:48,575 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 22:32:48,612 DEBUG client.py Запрос списка известных пользователей dwqdqwd
+2022-03-16 22:32:49,100 DEBUG client.py Запрос контакт листа для пользователся dwqdqwd
+2022-03-16 22:32:49,100 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647459169.1002948, 'user': None}
+2022-03-16 22:39:17,840 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:39:21,141 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:39:21,141 DEBUG client.py Сформировано presence сообщение для пользователя dasdas
+2022-03-16 22:39:21,170 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 22:39:21,170 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 22:39:21,207 DEBUG client.py Запрос списка известных пользователей dasdas
+2022-03-16 22:39:21,689 DEBUG client.py Запрос контакт листа для пользователся dasdas
+2022-03-16 22:39:21,689 DEBUG client.py Сформирован запрос {'action': 'get_contacts', 'time': 1647459561.689643, 'user': None}
+2022-03-16 22:46:29,040 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:46:32,381 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:46:32,381 DEBUG client.py Сформировано presence сообщение для пользователя апаафыпаыв
+2022-03-16 22:46:32,394 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 22:46:32,394 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-16 22:53:57,299 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:54:01,173 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:54:56,534 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888'] функции client_name).
+2022-03-16 22:55:00,321 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-16 22:55:00,322 DEBUG client.py Сформировано presence сообщение для пользователя dsafdsgfdsag
+2022-03-16 22:55:00,340 DEBUG client.py Разбор сообщения от сервера: {'response': 200}
+2022-03-16 22:55:00,340 INFO client.py Принят ответ от сервера 200 : OK
+2022-03-17 00:29:53,636 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 00:29:53,829 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:29:53,860 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:29:53,861 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:29:53,861 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 00:29:58,863 CRITICAL client_transport.py Потеряно соединение с сервером!
+2022-03-17 00:30:11,529 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 00:30:11,707 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:30:11,739 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:30:11,739 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:30:11,739 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 00:30:11,740 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-17 00:30:24,008 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender12'] функции client_name).
+2022-03-17 00:30:24,186 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:30:24,229 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:30:24,229 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:30:24,230 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender12
+2022-03-17 00:30:24,751 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:30:24,752 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 00:30:24,752 DEBUG client_transport.py Запрос списка известных пользователей TestSender12
+2022-03-17 00:30:25,266 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 00:30:25,266 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647466225.26631, 'user': 'TestSender12'}
+2022-03-17 00:30:25,768 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-17 00:30:25,769 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 00:31:27,506 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender12'] функции client_name).
+2022-03-17 00:31:27,723 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:31:27,748 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:31:27,749 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:31:27,749 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender12
+2022-03-17 00:31:27,836 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-17 00:31:36,840 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender122'] функции client_name).
+2022-03-17 00:31:37,019 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:31:37,061 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:31:37,061 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:31:37,062 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender122
+2022-03-17 00:31:41,763 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:31:41,764 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 00:31:41,764 DEBUG client_transport.py Запрос списка известных пользователей TestSender122
+2022-03-17 00:31:42,279 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 00:31:42,280 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647466302.280061, 'user': 'TestSender122'}
+2022-03-17 00:31:42,772 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-17 00:31:42,773 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 00:32:47,104 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1222'] функции client_name).
+2022-03-17 00:32:47,311 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:32:47,369 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:32:47,370 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:32:47,371 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1222
+2022-03-17 00:32:47,553 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:32:47,553 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 00:32:47,554 DEBUG client_transport.py Запрос списка известных пользователей TestSender1222
+2022-03-17 00:32:52,554 ERROR client_transport.py Timeout соединения при обновлении списков пользователей.
+2022-03-17 00:32:52,556 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 00:32:53,644 DEBUG client_transport.py Принято сообщение с сервера: {'response': 202, 'data_list': ['dasdas', 'апаафыпаыв', 'dsafdsgfdsag', 'TestSender1', 'TestSender12', 'TestSender122', 'TestSender1222']}
+2022-03-17 00:32:53,644 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 202, 'data_list': ['dasdas', 'апаафыпаыв', 'dsafdsgfdsag', 'TestSender1', 'TestSender12', 'TestSender122', 'TestSender1222']}
+2022-03-17 00:32:53,645 DEBUG client_transport.py Принят неизвестный код подтверждения 202
+2022-03-17 00:33:29,872 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1222'] функции client_name).
+2022-03-17 00:33:30,187 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:33:30,251 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:33:30,252 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:33:30,252 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1222
+2022-03-17 00:33:30,754 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-17 00:33:41,418 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1222'] функции client_name).
+2022-03-17 00:33:41,602 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:33:41,627 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:33:41,627 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:33:41,627 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1222
+2022-03-17 00:33:42,130 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Имя пользователя уже занято.'}
+2022-03-17 00:33:50,921 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender12222'] функции client_name).
+2022-03-17 00:33:51,120 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:33:51,159 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:33:51,159 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:33:51,160 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender12222
+2022-03-17 00:33:51,684 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:33:51,684 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 00:33:51,684 DEBUG client_transport.py Запрос списка известных пользователей TestSender12222
+2022-03-17 00:33:52,204 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 00:33:52,204 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647466432.204772, 'user': 'TestSender12222'}
+2022-03-17 00:33:52,698 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-17 00:33:52,698 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 00:34:09,702 DEBUG client_transport.py Создание контакта апаафыпаыв
+2022-03-17 00:34:09,818 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:34:09,829 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x10a977550>
+2022-03-17 00:34:23,132 DEBUG client_transport.py Создание контакта TestSender1222
+2022-03-17 00:34:23,425 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:34:23,430 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x10a9c6f70>
+2022-03-17 00:36:14,137 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client_gui_2.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender_gui'] функции client_name).
+2022-03-17 00:36:14,338 INFO client_gui_2.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:36:14,378 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:36:14,378 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:36:14,378 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender_gui
+2022-03-17 00:36:14,562 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:36:14,562 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 00:36:14,563 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:36:16,655 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 00:36:16,655 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647466576.65572, 'user': 'TestSender_gui'}
+2022-03-17 00:36:17,149 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-03-17 00:36:17,150 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 00:36:28,213 DEBUG client_transport.py Создание контакта TestSender12222
+2022-03-17 00:36:28,728 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:36:28,738 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x10a7bc550>
+2022-03-17 00:36:35,044 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647466595.044447, 'mess_text': 'dcvfaeftwrtb'}
+2022-03-17 00:36:36,654 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647466595.044447, 'mess_text': 'dcvfaeftwrtb'}
+2022-03-17 00:36:36,654 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647466595.044447, 'mess_text': 'dcvfaeftwrtb'}
+2022-03-17 00:36:36,654 DEBUG client_transport.py Получено сообщение от пользователя TestSender_gui:dcvfaeftwrtb
+2022-03-17 00:36:41,023 DEBUG client_transport.py Создание контакта TestSender_gui
+2022-03-17 00:36:41,330 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:36:41,334 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x10a9c6b80>
+2022-03-17 00:36:49,000 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466609.0001762, 'mess_text': 'dvbrtwbrtwbe'}
+2022-03-17 00:36:49,396 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466609.0001762, 'mess_text': 'dvbrtwbrtwbe'}
+2022-03-17 00:36:49,396 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466609.0001762, 'mess_text': 'dvbrtwbrtwbe'}
+2022-03-17 00:36:49,396 DEBUG client_transport.py Получено сообщение от пользователя TestSender12222:dvbrtwbrtwbe
+2022-03-17 00:36:59,200 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647466619.200633, 'mess_text': 'dabertbwretb'}
+2022-03-17 00:37:04,551 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647466619.200633, 'mess_text': 'dabertbwretb'}
+2022-03-17 00:37:04,551 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647466619.200633, 'mess_text': 'dabertbwretb'}
+2022-03-17 00:37:04,551 DEBUG client_transport.py Получено сообщение от пользователя TestSender_gui:dabertbwretb
+2022-03-17 00:37:27,257 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466647.257813, 'mess_text': 'vdfvdfvdfv'}
+2022-03-17 00:37:32,824 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466647.257813, 'mess_text': 'vdfvdfvdfv'}
+2022-03-17 00:37:32,824 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466647.257813, 'mess_text': 'vdfvdfvdfv'}
+2022-03-17 00:37:32,824 DEBUG client_transport.py Получено сообщение от пользователя TestSender12222:vdfvdfvdfv
+2022-03-17 00:37:39,055 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender1222', 'time': 1647466659.055184, 'mess_text': 'dfv d '}
+2022-03-17 00:37:50,924 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender1222', 'time': 1647466670.9240162, 'mess_text': 'fdvfdfvdfv'}
+2022-03-17 00:38:06,946 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender1222', 'time': 1647466686.946024, 'mess_text': 'vdfvdfvdfv'}
+2022-03-17 00:39:01,040 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466741.040096, 'mess_text': 'vdfzvfds'}
+2022-03-17 00:39:10,575 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466750.5750668, 'mess_text': 'vdfvxdvf'}
+2022-03-17 00:39:21,982 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647466761.982362, 'mess_text': 'xcvxcvxcv'}
+2022-03-17 00:39:30,503 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 00:39:35,520 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 00:40:14,193 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender12222'] функции client_name).
+2022-03-17 00:40:14,384 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:40:14,418 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:40:14,418 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:40:14,419 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender12222
+2022-03-17 00:40:14,436 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:40:14,436 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 00:40:14,436 DEBUG client_transport.py Запрос списка известных пользователей TestSender12222
+2022-03-17 00:40:14,958 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 00:40:14,958 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647466814.958626, 'user': 'TestSender12222'}
+2022-03-17 00:40:15,452 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['апаафыпаыв', 'TestSender1222', 'TestSender_gui']}
+2022-03-17 00:40:15,472 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 00:40:25,026 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client_gui_2.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender_gui'] функции client_name).
+2022-03-17 00:40:25,224 INFO client_gui_2.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:40:25,258 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:40:25,259 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:40:25,259 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender_gui
+2022-03-17 00:40:25,780 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:40:25,780 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 00:40:25,780 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:40:26,303 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 00:40:26,304 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647466826.3039842, 'user': 'TestSender_gui'}
+2022-03-17 00:40:26,797 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender12222']}
+2022-03-17 00:40:26,818 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 00:40:33,893 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647466833.893153, 'mess_text': 'gfdgdfgdf'}
+2022-03-17 00:40:34,627 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647466833.893153, 'mess_text': 'gfdgdfgdf'}
+2022-03-17 00:40:34,627 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647466833.893153, 'mess_text': 'gfdgdfgdf'}
+2022-03-17 00:40:34,627 DEBUG client_transport.py Получено сообщение от пользователя TestSender_gui:gfdgdfgdf
+2022-03-17 00:40:42,828 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466842.8285718, 'mess_text': 'dfgdfgdfg'}
+2022-03-17 00:40:43,415 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466842.8285718, 'mess_text': 'dfgdfgdfg'}
+2022-03-17 00:40:43,415 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466842.8285718, 'mess_text': 'dfgdfgdfg'}
+2022-03-17 00:40:43,415 DEBUG client_transport.py Получено сообщение от пользователя TestSender12222:dfgdfgdfg
+2022-03-17 00:41:02,173 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466862.173368, 'mess_text': 'dgdfgdfg'}
+2022-03-17 00:41:02,531 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466862.173368, 'mess_text': 'dgdfgdfg'}
+2022-03-17 00:41:02,531 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender12222', 'to': 'TestSender_gui', 'time': 1647466862.173368, 'mess_text': 'dgdfgdfg'}
+2022-03-17 00:41:02,531 DEBUG client_transport.py Получено сообщение от пользователя TestSender12222:dgdfgdfg
+2022-03-17 00:41:10,070 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 00:41:10,190 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-17 00:41:11,583 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 00:44:10,055 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 00:44:10,228 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:44:10,254 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:44:10,255 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:44:10,255 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 00:44:15,255 CRITICAL client_transport.py Потеряно соединение с сервером!
+2022-03-17 00:45:27,083 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 00:45:27,254 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:45:27,286 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:45:27,286 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:45:27,287 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 00:45:27,304 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:45:27,304 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 00:45:27,304 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-17 00:45:27,823 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 00:45:27,823 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647467127.823903, 'user': 'TestSender1'}
+2022-03-17 00:45:28,319 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['dasdas', 'TestSender122']}
+2022-03-17 00:45:28,333 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 00:45:49,800 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client_gui_2.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender_gui'] функции client_name).
+2022-03-17 00:45:49,996 INFO client_gui_2.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 00:45:50,035 INFO client_transport.py Попытка подключения №1
+2022-03-17 00:45:50,036 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 00:45:50,036 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender_gui
+2022-03-17 00:45:50,558 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:45:50,558 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 00:45:50,558 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:45:51,079 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 00:45:51,080 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647467151.080069, 'user': 'TestSender_gui'}
+2022-03-17 00:45:51,569 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender12222']}
+2022-03-17 00:45:51,579 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 00:46:00,412 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647467160.4120471, 'mess_text': 'csdcsdsd'}
+2022-03-17 00:46:12,362 DEBUG client_transport.py Создание контакта TestSender1
+2022-03-17 00:46:12,730 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:46:12,736 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x113ccf550>
+2022-03-17 00:46:19,172 DEBUG client_transport.py Удаление контакта TestSender1
+2022-03-17 00:46:19,288 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:46:19,290 INFO main_window.py Успешно удалён контакт TestSender1
+2022-03-17 00:46:26,402 DEBUG client_transport.py Удаление контакта TestSender12222
+2022-03-17 00:46:26,834 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:46:26,836 INFO main_window.py Успешно удалён контакт TestSender12222
+2022-03-17 00:46:31,962 DEBUG client_transport.py Создание контакта TestSender1
+2022-03-17 00:46:32,377 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:46:32,382 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x113ccf5e0>
+2022-03-17 00:46:41,653 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467201.653455, 'mess_text': 'dcsdscs'}
+2022-03-17 00:46:41,939 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467201.653455, 'mess_text': 'dcsdscs'}
+2022-03-17 00:46:41,940 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467201.653455, 'mess_text': 'dcsdscs'}
+2022-03-17 00:46:41,940 DEBUG client_transport.py Получено сообщение от пользователя TestSender_gui:dcsdscs
+2022-03-17 00:46:44,018 DEBUG client_transport.py Создание контакта TestSender_gui
+2022-03-17 00:46:44,474 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:46:44,480 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x10a3be280>
+2022-03-17 00:46:58,910 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467218.910423, 'mess_text': 'sdfdsfsd'}
+2022-03-17 00:46:59,059 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467218.910423, 'mess_text': 'sdfdsfsd'}
+2022-03-17 00:46:59,060 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467218.910423, 'mess_text': 'sdfdsfsd'}
+2022-03-17 00:46:59,060 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:sdfdsfsd
+2022-03-17 00:47:07,902 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467227.902721, 'mess_text': 'fsdsdfsdf'}
+2022-03-17 00:47:09,114 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467227.902721, 'mess_text': 'fsdsdfsdf'}
+2022-03-17 00:47:09,114 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647467227.902721, 'mess_text': 'fsdsdfsdf'}
+2022-03-17 00:47:09,115 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:fsdsdfsdf
+2022-03-17 00:47:14,641 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467234.6410408, 'mess_text': 'sdfsdfsd'}
+2022-03-17 00:47:14,663 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467234.6410408, 'mess_text': 'sdfsdfsd'}
+2022-03-17 00:47:14,663 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647467234.6410408, 'mess_text': 'sdfsdfsd'}
+2022-03-17 00:47:14,663 DEBUG client_transport.py Получено сообщение от пользователя TestSender_gui:sdfsdfsd
+2022-03-17 00:47:43,354 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender122', 'time': 1647467263.354035, 'mess_text': 'sdfsdf'}
+2022-03-17 00:48:14,029 DEBUG client_transport.py Создание контакта TestSender12222
+2022-03-17 00:48:19,074 DEBUG client_transport.py Принято сообщение с сервера: {'response': 200}
+2022-03-17 00:48:19,074 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:48:23,053 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:48:25,320 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-03-17 00:48:25,345 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:48:26,092 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-03-17 00:48:28,687 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:48:29,121 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-03-17 00:48:32,509 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 00:48:32,643 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-03-17 00:48:40,134 DEBUG client_transport.py Создание контакта TestSender12222
+2022-03-17 00:48:40,189 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 00:48:40,200 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x1142d0700>
+2022-03-17 00:48:45,511 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender12222', 'time': 1647467325.51106, 'mess_text': 'sdfsdf'}
+2022-03-17 00:49:11,565 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 00:49:11,870 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-17 00:49:15,591 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 13:30:35,454 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 13:30:35,665 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 13:30:35,710 INFO client_transport.py Попытка подключения №1
+2022-03-17 13:30:35,711 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 13:30:35,711 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 13:30:35,891 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 13:30:35,891 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 13:30:35,891 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-17 13:30:40,585 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 13:30:40,585 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647513040.585278, 'user': 'TestSender1'}
+2022-03-17 13:30:41,083 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['dasdas', 'TestSender122', 'TestSender_gui']}
+2022-03-17 13:30:41,110 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 13:30:55,430 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 13:30:55,694 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-17 13:32:34,862 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 13:32:35,058 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 13:32:35,091 INFO client_transport.py Попытка подключения №1
+2022-03-17 13:32:35,091 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 13:32:35,091 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 13:32:35,097 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 13:32:35,098 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 13:32:35,098 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-17 13:32:35,618 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 13:32:35,618 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647513155.618525, 'user': 'TestSender1'}
+2022-03-17 13:32:36,109 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['dasdas', 'TestSender122', 'TestSender_gui']}
+2022-03-17 13:32:36,136 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 13:32:48,765 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 13:32:49,263 DEBUG client_transport.py Потеряно соединение с сервером.
+2022-03-17 13:33:52,717 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender1'] функции client_name).
+2022-03-17 13:33:52,894 INFO client.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 13:33:52,930 INFO client_transport.py Попытка подключения №1
+2022-03-17 13:33:52,930 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 13:33:52,930 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender1
+2022-03-17 13:33:52,942 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 13:33:52,943 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 13:33:52,943 DEBUG client_transport.py Запрос списка известных пользователей TestSender1
+2022-03-17 13:33:53,463 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 13:33:53,463 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647513233.463609, 'user': 'TestSender1'}
+2022-03-17 13:33:53,953 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['dasdas', 'TestSender122', 'TestSender_gui']}
+2022-03-17 13:33:53,969 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 13:34:51,661 DEBUG loging_decos.py Запущено приложение ClientApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_5/client_gui_2.py', 'client.py', '-a', '192.168.0.50', '-p', '8888', '-u', 'TestSender_gui'] функции client_name).
+2022-03-17 13:34:51,850 INFO client_gui_2.py Запущен клиент с парамертами: адрес сервера: 192.168.0.50, порт: 8888
+2022-03-17 13:34:51,882 INFO client_transport.py Попытка подключения №1
+2022-03-17 13:34:51,883 DEBUG client_transport.py Установлено соединение с сервером
+2022-03-17 13:34:51,883 DEBUG client_transport.py Сформировано presence сообщение для пользователя TestSender_gui
+2022-03-17 13:34:52,007 DEBUG client_transport.py Разбор сообщения от сервера: {'response': 200}
+2022-03-17 13:34:52,007 INFO client_transport.py Соединение с сервером успешно установлено.
+2022-03-17 13:34:52,007 DEBUG client_transport.py Запрос списка известных пользователей TestSender_gui
+2022-03-17 13:34:57,020 DEBUG client_transport.py Запрос контакт листа для пользователся Thread-1
+2022-03-17 13:34:57,020 DEBUG client_transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1647513297.0208378, 'user': 'TestSender_gui'}
+2022-03-17 13:34:57,506 DEBUG client_transport.py Получен ответ {'response': 202, 'data_list': ['TestSender1', 'TestSender12222']}
+2022-03-17 13:34:57,527 DEBUG client_transport.py Запущен процесс - приёмник собщений с сервера.
+2022-03-17 13:35:05,465 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513305.464951, 'mess_text': 'dfgdsfagdsf'}
+2022-03-17 13:35:05,801 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513305.464951, 'mess_text': 'dfgdsfagdsf'}
+2022-03-17 13:35:05,801 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513305.464951, 'mess_text': 'dfgdsfagdsf'}
+2022-03-17 13:35:05,802 DEBUG client_transport.py Получено сообщение от пользователя TestSender_gui:dfgdsfagdsf
+2022-03-17 13:35:08,758 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647513308.757985, 'mess_text': 'dsfasdf'}
+2022-03-17 13:35:09,075 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647513308.757985, 'mess_text': 'dsfasdf'}
+2022-03-17 13:35:09,076 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:dsfasdf
+2022-03-17 13:35:09,093 INFO client_transport.py Отправлено сообщение для пользователя TestSender1
+2022-03-17 13:35:09,095 DEBUG main_window.py Отправлено сообщение для TestSender1: dfgdsfagdsf
+2022-03-17 13:35:19,523 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647513319.52393, 'mess_text': 'sdfsdf'}
+2022-03-17 13:35:19,631 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647513319.52393, 'mess_text': 'sdfsdf'}
+2022-03-17 13:35:19,631 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender_gui', 'time': 1647513319.52393, 'mess_text': 'sdfsdf'}
+2022-03-17 13:35:19,632 DEBUG client_transport.py Получено сообщение от пользователя TestSender1:sdfsdf
+2022-03-17 13:36:15,718 DEBUG client_transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513375.7186182, 'mess_text': 'sdfsdfsd'}
+2022-03-17 13:36:18,756 DEBUG client_transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513375.7186182, 'mess_text': 'sdfsdfsd'}
+2022-03-17 13:36:18,757 DEBUG client_transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'TestSender_gui', 'to': 'TestSender1', 'time': 1647513375.7186182, 'mess_text': 'sdfsdfsd'}
+2022-03-17 13:36:18,757 DEBUG client_transport.py Получено сообщение от пользователя TestSender_gui:sdfsdfsd
+2022-03-17 13:36:45,864 DEBUG client_transport.py Транспорт завершает работу.
+2022-03-17 13:36:52,835 DEBUG client_transport.py Транспорт завершает работу.

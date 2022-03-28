@@ -1,0 +1,143 @@
+2022-03-18 01:16:16,716 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:16:16,717 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:16:16,717 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:16:16,717 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:16:37,594 DEBUG loging_decos.py Запущено приложение main,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:16:50,786 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:16:50,786 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:16:50,787 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:16:50,787 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:17:38,724 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:17:38,725 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:17:38,725 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:17:38,726 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:17:48,738 DEBUG loging_decos.py Запущено приложение main,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:30:41,676 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:30:41,678 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:30:41,678 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:30:41,678 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:33:44,320 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:33:44,321 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:33:44,321 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:33:44,321 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:33:44,366 INFO core.py Запущен сервер, порт для подключений: 8888 , адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:33:56,913 INFO core.py Установлено соедение с ПК ('192.168.0.50', 51382)
+2022-03-18 01:33:57,423 DEBUG core.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1647556436.926778, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 01:33:57,423 DEBUG core.py Start auth process for {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}
+2022-03-18 01:33:57,431 DEBUG core.py Correct username, starting passwd check.
+2022-03-18 01:33:57,434 DEBUG core.py Auth message = {'response': 511, 'bin': '0a60ddf53ac2aa36b1626d7f13ac2f7e85a1ecafd1ab39b01ef172d40ba166084692ff04845561fc534d966dab16efc68e20c4de478d13329c2daf53b2d9a31a'}
+2022-03-18 01:33:57,950 DEBUG core.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1647556437.435609, 'account_name': 'TestSender1'}
+2022-03-18 01:33:58,456 DEBUG core.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1647556437.960438, 'user': 'TestSender1'}
+2022-03-18 01:34:30,155 DEBUG core.py Разбор сообщения от клиента : {'action': 'add', 'time': 1647556469.977001, 'user': 'TestSender1', 'account_name': 'TestSender1'}
+2022-03-18 01:34:34,700 DEBUG core.py Разбор сообщения от клиента : {'action': 'pubkey_need', 'time': 1647556474.2803662, 'account_name': 'TestSender1'}
+2022-03-18 01:34:38,232 DEBUG core.py Разбор сообщения от клиента : {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647556478.061405, 'mess_text': 'Xq3xAPg2LDAESsjUPiUDeZOWpR7Okg9xPfA7mLVPd9wJcoYvKm6ttB4xv29AncxvouJz9tjuBbDKS5n9S2EsfE9eGU2s2VVGON99OYAf3A2QpZqzghow39/Z89zjQsU/18og2A2JnMSj8YBlXn7ySFlj9mIvbB/N9BkMg+OtMQm/dBAg1hAqJBxxaaKbOCRTfzvy9AETNWNi2Bf/bUjsOA3CcctnrQ67e6TNh1R8yW9i2D6kDl+8zffLDYchtd/RutAT/7VJn2th/aTcHm+KCaxBSZ3IntwCwmnHTKqnwrxMGAwPp/RhxndaqBYnbJC+hKgkVCV8SEKtUD5iIZpv/A=='}
+2022-03-18 01:34:38,268 INFO core.py Отправлено сообщение пользователю TestSender1 от пользователя TestSender1.
+2022-03-18 01:34:44,801 DEBUG core.py Разбор сообщения от клиента : {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647556484.695488, 'mess_text': 'GSkQm9DGEg5ViiYvr1x7o4AoVoHIzpVbU12Q+Pe8rcAyypcwKG376E+f/qL+lune0e1vfxAO8D0cA3sCSgRn9FclemO5AndmfKN5hE0hhFt/F134gtQ92a+5IDTlWrUlcNZKr9frfYoZWhoeowDriGwbsXIMgwjO2nvi8+NxHxTwTzTFPS6ag6gmRIMas+Oitvx12SS6e7f9sqhd2PwuR4dipflLy/Ajl1U8T0IHHUlYj6nzrKxODJb2nmnMSKmH1l59AelqRVa/v0cVKsE9cb/I6k9HQJn4e/EC9Y6O7Te60LgmLkwbJoHLvjfO7JCaMg1MA5LmQM5RnLKGbmqa/Q=='}
+2022-03-18 01:34:44,817 INFO core.py Отправлено сообщение пользователю TestSender1 от пользователя TestSender1.
+2022-03-18 01:34:50,851 DEBUG core.py Разбор сообщения от клиента : {'action': 'exit', 'time': 1647556490.67991, 'account_name': 'TestSender1'}
+2022-03-18 01:34:50,851 INFO core.py Клиент ('192.168.0.50', 51382) отключился от сервера.
+2022-03-18 01:44:25,092 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:44:25,094 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:44:25,094 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:44:25,094 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:47:48,938 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:47:48,940 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:47:48,940 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:47:48,940 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:50:20,861 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:50:20,862 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:50:20,862 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:50:20,862 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:51:26,922 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:51:26,923 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:51:26,923 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:51:26,923 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:51:57,254 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:51:57,255 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:51:57,255 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:51:57,255 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:51:57,293 INFO core.py Запущен сервер, порт для подключений: <common.descryptors.Port object at 0x108187760> , адрес с которого принимаются подключения: 8888. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:53:21,799 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:53:21,801 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:53:21,801 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:53:21,801 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:53:21,845 INFO core.py Запущен сервер, порт для подключений: <common.descryptors.Port object at 0x10cea4760> , адрес с которого принимаются подключения: 8888. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:56:49,998 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:56:49,999 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:56:49,999 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:56:49,999 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 01:56:50,044 INFO core.py Запущен сервер, порт для подключений: <common.descryptors.Port object at 0x1059897c0> , адрес с которого принимаются подключения: 8888. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:58:47,774 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 01:58:47,776 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 01:58:47,776 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 01:58:47,776 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 02:00:32,836 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 02:00:32,837 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 02:00:32,837 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 02:00:32,837 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 02:00:32,869 INFO core.py Запущен сервер, порт для подключений: <common.descryptors.Port object at 0x109fd27c0> , адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 02:01:35,922 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 02:01:35,924 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 02:01:35,924 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 02:01:35,924 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 02:01:35,958 INFO core.py Запущен сервер, порт для подключений: <common.descryptors.Port object at 0x103d1f7c0> , адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 02:03:03,919 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 02:03:03,920 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 02:03:03,920 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 02:03:03,920 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 02:03:03,972 INFO core.py Запущен сервер, порт для подключений: 8888 , адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 02:03:15,414 INFO core.py Установлено соедение с ПК ('192.168.0.50', 51437)
+2022-03-18 02:03:15,919 DEBUG core.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1647558195.428642, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 02:03:15,920 DEBUG core.py Start auth process for {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}
+2022-03-18 02:03:15,928 DEBUG core.py Correct username, starting passwd check.
+2022-03-18 02:03:15,931 DEBUG core.py Auth message = {'response': 511, 'bin': 'b1f1bfad1e30e36ae850131f8f9ff252fe201c161bc5d9873db60e6eede1db12f1796e0e1c261656dfc9e53b6643b6a69dd5beb3cc9dc1d6b184f6d139f06fc2'}
+2022-03-18 02:03:16,448 DEBUG core.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1647558195.9321868, 'account_name': 'TestSender1'}
+2022-03-18 02:03:16,954 DEBUG core.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1647558196.46172, 'user': 'TestSender1'}
+2022-03-18 02:03:22,491 DEBUG core.py Разбор сообщения от клиента : {'action': 'pubkey_need', 'time': 1647558202.1084642, 'account_name': 'TestSender1'}
+2022-03-18 02:03:26,518 DEBUG core.py Разбор сообщения от клиента : {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647558205.545068, 'mess_text': 'cn0XUdnHC9J+TS5+botq4oNFSYKbhMmzCJtVKXzCOn+2zJA+GuprkXkVPHS751vKRYXbr8jI2APOUvwtziYhVLHDj1VElw6V3+zZtqtKjW016guZWipJSxDU5DXFlLtF21wwa97+u578iYzzCO3cRoMiOvhxvMH0J2+by4w+91YyOyUwtVf6GZSX1XaPlwgeYkWx9AZK1P0YExMIqs7vuWZw+cIMLzMku9lYNeEbEYQwT+aVd23GShsricb6LPoMvHl3IWURzoMJs+bPPzavUyTW24/mq7nls6b2RiluXakVEF04JXrxQVDQ6murLGoU5Hs+F2Wel2N2AVkCuBOxMg=='}
+2022-03-18 02:03:26,527 INFO core.py Отправлено сообщение пользователю TestSender1 от пользователя TestSender1.
+2022-03-18 02:03:41,115 DEBUG core.py Разбор сообщения от клиента : {'action': 'exit', 'time': 1647558220.7591941, 'account_name': 'TestSender1'}
+2022-03-18 02:03:41,116 INFO core.py Клиент ('192.168.0.50', 51437) отключился от сервера.
+2022-03-18 02:05:19,656 DEBUG loging_decos.py Запущено приложение ServerApp,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции gui_flag).
+2022-03-18 02:05:19,657 DEBUG loging_decos.py Запущено приложение config_load,c параметрами ['/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/server.py', 'server.py', '-a', '192.168.0.50', '-p', '8888'] функции ServerApp.main().
+2022-03-18 02:05:19,657 INFO server.py Запущен сервер, порт для подключений: 8888, адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 02:05:19,657 DEBUG server.py Server launched. IP: 192.168.0.50 Port: 8888
+2022-03-18 02:05:19,701 INFO core.py Запущен сервер, порт для подключений: 8888 , адрес с которого принимаются подключения: 192.168.0.50. Если адрес не указан, принимаются соединения с любых адресов.
+2022-03-18 02:05:29,412 INFO core.py Установлено соедение с ПК ('192.168.0.50', 51449)
+2022-03-18 02:05:29,914 DEBUG core.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1647558329.4272158, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 02:05:29,914 DEBUG core.py Start auth process for {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}
+2022-03-18 02:05:29,924 DEBUG core.py Correct username, starting passwd check.
+2022-03-18 02:05:29,926 DEBUG core.py Auth message = {'response': 511, 'bin': '36d0e5617cd74279d1c49582a83791f2f6547b79bd944b99c74159b988a1bc24631cb27ae6a09d8cd21cf664128d383dbbd79bc941d3888598b3a5dd70fb5728'}
+2022-03-18 02:05:30,446 DEBUG core.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1647558329.927624, 'account_name': 'TestSender1'}
+2022-03-18 02:05:30,953 DEBUG core.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1647558330.463711, 'user': 'TestSender1'}
+2022-03-18 02:05:31,458 DEBUG core.py Getting data from client exception.
+Traceback (most recent call last):
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/Server/core.py", line 88, in run
+    get_message(client_with_message), client_with_message)
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/common/utils.py", line 22, in get_message
+    response = json.loads(json_response)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2022-03-18 02:05:31,462 INFO core.py Клиент ('192.168.0.50', 51449) отключился от сервера.
+2022-03-18 02:10:07,928 INFO core.py Установлено соедение с ПК ('192.168.0.50', 51460)
+2022-03-18 02:10:08,435 DEBUG core.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1647558607.9407082, 'user': {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-03-18 02:10:08,437 DEBUG core.py Start auth process for {'account_name': 'TestSender1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlIIAbEuKDWzgLz5hUl+i\n4rNgZTjOb7oDsPpfOJpZwJnc21Z2lIcVf69A+ueV5djiYOJJe7yA6L+74tQZAS8v\nAq/tDWaaTbT83+UiopDBur5ikObJhmi28Iy5qvqI8dRVURYmLh0e9VoKQGO+iLgz\n3Ly6HEkDpqYs/WLtiuVR54fXIJc0UtSrT7aHt2hokwD0oVv0+MAoFt4s2u5O/wMF\nvMQ8KLWJKW5D+aQjvGmteidpQ64vAAB7JwY4JJvNWmyawUySNYbX7hCGDGD7Fhv5\ni4so8fdau/Avu6O2y8GnaNv7PKWO0gGjUPNQaNy39tL/YYDCaDiWlSP6Mx0G3I9M\nowIDAQAB\n-----END PUBLIC KEY-----'}
+2022-03-18 02:10:08,438 DEBUG core.py Correct username, starting passwd check.
+2022-03-18 02:10:08,439 DEBUG core.py Auth message = {'response': 511, 'bin': 'f7d8e3b3b798cf4e7641e7be5bbade13b98d344c6bb15569cb9fc951d384074378d9a65a4c5e1d143e02831873560c0599d01062ae65bba66b06fdd9c22ffe13'}
+2022-03-18 02:10:08,958 DEBUG core.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1647558608.440763, 'account_name': 'TestSender1'}
+2022-03-18 02:10:09,478 DEBUG core.py Разбор сообщения от клиента : {'action': 'get_contacts', 'time': 1647558608.973949, 'user': 'TestSender1'}
+2022-03-18 02:10:58,739 DEBUG core.py Разбор сообщения от клиента : {'action': 'pubkey_need', 'time': 1647558658.644238, 'account_name': 'TestSender1'}
+2022-03-18 02:11:02,259 DEBUG core.py Разбор сообщения от клиента : {'action': 'message', 'from': 'TestSender1', 'to': 'TestSender1', 'time': 1647558661.814739, 'mess_text': 'AXQKgy+n1obsG7xtV73WSgooBfWcSbypv0Y5yGwWiGAE9757byd/Zy4jDsKgjZqN0knguVQ78JBQKaAZ3Qym1x6CaFVkOKvAr333xpS6uubqxyilN8zji5WvzQmmcI16MdU7qPEu74g/5YjHcmHFHBzueuLdlMauKslfcPAqxvnd1HiszGctXhBd5EIGrAknJOHX5TOAUyiW+iJWQLYguk9DnS9x5+25+CHNsKNUfpeD+d3V2iX58n8oa8j8NjOtCBRmJK9qFavRFz8KZGx0xMztH/Bpt84QdZAw9CB7F2t5CxJPKwGr8JjVjr9rW8SS7T4zsmnDcswJdyGzxta1ww=='}
+2022-03-18 02:11:02,296 INFO core.py Отправлено сообщение пользователю TestSender1 от пользователя TestSender1.
+2022-03-18 02:11:02,798 DEBUG core.py Getting data from client exception.
+Traceback (most recent call last):
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/Server/core.py", line 88, in run
+    get_message(client_with_message), client_with_message)
+  File "/Users/dmitry/Desktop/Programms/geekbrains/11-PyQT/PyQT_pycharm/Lesson_6/common/utils.py", line 19, in get_message
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+ConnectionResetError: [Errno 54] Connection reset by peer
