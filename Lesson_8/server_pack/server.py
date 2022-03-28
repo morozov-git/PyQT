@@ -165,7 +165,7 @@ class ServerApp():  # class ServerApp(metaclass=ServerMaker):
 			if 1023 < port < 65536:
 				self.config['SETTINGS']['Default_port'] = str(port)
 				print(port)
-				with open('../server.ini', 'w') as conf:
+				with open('server.ini', 'w') as conf:
 					self.config.write(conf)
 					message.information(
 						config_window, 'OK', 'Настройки успешно сохранены!')
